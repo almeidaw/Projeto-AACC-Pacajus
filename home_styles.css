@@ -27,7 +27,6 @@ body{
     justify-content: space-between;
     align-content: space-between;
     background-color: none;
-    border: 1px solid red;
     height: 400px;
 }
 
@@ -104,6 +103,94 @@ header::after{
     width: 100%;
 }
 
+
+/*
+
+                                                Formatação do carrossel de fotos
+
+*/
+
+
+.carousel{
+    position: absolute;
+    height: 200px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.carousel_image{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.carousel_track_container{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+}
+
+.carousel_slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel_button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel_button--left{
+    left: -30px;
+}
+
+.carousel_button--right{
+    right: -30px;
+}
+
+.carousel_indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 20px;
+    background: rgba(0,0,0,.3);
+    cursor: pointer;
+}
+
+.carousel_nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0 15px;
+}
+
+.carousel_button img{
+    width: 12px;
+}
+
+.carousel_indicator.current_slide{
+    background-color: rgba(0,0,0,.75);
+}
+
+.is_hidden{
+    display: none;
+}
 
 /*
 
