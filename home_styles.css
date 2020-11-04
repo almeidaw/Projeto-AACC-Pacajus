@@ -1,0 +1,149 @@
+/*
+                            Formatação geral da página (fonte e imagem de fundo)
+*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("assets/BackGround.png");
+    background-size: cover;
+    background-color: #6FCF97;
+    height: 100%;
+    position: relative;
+}
+
+.main_container{
+    min-height: 100vh;
+    min-width: auto;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.conteudo_home{
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    background-color: none;
+    border: 1px solid red;
+    height: 400px;
+}
+
+/*
+                                    Formatação da barra de navegação
+*/
+
+.logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: left;
+    padding: 10px 0;
+}
+
+.header{
+    background-color: #6FCF97;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav{
+    position: relative;
+    bottom: auto;
+}
+
+#nome{
+    font-size: 22px;
+    margin-left: 18px;
+}
+
+.item_nav{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 25px;
+    position: relative;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.link:hover{
+    color: #000000;
+}
+
+.link::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0;
+    background-color: #444444;
+    position: absolute;
+    top: 0;
+}
+
+.link:hover::before{
+    width: 100%;
+}
+
+
+/*
+
+                                Formatação do rodapé
+
+*/
+
+.footer{
+    background-color: #6FCF97;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.informacoes,.informacoes_contato{
+    list-style: none;
+}
+
+.link_rodape{
+    color: black;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.link_rodape:hover{
+    color: #000000;
+    font-style:italic;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0px;
+}
+
+.div_info_contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
