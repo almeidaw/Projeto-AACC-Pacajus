@@ -9,6 +9,9 @@
     <script></script>
 </head>
 <body>
+
+                                                <!-- Esqueleto da barra de navegação-->
+
 <div class="main_container">
 <header class="header">
     <div class="container">
@@ -26,6 +29,9 @@
         </nav>
     </div>
 </header>
+
+                                            <!-- Esqueleto da parte Nossa História-->
+
 <div class="conteudo_home">
     <h1 class="h1">Nossa história</h1>
     <div class="nossa_historia">
@@ -40,37 +46,44 @@
     <h3 class="h3"> 
         Veja algumas das nossas fotos e vídeos!
     </h3>
-    <div class="fotos_e_videos">
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="assets/foto_carrossel_1.jpg" style="width:30%" height="10%">
-            <div class="text">Caption Text</div>
-          </div>
-        
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img2.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
-          </div>
-        
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img3.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
-          </div>
 
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                                        <!-- Esqueleto do carrossel-->
 
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
+    <div class="carousel">
 
-        Inserir fotos
+        <button class="carousel_button carousel_button--left is_hidden">
+            <img src="assets/seta-esquerda.png" alt="">
+        </button>
+
+        <div class="carousel_track_container">
+            <ul class="carousel_track">
+                <li class="carousel_slide current_slide">
+                    <img class = "carousel_image" src="assets/foto_carrossel_1.jpg" alt="">
+                </li>
+                <li class="carousel_slide">
+                    <img class = "carousel_image" src="assets/foto_carrossel_2.jpg" alt="">
+                </li>
+                <li class="carousel_slide">
+                    <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <button class="carousel_button carousel_button--right">
+            <img src="assets/seta-direita.png" alt="">
+        </button>
+
+        <div class="carousel_nav">
+            <button class="carousel_indicator current_slide"></button>
+            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator"></button>
+        </div>
 
     </div>
+
+
+                                                        <!-- Esqueleto do footer-->
+
 </div>
     <footer class="footer">
         <ul class="informacoes">
@@ -91,5 +104,8 @@
         </ul>
     </footer>
 </div>
+
+<script src = "home_carrossel.js"></script>
+
 </body>
 </html>
