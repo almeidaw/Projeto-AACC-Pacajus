@@ -1,3 +1,44 @@
 .is_hidden{
     display: none;
 }
+
+.produto {
+	background-color: #FFF;
+	height: 300px;
+	width: 300px;
+	border-radius: 10px;
+}
+
+.prod_header {
+	margin: 2px 10px;
+	position: relative;
+
+}
+
+.prod_header h4, h5 {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+.prod_header h5 {
+	position: absolute;
+	right: 0px;
+}
+
+.produto img {
+	max-width:100%;
+	max-height:100%;
+}
+
+.conteudo {
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	grid-gap: 50px;
+	max-width: 1000px;
+	margin: 30px auto;	
+}
+
+.main_container {
+	position: relative;
+}
