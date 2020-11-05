@@ -22,12 +22,38 @@ body{
 
 .conteudo_home{
     margin-left: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: baseline;
+    align-content: center;
     background-color: none;
-    height: 400px;
+    height: 1050px;
+}
+
+.nossa_historia{
+    height: 150px;
+}
+
+#head_nossa_historia{
+    color: black;
+    text-decoration: none;
+    text-transform: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+#head_nossa_historia:hover{
+    color: #000000;
+}
+
+#head_nossa_historia::before{
+    background-color: #444444;
+    position: absolute;
+}
+
+#paragrafo_nossa_historia{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 
 /*
@@ -103,6 +129,35 @@ header::after{
     width: 100%;
 }
 
+/*
+
+                                            Formatação do carrossel de depoimentos
+
+*/
+
+.depoimentos{
+    height: 300px;
+}
+
+#header_depoimentos{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif ;
+}
+
+.autor{
+    padding-left: 10px;
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.frase{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
 
 /*
 
@@ -113,17 +168,19 @@ header::after{
 
 .carousel{
     position: absolute;
-    height: 200px;
-    width: 80%;
+    height: 400px;
+    width: 90%;
     margin: 0 auto;
     padding: 10px;
-    border: 1px solid red;
 }
 
 .carousel_image{
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel_track_container{
@@ -169,7 +226,7 @@ header::after{
     border-radius: 50%;
     width: 15px;
     height: 20px;
-    background: rgba(0,0,0,.3);
+    background: rgb(0,0,0,.3);
     cursor: pointer;
 }
 
@@ -192,6 +249,11 @@ header::after{
     display: none;
 }
 
+.h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
 /*
 
                                 Formatação do rodapé
@@ -203,7 +265,7 @@ header::after{
     position: absolute;
     bottom: 0;
     width: 100%;
-    
+    margin-top: 1000px;
 }
 
 .informacoes,.informacoes_contato{
@@ -233,4 +295,20 @@ header::after{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.logo_rede_social{
+
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+#info_doacao{
+    margin-right: 40px;
+    vertical-align: middle;
+}
+
+#localizacao{
+    vertical-align: middle;
 }

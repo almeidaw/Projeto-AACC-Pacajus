@@ -1,4 +1,12 @@
-                                                        /* Forrmatação geral do carrossel de fotos*/
+/*
+#################################################################################################################
+                                          Carrossel de fotos
+#################################################################################################################
+*/
+                                                        
+                                                        
+                                                        
+                                  /* Forrmatação geral do carrossel de fotos*/
 
 const track = document.querySelector('.carousel_track');
 const slides = Array.from(track.children);
@@ -13,7 +21,7 @@ const slideHeight = slideSize.height
 
 console.log(slideSize);
 
-                                              /* Colocando as fotos uma ao lado da outra*/
+                                    /* Colocando as fotos uma ao lado da outra*/
 
 const setSlidePosition = (slide,index) => {
   slide.style.left = slideWidth * index + 'px'
@@ -22,7 +30,7 @@ const setSlidePosition = (slide,index) => {
 slides.forEach(setSlidePosition)
 
 
-                                                      /* Formatação do botão direito*/
+                                          /* Formatação do botão direito*/
 
 const moveToSlide = (track,currentSlide,targetSlide) => {
 
@@ -53,7 +61,7 @@ nextButton.addEventListener('click',e => {
 
 })
 
-                                                    /* Formatação do botão esquerdo*/
+                                    /* Formatação do botão esquerdo*/
 
 prevButton.addEventListener('click',e => {
 
@@ -70,7 +78,7 @@ prevButton.addEventListener('click',e => {
 
 })
 
-                                                    /* Formatação dos pontos pretos abaixo do carrossel */
+                        /* Formatação dos pontos pretos abaixo do carrossel e das duas setas */
 
 
 const hideShowArrows = (slides,prevButton,nextButton,targetIndex) => {
@@ -108,3 +116,9 @@ dotsNav.addEventListener('click',e => {
   hideShowArrows(slides,prevButton,nextButton,targetIndex)
 
 })
+
+/*
+#################################################################################################################
+                                          Carrossel de depoimentos
+#################################################################################################################
+*/

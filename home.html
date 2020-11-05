@@ -18,13 +18,13 @@
         <img src="assets/logo.jpg" alt="logo" class="logo">
         <nav class="nav">
             <ul>
-                <li id="nome" class="item_nav"><a href="home.html" class="link">AACC Pacajus</a></li>
-                <li class="item_nav"><a href="#" class="link">Quem somos</a></li>
-                <li class="item_nav"><a href="#" class="link">Projetos</a></li>
-                <li class="item_nav"><a href="#"class="link">Depoimentos</a></li>
-                <li class="item_nav"><a href="#" class="link">Como ajudar</a></li>
-                <li class="item_nav"><a href="#" class="link">Conheça nosso bazar</a></li>
-                <li class="item_nav"><a href="#" class="link">Acervo de fotos</a></li>
+                <li id="nome" class="item_nav"><a href="home.html" class="link" target="_blank">AACC Pacajus</a></li>
+                <li class="item_nav"><a href="#" class="link" target="_blank">Quem somos</a></li>
+                <li class="item_nav"><a href="#" class="link" target="_blank">Projetos</a></li>
+                <li class="item_nav"><a href="#"class="link" target="_blank">Depoimentos</a></li>
+                <li class="item_nav"><a href="#" class="link" target="_blank">Como ajudar</a></li>
+                <li class="item_nav"><a href="#" class="link" target="_blank">Conheça nosso bazar</a></li>
+                <li class="item_nav"><a href="#" class="link" target="_blank">Acervo de fotos</a></li>
             </ul>
         </nav>
     </div>
@@ -32,59 +32,76 @@
 
                                             <!-- Esqueleto da parte Nossa História-->
 
-<div class="conteudo_home">
-    <h1 class="h1">Nossa história</h1>
-    <div class="nossa_historia">
-        Somos uma entidade sem fins lucrativos que mantém uma escola com atendimento educacional e 
-        alimentação em tempo parcial para quase 70 crianças carentes. 
-        Atuamos com muita dedicação e responsabilidade há mais de 35 anos no município de Pacajus(Ce).
-    </div>
-    <div class="depoimentos">
-        <h2 class="h2">Depoimentos</h2>
-        <p>Inserir depoimentos</p>
-    </div>
-    <h3 class="h3"> 
-        Veja algumas das nossas fotos e vídeos!
-    </h3>
-
-                                                        <!-- Esqueleto do carrossel-->
-
-    <div class="carousel">
-
-        <button class="carousel_button carousel_button--left is_hidden">
-            <img src="assets/seta-esquerda.png" alt="">
-        </button>
-
-        <div class="carousel_track_container">
-            <ul class="carousel_track">
-                <li class="carousel_slide current_slide">
-                    <img class = "carousel_image" src="assets/foto_carrossel_1.jpg" alt="">
-                </li>
-                <li class="carousel_slide">
-                    <img class = "carousel_image" src="assets/foto_carrossel_2.jpg" alt="">
-                </li>
-                <li class="carousel_slide">
-                    <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="">
-                </li>
-            </ul>
+    <div class="conteudo_home">
+    
+        <div class="nossa_historia">
+            <h1><a href="#" target="_blank" id="head_nossa_historia">Nossa história</a></h1>
+            <p id="paragrafo_nossa_historia">
+                Somos uma entidade sem fins lucrativos que mantém uma escola com atendimento educacional e 
+                alimentação em tempo parcial para quase 70 crianças carentes. 
+                Atuamos com muita dedicação e responsabilidade há mais de 35 anos no município de Pacajus(Ce).
+            </p>
         </div>
 
-        <button class="carousel_button carousel_button--right">
-            <img src="assets/seta-direita.png" alt="">
-        </button>
+                                    <!-- Esqueleto do carrossel de depoimentos-->
 
-        <div class="carousel_nav">
-            <button class="carousel_indicator current_slide"></button>
-            <button class="carousel_indicator"></button>
-            <button class="carousel_indicator"></button>
+
+        <div class="depoimentos">
+            <header id="header_depoimentos">Veja alguns depoimentos de pessoas da nossa ONG</header>
+            
+            <p class="frase">
+                Inserir frase
+            </p>
+
+            <p class="autor">
+                Inserir autor
+            </p>
+
+        </div>
+    
+                                        <!-- Esqueleto do carrossel de fotos-->
+
+        <div class="carousel">
+
+            <h3 class="h3"> 
+                Veja algumas das nossas fotos e vídeos!
+            </h3>
+
+            <button class="carousel_button carousel_button--left is_hidden">
+                <img src="assets/seta-esquerda.png" alt="">
+            </button>
+
+            <div class="carousel_track_container">
+                <ul class="carousel_track">
+                    <li class="carousel_slide current_slide">
+                        <img class = "carousel_image" src="assets/foto_carrossel_1.jpg" alt="">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class = "carousel_image" src="assets/foto_carrossel_2.jpg" alt="">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+
+            <button class="carousel_button carousel_button--right">
+                <img src="assets/seta-direita.png" alt="">
+            </button>
+
+            <div class="carousel_nav">
+                <button class="carousel_indicator current_slide"></button>
+                <button class="carousel_indicator"></button>
+                <button class="carousel_indicator"></button>
+            </div>
+
         </div>
 
     </div>
-
-
                                                         <!-- Esqueleto do footer-->
 
-</div>
+
+
     <footer class="footer">
         <ul class="informacoes">
             <div class="div_info_contato">
@@ -96,16 +113,18 @@
             </div>
             <div class = "redes sociais">
                 <div class="icones_redes_sociais">
-                    <a href="#"><span class="fab fa-facebook-f"></span></a>
+                    <header>Redes sociais</header>
+                    <a href="https://www.instagram.com/aaccpacajus/" target="_blank"><img class = "logo_rede_social" src="assets/instagram.png" alt=""></a>
+                    <a href="https://www.facebook.com/aaccpacajus" target="_blank"><img class = "logo_rede_social" src="assets/facebook.png" alt=""></a>
                 </div>
             </div>
-            <li><a href="" class="link_rodape">Localização </a></li>
-            <li><a href="" class="link_rodape">Informações para doação</a></li>
+            <li id="localizacao"><a href="" class="link_rodape">Localização </a></li>
+            <li id="info_doacao"><a href="" class="link_rodape">Informações para doação</a></li>
         </ul>
     </footer>
 </div>
 
-<script src = "home_carrossel.js"></script>
+<script src = "home_carrossel_fotos.js"></script>
 
 </body>
 </html>
