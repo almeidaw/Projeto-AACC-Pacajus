@@ -27,7 +27,7 @@ body{
     justify-content: baseline;
     align-content: center;
     background-color: none;
-    height: 1050px;
+    height: 1250px;
 }
 
 .nossa_historia{
@@ -135,29 +135,90 @@ header::after{
 
 */
 
-.depoimentos{
-    height: 300px;
-}
-
-#header_depoimentos{
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif ;
-}
-
-.autor{
-    padding-left: 10px;
-    padding-top: 30px;
+ /* Container das frases */
+ .slideshow-container {
+    position: relative;
+    background-color: transparent;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Botões */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
     font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* Container dos pontos */
+  .dot-container {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-}
+    padding: 20px;
+    background-color: transparent;
+  }
+  
+  /* Pontos */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Desmarcando pontos não ativados */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fonte itálica */
+  q {font-style: italic;}
+  
+  .author {color: black;} 
 
-.frase{
-    text-align: center;
-    font-size: 40px;
-    padding-top: 20px;
-    font-family: 'Roboto', sans-serif;
-}
+  #h2_depoimentos{
+      font-family: 'Roboto',sans-serif;
+      font-size: 30px;
+  }
+
+  .frase{
+      font-family: 'Roboto',sans-serif;
+      font-size: 30px;
+  }
+
+  .author{
+      font-family: 'Roboto',sans-serif;
+      font-size: 20px;
+  }
 
 /*
 
@@ -205,12 +266,14 @@ header::after{
 }
 
 .carousel_button{
+    cursor: pointer;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 .carousel_button--left{
@@ -225,9 +288,11 @@ header::after{
     border: 0;
     border-radius: 50%;
     width: 15px;
-    height: 20px;
-    background: rgb(0,0,0,.3);
+    height: 15px;
+    background: #bbb;
     cursor: pointer;
+    transition: background-color 0.6s ease;
+    margin: 0 2px ;
 }
 
 .carousel_nav{
@@ -238,11 +303,13 @@ header::after{
 }
 
 .carousel_button img{
-    width: 12px;
+    width: 20px;
+    height: 30px;
+    background-color: transparent;
 }
 
 .carousel_indicator.current_slide{
-    background-color: rgba(0,0,0,.75);
+    background-color: #717171 ;
 }
 
 .is_hidden{
@@ -306,9 +373,15 @@ header::after{
 
 #info_doacao{
     margin-right: 40px;
-    vertical-align: middle;
 }
 
 #localizacao{
     vertical-align: middle;
+}
+
+.redes_sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
 }
