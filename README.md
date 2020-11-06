@@ -2,7 +2,9 @@
 ## Projeto prático do Trilha de Devs
 
 ### Estrutura do site e responsáveis
+
 ```
+http://almeidaw.github.io
 ├─ Index (Mateus)
 ├─ Quem somos (Laura)
 │  ├─ Depoimentos
