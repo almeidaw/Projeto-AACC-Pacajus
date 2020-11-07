@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - AACC Pacajus</title>
     <link rel="stylesheet" href="home_styles.css">
-    <link rel="shortcut icon" href="assets/logo_semFundo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet"> 
     <script></script>
 </head>
@@ -19,13 +18,13 @@
         <img src="assets/logo.jpg" alt="logo" class="logo">
         <nav class="nav">
             <ul>
-                <li id="nome" class="item_nav"><a href="index.html" class="link">AACC Pacajus</a></li>
-                <li class="item_nav"><a href="quem_somos.html" class="link">Quem somos</a></li>
-                <li class="item_nav"><a href="#" class="link">Projetos</a></li>
-                <li class="item_nav"><a href="#"class="link">Depoimentos</a></li>
-                <li class="item_nav"><a href="como_ajudar.html" class="link">Como ajudar</a></li>
-                <li class="item_nav"><a href="bazar.html" class="link">Conheça nosso bazar</a></li>
-                <li class="item_nav"><a href="acervo.html" class="link">Acervo de fotos</a></li>
+                <li id="nome" class="item_nav"><a href="home.html" class="link" target="_blank">AACC Pacajus</a></li>
+                <li class="item_nav"><a href="quem_somos.html" class="link" target="_blank">Quem somos</a></li>
+                <li class="item_nav"><a href="#" class="link" target="_blank">Projetos</a></li>
+                <li class="item_nav"><a href="#"class="link" target="_blank">Depoimentos</a></li>
+                <li class="item_nav"><a href="como_ajudar.html" class="link" target="_blank">Como ajudar</a></li>
+                <li class="item_nav"><a href="bazar.html" class="link" target="_blank">Conheça nosso bazar</a></li>
+                <li class="item_nav"><a href="acervo.html" class="link" target="_blank">Acervo de fotos</a></li>
             </ul>
         </nav>
     </div>
@@ -46,31 +45,63 @@
 
                                     <!-- Esqueleto do carrossel de depoimentos-->
 
+        <h2 id = "h2_depoimentos">Veja alguns depoimentos de pessoas da nossa ONG</h2>
 
-        <div class="depoimentos">
-            <header id="header_depoimentos">Veja alguns depoimentos de pessoas da nossa ONG</header>
-            
-            <p class="frase">
-                Inserir frase
-            </p>
+                                            <!-- Container das frases -->
 
-            <p class="autor">
-                Inserir autor
-            </p>
+        <div class="slideshow-container">
 
+                                        <!-- Frases e autores -->
+            <div class="mySlides">
+                <q class = "frase">Frase 1</q>
+                <p class="author">- Autor 1, Função na ONG</p>
+            </div>
+  
+            <div class="mySlides">
+                <q class="frase">Frase 2</q>
+                <p class="author">- Autor 2, Função na ONG</p>
+            </div>
+  
+            <div class="mySlides">
+                <q class="frase">Frase 3</q>
+                <p class="author">- Autor 3, Função na ONG</p>
+            </div>
+
+            <div class="mySlides">
+                <q class="frase">Frase 4</q>
+                <p class="author">- Autor 4, Função na ONG</p>
+            </div>
+  
+                                <!-- Botões -->
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+  
+                                <!-- Pontos -->
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div> 
+        
     
-                                        <!-- Esqueleto do carrossel de fotos-->
+                            <!-- Esqueleto do carrossel de fotos da home -->
 
         <div class="carousel">
 
             <h3 class="h3"> 
                 Veja algumas das nossas fotos e vídeos!
             </h3>
+                                    <!-- Imagens da seta esquerda-->
 
             <button class="carousel_button carousel_button--left is_hidden">
                 <img src="assets/seta-esquerda.png" alt="">
             </button>
+
+                                    <!-- Carrossel com as fotos -->
 
             <div class="carousel_track_container">
                 <ul class="carousel_track">
@@ -86,9 +117,13 @@
                 </ul>
             </div>
 
+                                    <!-- Imagem da seta direita -->
+
             <button class="carousel_button carousel_button--right">
                 <img src="assets/seta-direita.png" alt="">
             </button>
+
+                                    <!-- Pontos indicadores-->
 
             <div class="carousel_nav">
                 <button class="carousel_indicator current_slide"></button>
@@ -99,9 +134,7 @@
         </div>
 
     </div>
-                                                        <!-- Esqueleto do footer-->
-
-
+                                <!-- Esqueleto do footer-->
 
     <footer class="footer">
         <ul class="informacoes">
@@ -112,20 +145,31 @@
                     <li>Email: <a href="" class="link_rodape">email</a></li>
                 </ul>
             </div>
-            <div class = "redes sociais">
+            <div class = "redes_sociais">
                 <div class="icones_redes_sociais">
                     <header>Redes sociais</header>
                     <a href="https://www.instagram.com/aaccpacajus/" target="_blank"><img class = "logo_rede_social" src="assets/instagram.png" alt=""></a>
                     <a href="https://www.facebook.com/aaccpacajus" target="_blank"><img class = "logo_rede_social" src="assets/facebook.png" alt=""></a>
                 </div>
             </div>
-            <li id="localizacao"><a href="" class="link_rodape">Localização </a></li>
-            <li id="info_doacao"><a href="" class="link_rodape">Informações para doação</a></li>
+            <div id="localizacao">
+                <header><a href="" class="link_rodape">Localização: </a></header>
+                    <p>Rua XXX</p>
+                    <p>Número 123</p>
+                    <p>Pacajus,Ceará</p>
+            </div>
+            <div id="doacao">
+                <header id="info_doacao"><a href="como_ajudar.html" class="link_rodape">Informações para doação:</a></header>
+                    <p>Banco XXX</p>
+                    <p>Agência: XXXXXX</p>
+                    <p>Conta: XXXXXXXX</p>
+            </div>
         </ul>
     </footer>
 </div>
 
 <script src = "home_carrossel_fotos.js"></script>
+<script src="home_carrossel_depoimentos.js"></script>
 
 </body>
 </html>
