@@ -1,4 +1,4 @@
-# Site da a AACC Pacajus
+# Site da AACC Pacajus
 ## Projeto prático do Trilha de Devs
 
 ### Estrutura do site e responsáveis
