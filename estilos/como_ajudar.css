@@ -1,0 +1,48 @@
+.conteudo {
+	display: grid;
+	grid-template-columns: 80%;
+	grid-gap: 25px;
+	grid-auto-flow: dense;
+	padding: 25px min(25px, 50px, 100px);
+	justify-content: center;
+}
+
+.card {
+	color: #000;
+	background-color: #FFFFFFD0;
+	border-radius: 8px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.card img {
+	vertical-align: middle;
+	max-height: 200px;
+	display: inline;
+	margin: 5px;
+}
+
+.esq {
+	float: left;
+	margin-right: 15px;
+	border-radius: 5px 0 0 5px;
+
+}
+
+.dir {
+	float: right;
+	margin-left: 15px;
+	border-radius: 0 5px 5px 0;
+}
+
+.card div {
+	margin: 10px;
+
+}
+
+.card div h3, .card div p {
+	margin: 0;
+}
+
+
