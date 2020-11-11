@@ -3,7 +3,7 @@
 	grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
 	grid-gap: 25px;
 	grid-auto-flow: dense;
-	padding: 25px min(25px,50px, 100px);
+	padding: 25px min(25px, 50px, 100px);
 	justify-content: center;
 }
 
@@ -37,4 +37,27 @@
 	max-width:100%;
 	max-height:100%;
 	/*float: center;*/
+}
+
+.produto a img {
+	max-height: 25px;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+.produto a div{
+	background-color: #25D366;
+	color: #fff;
+	border-radius: 10px;
+	padding: 5px 8px;
+	display: inline-block;
+	vertical-align: middle;
+	border: none;
+	font-size: 1em;
+}
+
+.produto a {
+	text-align: center;
+	display: block;
+	/*width: auto;*/
 }
