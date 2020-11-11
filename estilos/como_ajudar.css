@@ -51,7 +51,7 @@
 	padding: 0;
 }
 
-.card a div {
+.button {
 	display: inline-block;
 	text-align:center;
 	padding-right: 5px;
