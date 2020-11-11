@@ -38,7 +38,34 @@
 
 .card div {
 	margin: 10px;
+	position: relative;
+}
 
+.card div a img {
+	max-height: 25px;
+	vertical-align: middle;
+}
+
+.card div a div {
+	margin: 0;
+	padding: 0;
+}
+
+.button {
+	display: inline-block;
+	text-align:center;
+	padding-right: 5px;
+	background-color: #25D366;
+	border: none;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 1em;
+	margin: 0 auto;
+	text-decoration: none;
+}
+
+.button_dir {
+	float: right;
 }
 
 .card div h3, .card div p {
