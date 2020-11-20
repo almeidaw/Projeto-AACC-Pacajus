@@ -9,11 +9,14 @@
 
 .produto {
 	color: #000;
-	background-color: #FFFFFFD0;
+	background-color: #FFFFFF;
 	border-radius: 10px;
 	width: 100%;
 	height: 100%;
 	padding: 5px;
+	border-color: #4DC44A;
+	border-style: solid;
+	border-width: 2px;
 }
 
 .prod_header {
@@ -46,7 +49,7 @@
 }
 
 .produto a div{
-	background-color: #25D366;
+	background-color: #4DC44A;
 	color: #fff;
 	border-radius: 10px;
 	padding: 5px 8px;
@@ -54,6 +57,15 @@
 	vertical-align: middle;
 	border: none;
 	font-size: 1em;
+	border-color: #4DC44A;
+	border-style: solid;
+	border-width: 2px;
+	transition: 0.2s;
+}
+
+.produto a div:hover {
+	background-color: #FFF;
+	color: #4DC44A;
 }
 
 .produto a {
