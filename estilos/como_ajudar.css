@@ -9,11 +9,14 @@
 
 .card {
 	color: #000;
-	background-color: #FFFFFFD0;
+	background-color: #FFFFFF;
 	border-radius: 8px;
 	width: 100%;
 	height: 100%;
 	position: relative;
+	border-color: #4DC44A;
+	border-style: solid;
+	border-width: 2px;
 }
 
 .card img {
@@ -55,13 +58,21 @@
 	display: inline-block;
 	text-align:center;
 	padding-right: 5px;
-	background-color: #25D366;
-	border: none;
+	background-color: #4DC44A;
+	border-color: #4DC44A;
+	border-style: solid;
+	border-width: 2px;
 	color: #fff;
 	border-radius: 8px;
 	font-size: 1em;
 	margin: 0 auto;
 	text-decoration: none;
+	transition: 0.2s;
+}
+
+.button:hover {
+	background-color: #FFF;
+	color: #4DC44A;
 }
 
 .button_dir {
