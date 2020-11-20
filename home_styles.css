@@ -86,6 +86,7 @@ header::after{
 .nav{
     position: relative;
     bottom: auto;
+    width: 100%;
 }
 
 #nome{
@@ -226,6 +227,16 @@ header::after{
 
 */
 
+#link_acervo_carrossel {
+    color: black;
+    text-decoration: none;
+    text-transform: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+#link_acervo_carrossel:hover{
+    color: #000000;
+}
 
 .carousel{
     position: absolute;
@@ -263,6 +274,7 @@ header::after{
     top: 0;
     bottom: 0;
     width: 100%;
+    display: flex;
 }
 
 .carousel_button{
