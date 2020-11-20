@@ -4,7 +4,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url("assets/BackGround.png");
+    background-image: url("assets/layout_home_1.jpg");
     background-size: cover;
     background-color: #6FCF97;
     height: 100%;
@@ -67,20 +67,11 @@ html,body{
 }
 /*------------------------------Título------------------------------------*/
 #head_nossa_historia{
-    color: rgb(255, 255, 255);
+    color: #000000;
     text-decoration: none;
     text-transform: none;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
-}
-
-#head_nossa_historia:hover{
-    color: #000000;
-}
-
-#head_nossa_historia::before{
-    background-color: #444444;
-    position: absolute;
 }
 
 #paragrafo_nossa_historia{

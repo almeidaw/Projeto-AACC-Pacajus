@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acervo de Fotos - AACC Pacajus</title>
     <link rel="stylesheet" href="acervo.css">
-    <link rel="stylesheet" href="general.css">
     <link rel="shortcut icon" href="assets/logo_semFundo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet"> 
     <script></script>
@@ -20,63 +19,89 @@
         <img src="assets/logo.jpg" alt="logo" class="logo">
         <nav class="nav">
             <ul>
-                <li id="nome" class="item_nav"><a href="index.html" class="link">AACC Pacajus</a></li>
+                <li id="nome" class="item_nav"><a href="home.html" class="link">AACC Pacajus</a></li>
                 <li class="item_nav"><a href="quem_somos.html" class="link">Quem somos</a></li>
-                <li class="item_nav"><a href="#" class="link">Projetos</a></li>
-                <li class="item_nav"><a href="#"class="link">Depoimentos</a></li>
+                <li class="item_nav"><a href=" " class="link">Projetos</a></li>
+                <li class="item_nav"><a href="contato-parceiros/parceiros/parceiros.html"class="link">Parceiros</a></li>
                 <li class="item_nav"><a href="como_ajudar.html" class="link">Como ajudar</a></li>
                 <li class="item_nav"><a href="bazar.html" class="link">Conheça nosso bazar</a></li>
                 <li class="item_nav"><a href="acervo.html" class="link">Acervo de fotos</a></li>
+                <li class="item_nav"><a href="contato-parceiros/contato/contato.html" class="link">Contato</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
-                                            <!-- Esqueleto da parte Nossa História-->
-
     <div class="conteudo_home">
-    
-        <div class="eventos">
-            <h1 id="titulo_eventos">Nossos Eventos</h1>
+        <div class = "h1">
+        <h1>Acervo de Fotos!</h1>
         </div>
-    
-                                        <!-- Esqueleto do carrossel de fotos-->
+                            <!-- Esqueleto do carrossel de fotos da home -->
+
         <div class="carousel">
+                                    <!-- Imagens da seta esquerda-->
+
             <button class="carousel_button carousel_button--left is_hidden">
                 <img src="assets/seta-esquerda.png" alt="">
             </button>
+
+                                    <!-- Carrossel com as fotos -->
+
             <div class="carousel_track_container">
                 <ul class="carousel_track">
                     <li class="carousel_slide current_slide">
-                        <h3 id="classificacao">Natal 2019</h3>
                         <img class = "carousel_image" src="assets/foto_carrossel_1.jpg" alt="">
-                    </li>
-                    <li class="carousel_slide">
-                        <h3 id="classificacao">Festa Junina 2019</h3>
                         <img class = "carousel_image" src="assets/foto_carrossel_2.jpg" alt="">
+                        <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="">
+                        <img class = "carousel_image" src="assets/foto_carrossel_8.jpg" alt="">
                     </li>
                     <li class="carousel_slide">
-                        <h3 id="classificacao">Dia das crianças 2019</h3>
+                        <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="">
+                        <img class = "carousel_image" src="assets/foto_carrossel_5.jpg" alt="">
+                        <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="">
+                        <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="">
+                        <img class = "carousel_image" src="assets/foto_carrossel_8.jpg" alt="">
+                        <img class = "carousel_image" src="assets/foto_carrossel_9.jpg" alt="">
+                        <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="">
+                        <img class = "carousel_image" src="assets/foto_carrossel_1.jpg" alt="">
+                        <img class = "carousel_image" src="assets/foto_carrossel_2.jpg" alt="">
+                        <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="">
+                        <img class = "carousel_image" src="assets/foto_carrossel_5.jpg" alt="">
+                        <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="">
                         <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="">
                     </li>
                 </ul>
             </div>
 
+                                    <!-- Imagem da seta direita -->
+
             <button class="carousel_button carousel_button--right">
                 <img src="assets/seta-direita.png" alt="">
             </button>
+
+                                    <!-- Pontos indicadores-->
 
             <div class="carousel_nav">
                 <button class="carousel_indicator current_slide"></button>
                 <button class="carousel_indicator"></button>
                 <button class="carousel_indicator"></button>
+                <button class="carousel_indicator"></button>
+                <button class="carousel_indicator"></button>
             </div>
+
         </div>
 
     </div>
-                                                        <!-- Esqueleto do footer-->
-
-
+                                <!-- Esqueleto do footer-->
 
     <footer class="footer">
         <ul class="informacoes">
@@ -87,20 +112,31 @@
                     <li>Email: <a href="" class="link_rodape">email</a></li>
                 </ul>
             </div>
-            <div class = "redes sociais">
+            <div class = "redes_sociais">
                 <div class="icones_redes_sociais">
                     <header>Redes sociais</header>
                     <a href="https://www.instagram.com/aaccpacajus/" target="_blank"><img class = "logo_rede_social" src="assets/instagram.png" alt=""></a>
                     <a href="https://www.facebook.com/aaccpacajus" target="_blank"><img class = "logo_rede_social" src="assets/facebook.png" alt=""></a>
                 </div>
             </div>
-            <li id="localizacao"><a href="" class="link_rodape">Localização </a></li>
-            <li id="info_doacao"><a href="" class="link_rodape">Informações para doação</a></li>
+            <div id="localizacao">
+                <header><a href="" class="link_rodape">Localização: </a></header>
+                    <p>Rua XXX</p>
+                    <p>Número 123</p>
+                    <p>Pacajus,Ceará</p>
+            </div>
+            <div id="doacao">
+                <header id="info_doacao"><a href="como_ajudar.html" class="link_rodape">Informações para doação:</a></header>
+                    <p>Banco XXX</p>
+                    <p>Agência: XXXXXX</p>
+                    <p>Conta: XXXXXXXX</p>
+            </div>
         </ul>
     </footer>
 </div>
 
 <script src = "home_carrossel_fotos.js"></script>
+<script src="home_carrossel_depoimentos.js"></script>
 
 </body>
 </html>
