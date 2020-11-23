@@ -4,7 +4,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url("assets/layout_home_1.jpg");
+    background-image: url("fundos/fundos/Rectangle\ 11.png");
     background-size: cover;
     background-color: #6FCF97;
     height: 100%;
@@ -12,12 +12,12 @@ body{
 }
 
 .main_container{
-    min-height: 100vh;
+    min-height: 100;
     min-width: auto;
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 
 .conteudo_home{
@@ -28,6 +28,7 @@ body{
     align-content: center;
     background-color: none;
     height: 1250px;
+    margin-bottom: 20px;
 }
 
 .nossa_historia{
@@ -141,6 +142,9 @@ header::after{
  .slideshow-container {
     position: relative;
     background-color: transparent;
+    width: 90%;
+    margin-left: 50px;
+    left: 0;
   }
   
   /* Slides */
@@ -174,7 +178,8 @@ header::after{
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: #4DC44A;
+    opacity: 0.8;
     color: white;
   }
   
@@ -203,9 +208,13 @@ header::after{
   }
   
   /* Fonte itálica */
-  q {font-style: italic;}
+  q {
+      font-style: italic;
+    }
   
-  .author {color: black;} 
+  .author {
+      color: black;
+    } 
 
   #h2_depoimentos{
       font-family: 'Roboto',sans-serif;
@@ -228,6 +237,11 @@ header::after{
 
 */
 
+.h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
 #link_acervo_carrossel {
     color: black;
     text-decoration: none;
@@ -239,7 +253,80 @@ header::after{
     color: #000000;
 }
 
-.carousel{
+/* Container das fotos */
+.carousel_track_container {
+    position: relative;
+  }
+
+.carousel_track{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+  
+  /* Slides */
+  .mySlidesFoto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Botões */
+  .prevFoto, .nextFoto {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .nextFoto {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prevFoto:hover, .nextFoto:hover {
+    background-color:#4dc44a;
+    opacity: 0.8;
+    color: white;
+  }
+  
+  /* Container dos pontos */
+  .dotFoto-container {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+  }
+  
+  /* Pontos */
+  .dotFoto {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Desmarcando pontos não ativados */
+  .active, .dotFoto:hover {
+    background-color: #717171;
+  }
+
+  .carousel{
     position: absolute;
     height: 400px;
     width: 90%;
@@ -248,64 +335,12 @@ header::after{
 }
 
 .carousel_image{
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.carousel_track_container{
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel_track{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    height: 100%;
-}
-
-.carousel_slide{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-}
-
-.carousel_button{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.carousel_button--left{
-    left: -30px;
-}
-
-.carousel_button--right{
-    right: -30px;
-}
-
-.carousel_indicator{
-    border: 0;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: #bbb;
-    cursor: pointer;
-    transition: background-color 0.6s ease;
-    margin: 0 2px ;
 }
 
 .carousel_nav{
@@ -314,26 +349,6 @@ header::after{
     padding: 10px 0;
     margin: 0 15px;
 }
-
-.carousel_button img{
-    width: 20px;
-    height: 30px;
-    background-color: transparent;
-}
-
-.carousel_indicator.current_slide{
-    background-color: #717171 ;
-}
-
-.is_hidden{
-    display: none;
-}
-
-.h3{
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-}
-
 /*
 
                                 Formatação do rodapé
@@ -345,7 +360,6 @@ header::after{
     position: absolute;
     bottom: 0;
     width: 100%;
-    margin-top: 1000px;
 }
 
 .informacoes,.informacoes_contato{

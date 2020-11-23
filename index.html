@@ -47,7 +47,7 @@
 
                                     <!-- Esqueleto do carrossel de depoimentos-->
 
-        <h2 id = "h2_depoimentos">Veja alguns depoimentos de pessoas da nossa ONG</h2>
+        <h2 id = "h2_depoimentos">Veja alguns depoimentos de pessoas da nossa ONG!</h2>
 
                                             <!-- Container das frases -->
 
@@ -78,7 +78,8 @@
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+            
+    </div>
   
                                 <!-- Pontos -->
 
@@ -94,49 +95,44 @@
 
         <div class="carousel">
 
-            <h3 class="h3"> 
-               <a href="acervo.html" id="link_acervo_carrossel">Veja algumas das nossas fotos e vídeos!</a>   
-            </h3>
-                                    <!-- Imagens da seta esquerda-->
-
-            <button class="carousel_button carousel_button--left is_hidden">
-                <img src="assets/seta-esquerda.png" alt="">
-            </button>
+        <h3 class="h3"> 
+            <a href="acervo.html" id="link_acervo_carrossel">Veja algumas das nossas fotos e vídeos!</a>   
+        </h3>
 
                                     <!-- Carrossel com as fotos -->
 
             <div class="carousel_track_container">
                 <ul class="carousel_track">
-                    <li class="carousel_slide current_slide">
-                        <img class = "carousel_image" src="assets/foto_carrossel_1.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_2.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="">
+                    <li class="mySlidesFoto">
+                        <img class = "carousel_image" src="assets/foto_carrossel_1.jpg" alt="" >
+                        <img class = "carousel_image" src="assets/foto_carrossel_2.jpg" alt="" >
+                        <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="" >
                     </li>
-                    <li class="carousel_slide">
-                        <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_5.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="">
+                    <li class="mySlidesFoto">
+                        <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="" >
+                        <img class = "carousel_image" src="assets/foto_carrossel_5.jpg" alt="" >
+                        <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="" >
                     </li>
-                    <li class="carousel_slide">
-                        <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_8.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_9.jpg" alt="">
+                    <li class="mySlidesFoto">
+                        <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
+                        <img class = "carousel_image" src="assets/foto_carrossel_8.jpg" alt="" >
+                        <img class = "carousel_image" src="assets/foto_carrossel_9.jpg" alt="" >
                     </li>
                 </ul>
             </div>
 
-                                    <!-- Imagem da seta direita -->
+                                            <!-- Botões-->
 
-            <button class="carousel_button carousel_button--right">
-                <img src="assets/seta-direita.png" alt="">
-            </button>
+            <a class="prevFoto" onclick="plusSlidesFoto(-1)">&#10096;</a>
+            <a class="nextFoto" onclick="plusSlidesFoto(1)">&#10097;</a>
+
 
                                     <!-- Pontos indicadores-->
-
-            <div class="carousel_nav">
-                <button class="carousel_indicator current_slide"></button>
-                <button class="carousel_indicator"></button>
-                <button class="carousel_indicator"></button>
+                                    
+            <div class="dot-container" style="text-align:center">
+                <span class="dotFoto" onclick="currentSlideFoto(1)"></span>
+                <span class="dotFoto" onclick="currentSlideFoto(2)"></span>
+                <span class="dotFoto" onclick="currentSlideFoto(3)"></span>
             </div>
 
         </div>
