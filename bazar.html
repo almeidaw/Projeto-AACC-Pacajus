@@ -4,20 +4,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bazar - AACC Pacajus</title>
-        <link rel="stylesheet" href="general1.css">
+        <link rel="stylesheet" href="estilos/geral.css">
         <link rel="stylesheet" href="estilos/bazar.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        
         <header id="header">
             <div id="logo_nome">
-                <img src="assets/logo.jpg" alt="logo" id="logo">
-                <a id="nome" href="index.html">AACC Pacajus</a>
+                <img alt="Logotipo da AACC Pacajus. Descrição da imagem: Seis pessoas na cor verde de mãos dadas formando um círculo. 
+                Em volta o texto AACC Pacajus Associação de Apoio às Crianças Carentes. Ao fundo um círculo branco." src="assets/logo.jpg" alt="logo" id="logo">
+                <a id="nome" href="index.html" alt="Botão para página inicial AACC Pacajus">AACC Pacajus</a>
             </div>
             <nav class="nav">
                 <ul>
-                    <li class="item_nav"><a href="quem_somos.html" class="link">Quem somos</a></li>
+                    <li class="item_nav" alt="Botão para a página Quem somos"><a href="quem_somos.html" class="link">Quem somos</a></li>
                     <li class="item_nav"><a href=" " class="link">Projetos</a></li>
                     <li class="item_nav"><a href="contato-parceiros/parceiros/parceiros.html"class="link">Parceiros</a></li>
                     <li class="item_nav"><a href="como_ajudar.html" class="link">Como ajudar</a></li>
@@ -134,11 +134,7 @@
                 <a class="wpp" href="#"><div><img src="assets/whatsapp-logo.png">Perguntar sobre este produto</div></a>
             </div>
         </div>
-
-
-
                                             <!-- Esqueleto do footer-->
-
         </div>
         <footer class="footer">
             <ul class="informacoes">
@@ -158,8 +154,13 @@
                 <li><a href="" class="link_rodape">Informações para doação</a></li>
             </ul>
         </footer>
-        
         <script>
+            // window.onload = function() {load_nav()};
+
+            // function load_nav() {
+            //     document.getElementById("nave_place").innerHTML='<object type="text/html" data="nav.html" ></object>';
+            // }
+
             // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
             window.onscroll = function() {scrollFunction()};
 
@@ -169,7 +170,7 @@
                 var nome = document.getElementById("nome");
                 var logo = document.getElementById("logo");
 
-                if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                     var i;
                     for (i = 0; i < link.length; i++) {
                         link[i].style.padding = "15.5px 20px";
