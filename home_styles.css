@@ -29,6 +29,7 @@ body{
     background-color: none;
     height: 1250px;
     margin-bottom: 20px;
+    margin-top: 100px;
 }
 
 .nossa_historia{
@@ -62,76 +63,101 @@ body{
                                     Formatação da barra de navegação
 */
 
-.logo{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    float: left;
-    padding: 10px 0;
+#header{
+    background-color: #2E8A54;
+    /*padding: 0 20px;*/
+    position: fixed;
+    overflow: hidden;
+    transition: 0.4s;
+    width: 100%;
+    margin: 0;
+    z-index: 99;
+    top: 0;
 }
 
-.header{
-    background-color: #6FCF97;
-}
-
-header::after{
+#header::after{
     content: '';
     display: table;
-    clear: both;
+    clear: both; 
 }
 
-.container{
-    width: 100%;
-    margin: 0 auto;
-}
-
-.nav{
+#logo_nome {
     position: relative;
     bottom: auto;
-    width: 100%;
+    float: left;
 }
 
-#nome{
+#logo {
+    width: 80px;
+    height: 100%;
+    border-radius: 50%;
+    float: left;
+    transition: 0.4s;
+    display: inline;
+    margin: 10px;
+    position: relative;
+}
+
+#nome {
+    color: #000;
     font-size: 22px;
     margin-left: 18px;
-}
-
-.item_nav{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: inline-block;
-    margin-left: 50px;
-    padding-top: 25px;
+    transition: 0.4s;
+    display: inline;
     position: relative;
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.link{
-    color: black;
+    float: right;
+    padding: 37.5px 0;
     text-decoration: none;
     text-transform: none;
 }
 
-.link:hover{
-    color: #000000;
+.nav {
+    position: relative;
+    bottom: auto;
+    float: right;
 }
 
-.link::before{
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.item_nav{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.link{
+    color: #000;
+    text-decoration: none;
+    text-transform: none;
+    padding: 39.5px 25px;
+    transition: 0.4s;
+    display: inline-block;
+}
+
+#header a:hover{
+    color: #fff;
+}
+
+#header a::before{
     content: '';
     display: block;
     height: 5px;
     width: 0;
-    background-color: #444444;
+    background-color: #fff;
     position: absolute;
     top: 0;
+    left: 0;
+    transition: 0.1s;
 }
 
-.link:hover::before{
+#header a:hover::before{
     width: 100%;
 }
-
 /*
 
                                             Formatação do carrossel de depoimentos
@@ -257,13 +283,6 @@ header::after{
 .carousel_track_container {
     position: relative;
   }
-
-.carousel_track{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-}
   
   /* Slides */
   .mySlidesFoto {
@@ -338,13 +357,14 @@ header::after{
     width: 150px;
     height: 150px;
     object-fit: cover;
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
 
 .carousel_nav{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     padding: 10px 0;
     margin: 0 15px;
@@ -356,7 +376,7 @@ header::after{
 */
 
 .footer{
-    background-color: #6FCF97;
+    background-color:  #2E8A54;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -373,7 +393,7 @@ header::after{
 }
 
 .link_rodape:hover{
-    color: #000000;
+    color:white;
     font-style:italic;
 }
 
