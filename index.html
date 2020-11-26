@@ -6,7 +6,8 @@
     <title>Home - AACC Pacajus</title>
     <link rel="stylesheet" href="home_styles.css">
     <link rel="shortcut icon" href="assets/logo_semFundo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
     <script></script>
 </head>
 <body>
@@ -102,23 +103,23 @@
                                     <!-- Carrossel com as fotos -->
 
             <div class="carousel_track_container">
-                <ul class="carousel_track">
-                    <li class="mySlidesFoto">
+                <div class="carousel_track">
+                    <div class="mySlidesFoto">
                         <img class = "carousel_image" src="assets/foto_carrossel_1.jpg" alt="" >
                         <img class = "carousel_image" src="assets/foto_carrossel_2.jpg" alt="" >
                         <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="" >
-                    </li>
-                    <li class="mySlidesFoto">
+                    </div>
+                    <div class="mySlidesFoto">
                         <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="" >
                         <img class = "carousel_image" src="assets/foto_carrossel_5.jpg" alt="" >
                         <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="" >
-                    </li>
-                    <li class="mySlidesFoto">
+                    </div>
+                    <div class="mySlidesFoto">
                         <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
                         <img class = "carousel_image" src="assets/foto_carrossel_8.jpg" alt="" >
                         <img class = "carousel_image" src="assets/foto_carrossel_9.jpg" alt="" >
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
 
                                             <!-- Botões-->
@@ -175,6 +176,11 @@
 <script src = "home_carrossel_fotos.js"></script>
 <script src="home_carrossel_depoimentos.js"></script>
 <script src="formatacao_navbar.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.carousel_track_container').delay(2000).fadeIn(500);
+    });
+</script>
 
 </body>
 </html>

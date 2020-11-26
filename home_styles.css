@@ -30,6 +30,7 @@ body{
     height: 1250px;
     margin-bottom: 20px;
     margin-top: 100px;
+    min-height: 60%;
 }
 
 .nossa_historia{
@@ -204,7 +205,7 @@ body{
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-    background-color: #4DC44A;
+    background-color: #2E8A54;
     opacity: 0.8;
     color: white;
   }
@@ -285,12 +286,13 @@ body{
   }
   
   /* Slides */
-  .mySlidesFoto {
+
+.mySlidesFoto{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-  }
+}
   
   /* Botões */
   .prevFoto, .nextFoto {
@@ -316,7 +318,7 @@ body{
   
   /* On hover, add a black background color with a little bit see-through */
   .prevFoto:hover, .nextFoto:hover {
-    background-color:#4dc44a;
+    background-color: #2E8A54;
     opacity: 0.8;
     color: white;
   }
@@ -354,12 +356,10 @@ body{
 }
 
 .carousel_image{
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 75px;
 }
 
 .carousel_nav{
