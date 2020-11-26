@@ -3,27 +3,27 @@
                                           Carrossel de fotos
 #################################################################################################################
 */
-                                                                                                                                                                    
+
 var slideIndexFoto = 1;
 showSlidesFoto(slideIndexFoto);
 
-function plusSlidesFoto(n) {
-  showSlidesFoto(slideIndexFoto += n);
+function plusSlidesFoto(n1) {
+  showSlidesFoto(slideIndexFoto += n1);
 }
 
-function currentSlideFoto(n) {
-  showSlidesFoto(slideIndexFoto = n);
+function currentSlideFoto(n1) {
+  showSlidesFoto(slideIndexFoto = n1);
 }
 
-function showSlidesFoto(n) {
+function showSlidesFoto(n1) {
   var i;
   var slides = document.getElementsByClassName("mySlidesFoto");
   var dots = document.getElementsByClassName("dotFoto");
-  if (n > slides.length) {
-    slideIndex = 1
+  if (n1 > slides.length) {
+    slideIndexFoto = 1
   }
-    if (n < 1) {
-      slideIndex = slides.length
+    if (n1 < 1) {
+      slideIndexFoto = slides.length
     }
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
