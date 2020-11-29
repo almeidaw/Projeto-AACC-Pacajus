@@ -1,10 +1,20 @@
 /*
+
+                                                #####################
+                                                Formatação desktop
+                                                #####################
+
+
+*/
+
+
+/*
                             Formatação geral da página (fonte e imagem de fundo)
 */
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url("fundos/fundos/Rectangle\ 11.png");
+    background-image: url('assets/Desktop\ -\ 4.png');
     background-size: cover;
     background-color: #6FCF97;
     height: 100%;
@@ -17,7 +27,8 @@ body{
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
+    margin-bottom: auto;
 }
 
 .conteudo_home{
@@ -36,6 +47,9 @@ body{
 .nossa_historia{
     height: 150px;
     padding-top: 30px;
+    width: 88%;
+    padding-bottom: 30px;
+    display: inline-block;
 }
 
 #head_nossa_historia{
@@ -47,7 +61,7 @@ body{
 }
 
 #head_nossa_historia:hover{
-    color: #000000;
+    color:#2E8A54;
 }
 
 #head_nossa_historia::before{
@@ -277,7 +291,7 @@ body{
 }
 
 #link_acervo_carrossel:hover{
-    color: #000000;
+    color: #2E8A54;
 }
 
 /* Container das fotos */
@@ -432,3 +446,39 @@ body{
     justify-content: center;
     top: 50%;
 }
+
+/*
+
+                                                ########################
+                                                    Formatação tablets
+                                                ########################
+
+
+*/
+
+@media screen and (max-width:768px){
+    .main_container{
+        width: 100%;
+    }
+
+    #nome{
+        font-size: 14px;
+    }
+}
+
+/*
+
+                                                ########################
+                                                    Formatação tablets
+                                                ########################
+
+
+*/
+
+@media(max-width:500px){
+
+}
+
+
+
+

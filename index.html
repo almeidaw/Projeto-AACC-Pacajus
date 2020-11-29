@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="assets/logo_semFundo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
-    <script></script>
 </head>
 <body>
 
@@ -38,53 +37,63 @@
     <div class="conteudo_home">
     
         <div class="nossa_historia">
-            <h1><a href="quem_somos.html" target="_blank" id="head_nossa_historia">Nossa história</a></h1>
-            <p id="paragrafo_nossa_historia">
-                Somos uma entidade sem fins lucrativos que mantém uma escola com atendimento educacional e 
-                alimentação em tempo parcial para quase 70 crianças carentes. 
-                Atuamos com muita dedicação e responsabilidade há mais de 35 anos no município de Pacajus(Ce).
+            <div>
+                <h1><a href="quem_somos.html" target="_blank" id="head_nossa_historia">Nossa história</a></h1>
+            </div>
+
+            <div>
+
+                <p id="paragrafo_nossa_historia">
+                    Somos uma entidade sem fins lucrativos que mantém uma escola com atendimento educacional e 
+                    alimentação em tempo parcial para quase 70 crianças carentes. 
+                    Atuamos com muita dedicação e responsabilidade há mais de 35 anos no município de Pacajus(Ce).
+
             </p>
+
+        </div>
         </div>
 
                                     <!-- Esqueleto do carrossel de depoimentos-->
+        <div>
 
         <h2 id = "h2_depoimentos">Veja alguns depoimentos de pessoas da nossa ONG!</h2>
 
+        </div>
+
                                             <!-- Container das frases -->
 
-        <div class="slideshow-container">
+                <div class="slideshow-container">
 
                                         <!-- Frases e autores -->
-            <div class="mySlides">
-                <q class = "frase">Frase 1</q>
-                <p class="author">- Autor 1, Função na ONG</p>
-            </div>
+                    <div class="mySlides">
+                        <q class = "frase">Frase 1</q>
+                        <p class="author">- Autor 1, Função na ONG</p>
+                    </div>
   
-            <div class="mySlides">
-                <q class="frase">Frase 2</q>
-                <p class="author">- Autor 2, Função na ONG</p>
-            </div>
+                    <div class="mySlides">
+                        <q class="frase">Frase 2</q>
+                        <p class="author">- Autor 2, Função na ONG</p>
+                    </div>
   
-            <div class="mySlides">
-                <q class="frase">Frase 3</q>
-                <p class="author">- Autor 3, Função na ONG</p>
-            </div>
+                    <div class="mySlides">
+                        <q class="frase">Frase 3</q>
+                        <p class="author">- Autor 3, Função na ONG</p>
+                    </div>
 
-            <div class="mySlides">
-                <q class="frase">Frase 4</q>
-                <p class="author">- Autor 4, Função na ONG</p>
-            </div>
-  
-                                <!-- Botões -->
+                    <div class="mySlides">
+                        <q class="frase">Frase 4</q>
+                        <p class="author">- Autor 4, Função na ONG</p>
+                    </div>
+                                    <!-- Botões -->
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
-    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
   
                                 <!-- Pontos -->
 
-        <div class="dot-container">
+        <div class="dot-container" style="text-align: center;">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
@@ -130,7 +139,7 @@
 
                                     <!-- Pontos indicadores-->
                                     
-            <div class="dot-container" style="text-align:center">
+            <div class="dot-container">
                 <span class="dotFoto" onclick="currentSlideFoto(1)"></span>
                 <span class="dotFoto" onclick="currentSlideFoto(2)"></span>
                 <span class="dotFoto" onclick="currentSlideFoto(3)"></span>
@@ -177,9 +186,98 @@
 <script src="home_carrossel_depoimentos.js"></script>
 <script src="formatacao_navbar.js"></script>
 <script>
+
     $(document).ready(function(){
-        $('.carousel_track_container').delay(2000).fadeIn(500);
-    });
+    $('#head_nossa_historia').hide();
+    setTimeout(function(){
+        $('#head_nossa_historia').fadeIn('slow')
+        },1300)
+    })
+
+    $(document).ready(function(){
+        $('#paragrafo_nossa_historia').hide();
+        setTimeout(function(){
+            $('#paragrafo_nossa_historia').fadeIn('slow')
+        },1400)
+    })
+
+    $(document).ready(function(){
+        $('#h2_depoimentos').hide();
+        setTimeout(function(){
+            $('#h2_depoimentos').fadeIn('slow')
+        },1600)
+    })
+
+    $(document).ready(function(){
+        $('.frase').hide();
+        setTimeout(function(){
+            $('.frase').fadeIn('slow')
+        },1800)
+    })
+
+    $(document).ready(function(){
+        $('.author').hide();
+        setTimeout(function(){
+            $('.author').fadeIn('slow')
+        },1800)
+    })
+
+    $(document).ready(function(){
+        $('.prev').hide();
+        setTimeout(function(){
+            $('.prev').fadeIn('slow')
+        },2000)
+    })
+
+    $(document).ready(function(){
+        $('.next').hide();
+        setTimeout(function(){
+            $('.next').fadeIn('slow')
+        },2000)
+    })
+
+    $(document).ready(function(){
+        $('.dot').hide();
+        setTimeout(function(){
+            $('.dot').fadeIn('slow')
+        },2000)
+    })
+
+    $(document).ready(function(){
+        $('#link_acervo_carrossel').hide();
+        setTimeout(function(){
+            $('#link_acervo_carrossel').fadeIn('slow')
+        },2200)
+    })
+
+    $(document).ready(function(){
+        $('.carousel_image').hide();
+        setTimeout(function(){
+            $('.carousel_image').fadeIn('slow')
+        },2400)
+    })
+
+    $(document).ready(function(){
+        $('.dotFoto').hide();
+        setTimeout(function(){
+            $('.dotFoto').fadeIn('slow')
+        },2600)
+    })
+
+    $(document).ready(function(){
+        $('.prevFoto').hide();
+        setTimeout(function(){
+            $('.prevFoto').fadeIn('slow')
+        },2600)
+    })
+
+    $(document).ready(function(){
+        $('.nextFoto').hide();
+        setTimeout(function(){
+            $('.nextFoto').fadeIn('slow')
+        },2600)
+    })
+
 </script>
 
 </body>
