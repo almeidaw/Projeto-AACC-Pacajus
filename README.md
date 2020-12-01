@@ -20,10 +20,3 @@ http://almeidaw.github.io
 ├─ Acervo de fotos (Laura)
 └─ Contato (Jacque)
 ```
-### Problemas em cada seção
-Laura (Quem somos){
-    Não consigo colocar o carrossel de depoimentos sem atrapalhar o footer. Além disso, ao que parece, minha página não tá conseguindo fazer a rolagem, pra aumentar o tamanho da página e ver os items.
-}
-Laura (Acervo de Fotos){
-    Dificuldade em reproduzir o carrossel de fotos para um possível carrossel de vídeos. Ideia: Colocar o título do evento em cima de cada Seção de imagens. 
-}
