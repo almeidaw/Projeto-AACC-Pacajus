@@ -173,6 +173,7 @@ body{
 #header a:hover::before{
     width: 100%;
 }
+
 /*
 
                                             Formatação do carrossel de depoimentos
@@ -479,43 +480,41 @@ body{
 
     /* Formatações da barra de navegação */
 
-    nav{
+    .nav{
+        overflow: hidden;
         position: relative;
     }
 
-    .hamburger{
-        position: absolute;
-        cursor: pointer;
-        right:5%;
-        top: 100%;
-        transform: translate(-5%,-50%);
-        position: fixed;
-    }
-
     .lista_items{
-        position: fixed;
-        background: #2E8A54;
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        width: 100%;
         display: none;
     }
 
-    .line{
-        width: 30px;
-        height: 3px;
-        background: white;
-        margin: 3px;
+    .nav a{
+        color: #fff;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .icon{
+        background: #000;
+        display: block;
+        position: absolute;
+        right: 0;
+        top:0;
+    }
+
+    .nav a:hover{
+        background-color: red;
+        color:white
     }
 
     /* Formatações nossa história */
 
     #head_nossa_historia{
         font-size: 30px;
-    };
+    }
 
     #paragrafo_nossa_historia{
         font-size: 15px;
