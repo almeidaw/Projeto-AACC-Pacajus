@@ -1,3 +1,7 @@
+body {
+	background-image: url("../assets/Desktop - 5.png");
+}
+
 .conteudo {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
@@ -14,9 +18,6 @@
 	width: 100%;
 	height: 100%;
 	padding: 5px;
-	border-color: #4DC44A;
-	border-style: solid;
-	border-width: 2px;
 }
 
 .prod_header {
@@ -39,7 +40,6 @@
 .produto img {
 	max-width:100%;
 	max-height:100%;
-	/*float: center;*/
 }
 
 .produto a img {

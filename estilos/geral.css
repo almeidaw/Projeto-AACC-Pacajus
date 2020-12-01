@@ -4,10 +4,9 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url("../assets/layout_home_1.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-color: #4DC44A;
+    background-color: #196712;
     height: 100%;
     width: 100%;
     position: relative;
@@ -21,7 +20,7 @@ body{
 }
 
 /*
-                                    Formatação da barra de navegação
+     #4DC44A;                               Formatação da barra de navegação
 */
 
 
@@ -61,8 +60,8 @@ body{
 }
 
 #nome {
-    color: #000;
-    font-size: 22px;
+    color: #FAF1ED;
+    font-size: 1.72vw;
     margin-left: 18px;
     transition: 0.4s;
     display: inline;
@@ -89,12 +88,12 @@ body{
     list-style: none;
     display: inline-block;
     position: relative;
-    font-size: 18px;
+    font-size: 1.41vw;
     transition: 0.4s;
 }
 
 .link{
-    color: #000;
+    color: #FAF1ED;
     text-decoration: none;
     text-transform: none;
     padding: 39.5px 25px;
@@ -102,16 +101,12 @@ body{
     display: inline-block;
 }
 
-#header a:hover{
-    color: #fff;
-}
-
 #header a::before{
     content: '';
     display: block;
     height: 5px;
     width: 0;
-    background-color: #fff;
+    background-color: #FAF1ED;
     position: absolute;
     top: 0;
     left: 0;
