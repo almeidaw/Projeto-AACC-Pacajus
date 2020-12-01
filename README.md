@@ -20,3 +20,6 @@ http://almeidaw.github.io
 ├─ Acervo de fotos (Laura)
 └─ Contato (Jacque)
 ```
+
+### DISCLAIMER
+Responsividade não foi trabalhada por enquanto. Planejamos melhorar isso em breve, mas por enquanto o site é 100% para computador!
