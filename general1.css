@@ -137,6 +137,7 @@ body{
 
 .informacoes,.informacoes_contato{
     list-style: none;
+    margin-right:50px;
 }
 
 .link_rodape{
