@@ -17,7 +17,13 @@ body{
     padding-bottom: 100px;
     margin-bottom: auto;
 }
-
+.container_menor{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    margin-left: 10%;
+}
 .conteudo{
     display: inline-block;
     background-color: none;
@@ -28,12 +34,15 @@ body{
     background-color:  #196712;
     padding: 30px;
     border-radius: 15px;
-    display:flex;
-    align-items: flex-start;
+    display:inline-block;
+    margin-right:4%;
     width:50%;
+    height: 40%;
 }
 /*---------------------------------Div da foto----------------------------*/
 .mangueira{
+    display:inline-block;
+    justify-content: space-between;
     width: 50%;
     padding:80px;
 }
@@ -44,12 +53,10 @@ body{
     height: 415px;
 }
 /*------------------------------Título------------------------------------*/
-#head_nossa_historia{
-    color: #000000;
-    text-decoration: none;
-    text-transform: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+h1{
+    margin-left:7%;
+    font-size: 45px;
+    margin-top: 4%;
 }
 
 #paragrafo_nossa_historia{
@@ -72,17 +79,16 @@ body{
 
 */
 h2{
-    display: flex;
-    justify-content: center;
     font-size: 35px;
+    margin-left:37%;
 }
  /* Container das frases */
  .slideshow-container {
     background-color: #1e7915;
     border-radius: 20px;
     position: relative;
-    width: 96%;
-    margin-left: 50px;
+    width: 77%;
+    margin-left: 10%;
     margin-bottom: 5%;
   }
   
@@ -177,13 +183,15 @@ h2{
     background-color:  #196712;
     padding: 30px;
     border-radius: 15px;
+    width: 80%;
+    margin-left:7%;
 }
 .lista{
     display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
 }
 .geral:not(:last-child) {
     margin-right: 20px;
@@ -198,14 +206,4 @@ h2{
     color: #FFFFFF;
     text-decoration: none;
     padding: 7px 15px;
-}
-.target {
-    position: absolute;
-    border-bottom: 4px solid transparent;
-    z-index: -1;
-    transform: translateX(-60px);
-}
-.lista .doc,
-.target {
-  transition: all .35s ease-in-out;
 }
