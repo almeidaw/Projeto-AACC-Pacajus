@@ -11,7 +11,7 @@ body{
 .main_container{
     min-height: 100px;
     min-width: auto;
-    overflow: hidden;
+    overflow: auto;
     display: block;
     position: relative;
     padding-bottom: 100px;
@@ -20,9 +20,6 @@ body{
 
 .conteudo{
     display: inline-block;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
     background-color: none;
     height: 1250px;
     padding: 25px min(25px, 50px, 100px);
@@ -32,25 +29,19 @@ body{
     background-color:  #196712;
     padding: 30px;
     border-radius: 15px;
-    flex-direction: column;
-}
-/*--------------------------------Div da história-------------------------*/
-.nossa_historia{
-    height: 150px;
-    width: 50%;
-    display:column;
+    display:flex;
+    align-items: flex-start;
+    width:50%;
 }
 /*---------------------------------Div da foto----------------------------*/
 .mangueira{
     width: 50%;
     padding:80px;
-    display:column;
 }
 
 #foto_mangueira{
     border-radius: 25px;
     width: 500px;
-    margin-left:150px;
     height: 415px;
 }
 /*------------------------------Título------------------------------------*/
@@ -67,5 +58,112 @@ body{
     font-size: 20px;
     color:#ffff;
 }
+/*         
+                                    Formatação Fundadora
+*/
+#titulo{
+    font-size: 35px;
+    font-weight: 100px;
+    display:flex;
+    justify-content: flex-start;
+}
+/*
 
+                                            Formatação do carrossel de depoimentos
 
+*/
+
+ /* Container das frases */
+ .slideshow-container {
+    background-color: #1e7915;
+    border-radius: 20px;
+    position: relative;
+    width: 96%;
+    margin-left: 50px;
+    left: 0;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Botões */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #2E8A54;
+    opacity: 0.8;
+    color: white;
+  }
+  
+  /* Container dos pontos */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+  }
+  
+  /* Pontos */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Desmarcando pontos não ativados */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fonte itálica */
+  q {
+      font-style: italic;
+      color: #FFFFFF;
+    }
+  
+  .author {
+      color: #FFFFFF;
+    } 
+
+  #h2_depoimentos{
+      font-family: 'Roboto',sans-serif;
+      font-size: 30px;
+  }
+
+  .frase{
+      font-family: 'Roboto',sans-serif;
+      font-size: 30px;
+  }
+
+  .author{
+      font-family: 'Roboto',sans-serif;
+      font-size: 20px;
+  }
