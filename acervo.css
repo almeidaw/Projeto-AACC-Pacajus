@@ -57,8 +57,11 @@ h1{
 }
 h3{
     display: flex;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-right:100%;
     justify-content: center;
-    font-size: 30px;
+    font-size: 35px;
 }  
   /* Slides */
 
@@ -67,7 +70,7 @@ h3{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 24px;
+    margin-left: 50px;
     margin-right: 0;
 }
   
@@ -113,6 +116,7 @@ h3{
     height: 15px;
     width: 15px;
     margin: 0 2px;
+    margin-top: 2%;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -136,7 +140,7 @@ h3{
     width: 250px;
     height: 250px;
     object-fit: cover;
-    margin-left: 60px;
+    margin-left: 62px;
 }
 
 .carousel_nav{
