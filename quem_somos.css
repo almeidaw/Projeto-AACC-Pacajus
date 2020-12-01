@@ -11,7 +11,7 @@ body{
 .main_container{
     min-height: 100px;
     min-width: auto;
-    overflow: auto;
+    overflow: hidden;
     display: block;
     position: relative;
     padding-bottom: 100px;
@@ -21,7 +21,6 @@ body{
 .conteudo{
     display: inline-block;
     background-color: none;
-    height: 1250px;
     padding: 25px min(25px, 50px, 100px);
 }
 /*--------------------------------Card do texto da história---------------*/
@@ -62,7 +61,7 @@ body{
                                     Formatação Fundadora
 */
 #titulo{
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 100px;
     display:flex;
     justify-content: flex-start;
@@ -72,7 +71,11 @@ body{
                                             Formatação do carrossel de depoimentos
 
 */
-
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
  /* Container das frases */
  .slideshow-container {
     background-color: #1e7915;
@@ -80,7 +83,7 @@ body{
     position: relative;
     width: 96%;
     margin-left: 50px;
-    left: 0;
+    margin-bottom: 5%;
   }
   
   /* Slides */
@@ -167,3 +170,42 @@ body{
       font-family: 'Roboto',sans-serif;
       font-size: 20px;
   }
+/*
+                            Formatação documentação
+*/
+.card_documentos{
+    background-color:  #196712;
+    padding: 30px;
+    border-radius: 15px;
+}
+.lista{
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+.geral:not(:last-child) {
+    margin-right: 20px;
+}
+.geral{
+    display: inline;
+    position: relative;
+}
+.doc{
+    display: block;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 7px 15px;
+}
+.target {
+    position: absolute;
+    border-bottom: 4px solid transparent;
+    z-index: -1;
+    transform: translateX(-60px);
+}
+.lista .doc,
+.target {
+  transition: all .35s ease-in-out;
+}
