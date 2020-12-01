@@ -12,7 +12,27 @@ body{
     position: relative;
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 100px;
+    padding-bottom: 242px;
+}
+
+.main_container{
+    min-height: 100vh;
+    min-width: auto;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding: 0 0 100px 0;
+    margin: 0 auto;
+}
+
+.conteudo_home{
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    background-color: none;
+    height: 400px;
 }
 
 .conteudo{
