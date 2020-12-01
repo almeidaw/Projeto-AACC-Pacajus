@@ -29,10 +29,8 @@
         </nav>
     </header>
     
-        <div class="conteudo">
-        <div class = "h1">
-        <h1>Acervo de Fotos!</h1>
-        </div>
+    <div class="conteudo">
+        <h1 class = "h1">Acervo de Fotos!</h1>
                                                         <!-- Esqueleto do carrossel de fotos do acervo -->
 
         <div class="carousel">
@@ -41,38 +39,43 @@
                 <div class="carousel_track_container">
                     <div class="carousel_track">
                         <div class="mySlidesFoto">
-                            <h3 id ="titulos">Natal 2019</h3>
+                            <h3>Natal 2019</h3>
                             <img class = "carousel_image" src="assets/foto_carrossel_1.jpg" alt="" >
                             <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
                             <img class = "carousel_image" src="assets/foto_carrossel_2.jpg" alt="" >
                             <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="" >
+                            <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="" >
                         </div>
                         <div class="mySlidesFoto">
-                            <h3 id ="titulos">Festa Junina 2018</h3>
+                            <h3>Festa Junina 2018</h3>
                             <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="" >
                             <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
                             <img class = "carousel_image" src="assets/foto_carrossel_5.jpg" alt="" >
                             <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="" >
+                            <img class = "carousel_image" src="assets/foto_carrossel_5.jpg" alt="" >
                         </div>
                         <div class="mySlidesFoto">
-                            <h3 id ="titulos">Festa Junina 2018</h3>
+                            <h3>Festa Junina 2018</h3>
                             <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
                             <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
                             <img class = "carousel_image" src="assets/foto_carrossel_8.jpg" alt="" >
+                            <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="" >
                             <img class = "carousel_image" src="assets/foto_carrossel_9.jpg" alt="" >
                         </div>
                         <div class="mySlidesFoto">
-                            <h3 id ="titulos">Páscoa 2018</h3>
+                            <h3>Páscoa 2018</h3>
                             <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
                             <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="" >
                             <img class = "carousel_image" src="assets/foto_carrossel_8.jpg" alt="" >
+                            <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="" >
                             <img class = "carousel_image" src="assets/foto_carrossel_9.jpg" alt="" >
                         </div>
                         <div class="mySlidesFoto">
-                            <h3 id ="titulos">Dia das Crianças 2019</h3>
+                            <h3>Dia das Crianças 2019</h3>
                             <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="" >
                             <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
                             <img class = "carousel_image" src="assets/foto_carrossel_5.jpg" alt="" >
+                            <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="" >
                             <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="" >
                         </div>
                     </div>
@@ -93,13 +96,12 @@
                     <span class="dotFoto" onclick="currentSlideFoto(4)"></span>
                     <span class="dotFoto" onclick="currentSlideFoto(5)"></span>
                 </div>
-    
-            </div>
+        </div>
+        <h2>Acervo de Vídeos!</h2>
     </div>
-</div>
-                                                            <!-- Esqueleto do footer-->
+     <!-- Esqueleto do footer-->
 
-    <footer class="footer">
+     <footer class="footer">
         <ul class="informacoes">
             <div class="div_info_contato">
                 <ul class="informacoes_contato">
@@ -108,17 +110,31 @@
                     <li>Email: <a href="" class="link_rodape">email</a></li>
                 </ul>
             </div>
-            <div class = "redes sociais">
+            <div class = "redes_sociais">
                 <div class="icones_redes_sociais">
-                    <a href="#"><span class="fab fa-facebook-f"></span></a>
+                    <header>Redes sociais</header>
+                    <a href="https://www.instagram.com/aaccpacajus/" target="_blank"><img class = "logo_rede_social" src="assets/instagram.png" alt=""></a>
+                    <a href="https://www.facebook.com/aaccpacajus" target="_blank"><img class = "logo_rede_social" src="assets/facebook.png" alt=""></a>
                 </div>
             </div>
-            <li><a href="" class="link_rodape">Localização </a></li>
-            <li><a href="" class="link_rodape">Informações para doação</a></li>
+            <div id="localizacao">
+                <header><a href="" class="link_rodape">Localização: </a></header>
+                    <p>Rua XXX</p>
+                    <p>Número 123</p>
+                    <p>Pacajus,Ceará</p>
+            </div>
+            <div id="doacao">
+                <header id="info_doacao"><a href="como_ajudar.html" class="link_rodape">Informações para doação:</a></header>
+                    <p>Banco XXX</p>
+                    <p>Agência: XXXXXX</p>
+                    <p>Conta: XXXXXXXX</p>
+            </div>
         </ul>
     </footer>
 
-<script src = "home_carrossel_fotos.js"></script>
+    <script src = "home_carrossel_fotos.js"></script>
+    <script src="home_carrossel_depoimentos.js"></script>
+    <script src="formatacao_navbar.js"></script>
 <script>
     // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
     window.onscroll = function() {scrollFunction()};
@@ -159,9 +175,6 @@
         }
     }
 </script>
-
-<script src = "home_carrossel_fotos.js"></script>
-<script src="home_carrossel_depoimentos.js"></script>
 
 </body>
 </html>
