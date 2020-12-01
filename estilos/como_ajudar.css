@@ -21,18 +21,20 @@ body {
 /*	border-color: #4DC44A;
 	border-style: solid;
 	border-width: 2px;*/
+	text-align: justify;
+  text-justify: inter-word;
 }
 
 .card img {
 	vertical-align: middle;
-	max-height: 200px;
+	max-height: 350px;
 	display: inline;
 	margin: 5px;
 }
 
 .esq {
 	float: left;
-	margin-right: 15px;
+	margin-right: 50px;
 	border-radius: 5px 0 0 5px;
 
 }

@@ -148,6 +148,7 @@ body{
     position: absolute;
     bottom: 0;
     width: 100%;
+    color: #FAF1ED;
 }
 
 .informacoes,.informacoes_contato{
@@ -155,14 +156,16 @@ body{
 }
 
 .link_rodape{
-    color: black;
-    text-decoration: none;
+    color: #FAF1ED;
+    text-decoration: underline;
     text-transform: none;
 }
 
 .link_rodape:hover{
-    color:white;
+    background-color: #FAF1ED;;
+    text-decoration: none;
     font-style:italic;
+    color: #196712;
 }
 
 .informacoes{
@@ -180,7 +183,7 @@ body{
 }
 
 .logo_rede_social{
-
+    color: #FAF1ED;
     width: 25px;
     height: 25px;
     margin: 10px;
