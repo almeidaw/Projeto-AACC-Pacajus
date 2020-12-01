@@ -1,60 +1,48 @@
-/*
-                            Formatação geral da página (fonte e imagem de fundo)
-*/
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url("assets/layout_home_1.jpg");
     background-size: cover;
-    background-color: #6FCF97;
+    background-image: url('assets/Desktop\ -\ 4.png');
+    background-color:#F9F1EC;
     height: 100%;
-    display:flex;
-    flex-direction: column;
+    position: relative;
 }
-html,body{
-    width:100%;
-    height:100%;
-    margin:0;
-    padding:0;
-}
-/*                          Conteúdo Geral da página              */
+
 .main_container{
-    min-height: 100vh;
+    min-height: 100px;
     min-width: auto;
     overflow: hidden;
-    padding-bottom: 150px;
+    display: block;
+    position: relative;
+    padding-bottom: 200px;
+    margin-bottom: auto;
 }
-
-.conteudo_home{
-    margin-left: 60px;
-    display: flex;
-    flex-direction: column;
+.container_menor{
+    display:flex;
+    align-items: center;
     justify-content: space-between;
-    align-content: right;
+    height: auto;
+    margin-left: 10%;
+}
+.conteudo{
+    display: inline-block;
     background-color: none;
-    height: 1050px;
+    padding: 25px min(25px, 50px, 100px);
 }
-.flex{
-    display: flex;
-    justify-content: space-between;
-}
-
 /*--------------------------------Card do texto da história---------------*/
 .card{
-    background-color: #2e8a54;
+    background-color:  #196712;
     padding: 30px;
     border-radius: 15px;
-}
-/*--------------------------------Div da história-------------------------*/
-.nossa_historia{
-    height: 150px;
-    flex-direction: row;
-    width: 50%;
+    display:inline-block;
+    margin-right:4%;
+    width:50%;
+    height: 40%;
 }
 /*---------------------------------Div da foto----------------------------*/
 .mangueira{
-    display:flex;
-    flex-direction: row;
+    display:inline-block;
+    justify-content: space-between;
     width: 50%;
     padding:80px;
 }
@@ -62,56 +50,173 @@ html,body{
 #foto_mangueira{
     border-radius: 25px;
     width: 500px;
-    margin-left:150px;
     height: 415px;
 }
 /*------------------------------Título------------------------------------*/
-#head_nossa_historia{
-    color: #000000;
-    text-decoration: none;
-    text-transform: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+h1{
+    margin-left:7%;
+    font-size: 45px;
+    margin-top: 4%;
 }
 
 #paragrafo_nossa_historia{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    color:#ffff;
+    color:#F9F1EC;
 }
-
-
-
+/*         
+                                    Formatação Fundadora
+*/
+#titulo{
+    font-size: 25px;
+    font-weight: 100px;
+    display:flex;
+    justify-content: flex-start;
+}
 /*
 
                                             Formatação do carrossel de depoimentos
 
 */
-
-.depoimentos{
-    height: 300px;
+h2{
+    font-size: 35px;
+    margin-left:37%;
 }
-
-#header_depoimentos{
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif ;
-}
-
-.autor{
-    padding-left: 10px;
-    padding-top: 30px;
+ /* Container das frases */
+ .slideshow-container {
+    background-color:#196712;
+    border-radius: 20px;
+    position: relative;
+    width: 77%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Botões */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
     font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #2E8A54;
+    opacity: 0.8;
+    color: #F9F1EC;;
+  }
+  
+  /* Container dos pontos */
+  .dot-container {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    background-color: transparent;
+  }
+  
+  /* Pontos */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Desmarcando pontos não ativados */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fonte itálica */
+  q {
+      font-style: italic;
+      color: #FFFFFF;
+    }
+  
+  .author {
+      color: #FFFFFF;
+    } 
+
+  #h2_depoimentos{
+      font-family: 'Roboto',sans-serif;
+      font-size: 30px;
+  }
+
+  .frase{
+      font-family: 'Roboto',sans-serif;
+      font-size: 30px;
+  }
+
+  .author{
+      font-family: 'Roboto',sans-serif;
+      font-size: 20px;
+  }
+/*
+                            Formatação documentação
+*/
+.mynav{
+    background-color:  #196712;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    margin-left:7%;
+}
+.mynav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
 }
 
-.frase{
-    text-align: center;
-    font-size: 40px;
-    padding-top: 20px;
-    font-family: 'Roboto', sans-serif;
+.mynav li:not(:last-child) {
+  margin-right: 20px;
 }
 
+.mynav a {
+  display: block;
+  font-size: 20px;
+  color: #F9F1EC;
+  text-decoration: none;
+  padding: 7px 15px;
+}
+
+.target {
+  position: absolute;
+  border-bottom: 4px solid transparent;
+  z-index: -1;
+  transform: translateX(-60px);
+}
+
+.mynav a,
+.target {
+  transition: all .35s ease-in-out;
+}
 /*
 
                                 Formatação do rodapé
@@ -119,55 +224,60 @@ html,body{
 */
 
 .footer{
-    background-color: #6FCF97;
-    position:absolute;
-    bottom: 0;
-    width: 100%;
-    left:0px;
-    margin-top: 1000px;
+  background-color:  #196712;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2000px;
 }
 
 .informacoes,.informacoes_contato{
-    list-style: none;
+  list-style: none;
 }
 
 .link_rodape{
-    color: black;
-    text-decoration: none;
-    text-transform: none;
+  color: black;
+  text-decoration: none;
+  text-transform: none;
 }
 
 .link_rodape:hover{
-    color: #000000;
-    font-style:italic;
+  color: #000000;
+  font-style:italic;
 }
 
 .informacoes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
 }
 
 .div_info_contato{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo_rede_social{
 
-    width: 25px;
-    height: 25px;
-    margin: 10px;
+  width: 25px;
+  height: 25px;
+  margin: 10px;
 }
 
 #info_doacao{
-    margin-right: 40px;
-    vertical-align: middle;
+  margin-right: 40px;
 }
 
 #localizacao{
-    vertical-align: middle;
+  vertical-align: middle;
+}
+
+.redes_sociais{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 50%;
 }

@@ -3,117 +3,35 @@
                                           Carrossel de fotos
 #################################################################################################################
 */
-                                                        
-                                                        
-                                                        
-                                  /* Forrmatação geral do carrossel de fotos*/
 
-const track = document.querySelector('.carousel_track');
-const slides = Array.from(track.children);
-const nextButton = document.querySelector('.carousel_button--right');
-const prevButton = document.querySelector('.carousel_button--left');
-const dotsNav = document.querySelector('.carousel_nav');
-const dots = Array.from(dotsNav.children);
+var slideIndexFoto = 1;
+showSlidesFoto(slideIndexFoto);
 
-const slideSize = slides[0].getBoundingClientRect();
-const slideWidth = slideSize.width
-const slideHeight = slideSize.height
-
-console.log(slideSize);
-
-                                    /* Colocando as fotos uma ao lado da outra*/
-
-const setSlidePosition = (slide,index) => {
-  slide.style.left = slideWidth * index + 'px'
-};
-
-slides.forEach(setSlidePosition)
-
-
-                                          /* Formatação do botão direito*/
-
-const moveToSlide = (track,currentSlide,targetSlide) => {
-
-  track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-  currentSlide.classList.remove('current_slide'); /* Remove a classe current_slide do slide atual */
-  targetSlide.classList.add('current_slide') 
-    
+function plusSlidesFoto(n1) {
+  showSlidesFoto(slideIndexFoto += n1);
 }
 
-const updateDots = (currentDot,targetDot) => {
-
-  currentDot.classList.remove('current_slide');
-  targetDot.classList.add('current_slide');
-
+function currentSlideFoto(n1) {
+  showSlidesFoto(slideIndexFoto = n1);
 }
 
-nextButton.addEventListener('click',e => { 
-
-  const currentSlide = track.querySelector('.current_slide');
-  const nextSlide = currentSlide.nextElementSibling;
-  const currentDot = dotsNav.querySelector('.current_slide');
-  const nextDot = currentDot.nextElementSibling;
-  const nextIndex = slides.findIndex(slide => slide === nextSlide);
-
-  moveToSlide(track,currentSlide,nextSlide);
-  updateDots(currentDot,nextDot);
-  hideShowArrows(slides,prevButton,nextButton,nextIndex);
-
-})
-
-                                    /* Formatação do botão esquerdo*/
-
-prevButton.addEventListener('click',e => {
-
-  const currentSlide = track.querySelector('.current_slide');
-  const prevSlide = currentSlide.previousElementSibling;
-  const currentDot = dotsNav.querySelector('.current_slide');
-  const prevDot = currentDot.previousElementSibling;
-  const prevIndex = slides.findIndex(slide => slide === prevSlide);
-  
-
-  moveToSlide(track,currentSlide,prevSlide);
-  updateDots(currentDot,prevDot);
-  hideShowArrows(slides,prevButton,nextButton,prevIndex);
-
-})
-
-                        /* Formatação dos pontos pretos abaixo do carrossel e das duas setas */
-
-
-const hideShowArrows = (slides,prevButton,nextButton,targetIndex) => {
-
-  if (targetIndex === 0 ) {
-    prevButton.classList.add('is_hidden');
-    nextButton.classList.remove('is_hidden');
-  } else if (targetIndex === slides.length - 1) {
-    prevButton.classList.remove('is_hidden');
-    nextButton.classList.add('is_hidden');
-  } else {
-    prevButton.classList.remove('is_hidden');
-    nextButton.classList.remove('is_hidden');
+function showSlidesFoto(n1) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidesFoto");
+  var dots = document.getElementsByClassName("dotFoto");
+  if (n1 > slides.length) {
+    slideIndexFoto = 1
   }
-
-}
-
-dotsNav.addEventListener('click',e => {
-
-  const targetDot = e.target.closest('button');
-
-  if (!targetDot) return;
-
-  const currentSlide = track.querySelector('.current_slide');
-  const currentDot = dotsNav.querySelector('.current_slide');
-  const targetIndex = dots.findIndex(dot => dot === targetDot);
-  const targetSlide = slides[targetIndex];
-
-  moveToSlide(track,currentSlide,targetSlide);
-
-  currentDot.classList.remove('current_slide');
-  targetDot.classList.add('current_slide');
-  updateDots(currentDot,targetDot);
-
-  hideShowArrows(slides,prevButton,nextButton,targetIndex)
-
-})
+    if (n1 < 1) {
+      slideIndexFoto = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndexFoto-1].style.display = "inline";
+  dots[slideIndexFoto-1].className += " active";
+} 
 

@@ -4,79 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem somos - AACC Pacajus</title>
-    <link rel="stylesheet" href="quem_somos.css">
-    <link rel="stylesheet" href="general.css">
     <link rel="shortcut icon" href="assets/logo_semFundo.png">
+    <link rel="stylesheet" href="general1.css">
+    <link rel="stylesheet" href="quem_somos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet"> 
-    <script></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+
 </head>
 <body>
 
                                                 <!-- Esqueleto da barra de navegação-->
-
-<div class="main_container">
-<header class="header">
-    <div class="container">
-        <img src="assets/logo.jpg" alt="logo" class="logo">
+    <header id="header">
+        <div id="logo_nome">
+            <img src="assets/logo.jpg" alt="logo" id="logo">
+            <a id="nome" href="index.html">AACC Pacajus</a>
+        </div>
         <nav class="nav">
             <ul>
-                <li id="nome" class="item_nav"><a href="index.html" class="link">AACC Pacajus</a></li>
                 <li class="item_nav"><a href="quem_somos.html" class="link">Quem somos</a></li>
-                <li class="item_nav"><a href="#" class="link">Projetos</a></li>
-                <li class="item_nav"><a href="#"class="link">Depoimentos</a></li>
+                <li class="item_nav"><a href="parceiros.html"class="link">Parceiros</a></li>
                 <li class="item_nav"><a href="como_ajudar.html" class="link">Como ajudar</a></li>
-                <li class="item_nav"><a href="bazar.html" class="link">Conheça nosso bazar</a></li>
+                <li class="item_nav"><a href="bazar.html" class="link">Bazar</a></li>
                 <li class="item_nav"><a href="acervo.html" class="link">Acervo de fotos</a></li>
+                <li class="item_nav"><a href="contato.html" class="link">Contato</a></li>
             </ul>
         </nav>
-    </div>
-</header>
+    </header>
 
                                             <!-- Esqueleto da parte Nossa História-->
-
-    <div class="conteudo_home">
-        <div class="flex">
-        <div class="nossa_historia">
-            <h1><a href="quem_somos.html" target="_blank" id="head_nossa_historia">Nossa história</a></h1>
-            <div class="card">
-            <p id="paragrafo_nossa_historia">
-                Somos uma entidade sem fins lucrativos que mantém uma escola com atendimento educacional e 
-                alimentação em tempo parcial para quase 70 crianças carentes. 
-                Atuamos com muita dedicação e responsabilidade há mais de 35 anos no município de Pacajus(Ce).
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque feugiat augue magna, eget aliquam sem interdum sit amet. Vestibulum sollicitudin blandit nulla quis viverra. Mauris malesuada ipsum vitae augue bibendum volutpat. Suspendisse velit quam, elementum ut risus non, maximus iaculis quam. Quisque malesuada, nisi pretium dictum porttitor, velit tortor faucibus enim, in sodales velit arcu at dui. Quisque non orci vel erat condimentum tempor. Maecenas suscipit bibendum scelerisque. Mauris a turpis luctus, tincidunt lacus in, blandit purus. Sed vitae odio eu justo aliquet commodo ut a nibh. Sed in nisl et libero mattis dignissim. Mauris vitae augue tempor ante elementum sodales sit amet quis ante. In id elit vehicula, sollicitudin est auctor, rhoncus augue. Sed non pharetra neque.
-            </p>
+    <div class="main_container">
+        <div class="conteudo">
+            <h1>Nossa história</h1>
+            <div class="container_menor">
+                <div class="card">
+                <p id="paragrafo_nossa_historia">
+                    A AACC foi legalmente constituída com o objetivo de ser a mantenedora
+                    do CEI Pedro Philomeno Gomes, uma instituição que oferta educação
+                    básica, no ensino regular desde 1983. Foi fundada pela professora
+                    aposentada Ozanira de Oliveira Nogueira Machado, atendendo em
+                    média de 100 crianças na faixa etária de 2 a 6 anos.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque feugiat augue magna, eget aliquam sem interdum sit amet. Vestibulum sollicitudin blandit nulla quis viverra. Mauris malesuada ipsum vitae augue bibendum volutpat. Suspendisse velit quam, elementum ut risus non, maximus iaculis quam. Quisque malesuada, nisi pretium dictum porttitor, velit tortor faucibus enim, in sodales velit arcu at dui. Quisque non orci vel erat condimentum tempor. Maecenas suscipit bibendum scelerisque. Mauris a turpis luctus, tincidunt lacus in, blandit purus. Sed vitae odio eu justo aliquet commodo ut a nibh. Sed in nisl et libero mattis dignissim. Mauris vitae augue tempor ante elementum sodales sit amet quis ante. In id elit vehicula, sollicitudin est auctor, rhoncus augue. Sed non pharetra neque.
+                </p>
+                </div>
+            <div class="mangueira">
+                <img id="foto_mangueira" src="assets/mangueira.png">
             </div>
-        </div>
-        <div class="mangueira">
-            <img id="foto_mangueira" src="assets/mangueira.png">
-        </div>
-        </div>
-                                                        <!-- Esqueleto do footer-->
+            </div>
+            <h1>Nossa Fundadora - Ozanira de Oliveira Nogueira Machado </h1>
+            <div class= "container_menor">
+                <div class="card">
+                    <p id="paragrafo_nossa_historia">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque feugiat augue magna, eget aliquam sem interdum sit amet. Vestibulum sollicitudin blandit nulla quis viverra. Mauris malesuada ipsum vitae augue bibendum volutpat. Suspendisse velit quam, elementum ut risus non, maximus iaculis quam. Quisque malesuada, nisi pretium dictum porttitor, velit tortor faucibus enim, in sodales velit arcu at dui. Quisque non orci vel erat condimentum tempor. Maecenas suscipit bibendum scelerisque. Mauris a turpis luctus, tincidunt lacus in, blandit purus. Sed vitae odio eu justo aliquet commodo ut a nibh. Sed in nisl et libero mattis dignissim. Mauris vitae augue tempor ante elementum sodales sit amet quis ante. In id elit vehicula, sollicitudin est auctor, rhoncus augue. Sed non pharetra neque.
+                    </p>
+                </div>
+                <div class="mangueira">
+                    <img id="foto_mangueira" src="assets/fundadora.png">
+                </div>
+            </div>
+            <h2>Veja nossos depoimentos!</h2>
+            <!-- Container das frases -->
 
+            <div class="slideshow-container">
+
+            <!-- Frases e autores -->
+                <div class="mySlides">
+                    <q class = "frase">Frase 1</q>
+                    <p class="author">- Autor 1, Função na ONG</p>
+                </div>
+                    
+                <div class="mySlides">
+                    <q class="frase">Frase 2</q>
+                    <p class="author">- Autor 2, Função na ONG</p>
+                </div>
+                    
+                <div class="mySlides">
+                    <q class="frase">Frase 3</q>
+                    <p class="author">- Autor 3, Função na ONG</p>
+                </div>
+                    
+                <div class="mySlides">
+                    <q class="frase">Frase 4</q>
+                    <p class="author">- Autor 4, Função na ONG</p>
+                </div>
+
+                <div class="mySlides">
+                    <q class="frase">Frase 5</q>
+                    <p class="author">- Autor 5, Função na ONG</p>
+                </div>
+
+                <div class="mySlides">
+                    <q class="frase">Frase 6</q>
+                    <p class="author">- Autor 6, Função na ONG</p>
+                </div>
+                <!-- Botões -->
+                    
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+            
+                    
+            <!-- Pontos -->
+                    
+            <div class="dot-container" style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div> 
+            </div>
+            <script src="home_carrossel_depoimentos.js"></script>
+            
+            <h1>Nossa Documentação</h1>
+            <div class="mynav">
+                <ul>
+                    <li><a href="" target ="blank">Ata Inaugural</a></li>
+                    <li><a href="" target="blank">Ata da atual diretoria</a></li>
+                    <li><a href="" target="blank">Estatuto social</a></li>
+                </ul>
+            </div>
+            <span class="target"></span>
+            <script src="documentos.js"></script>
+        </div>
     </div>
+    <!-- Esqueleto do footer-->
 
     <footer class="footer">
         <ul class="informacoes">
             <div class="div_info_contato">
                 <ul class="informacoes_contato">
                     <header> Informações de contato</header>
-                    <li>Telefone: telefone</li>
-                    <li>Email: <a href="" class="link_rodape">email</a></li>
+                    <li>Telefone: (85) 99820-1336</li>
+                    <li>Email: <a href="" class="link_rodape">aaccpacajus@gmail.com</a></li>
                 </ul>
             </div>
-            <div class = "redes sociais">
+            <div class = "redes_sociais">
                 <div class="icones_redes_sociais">
                     <header>Redes sociais</header>
                     <a href="https://www.instagram.com/aaccpacajus/" target="_blank"><img class = "logo_rede_social" src="assets/instagram.png" alt=""></a>
                     <a href="https://www.facebook.com/aaccpacajus" target="_blank"><img class = "logo_rede_social" src="assets/facebook.png" alt=""></a>
                 </div>
             </div>
-            <li id="localizacao"><a href="" class="link_rodape">Localização </a></li>
-            <li id="info_doacao"><a href="" class="link_rodape">Informações para doação</a></li>
+            <div id="localizacao">
+                <header><a href="" class="link_rodape">Localização: </a></header>
+                    <p>Rua Vereador José Neto Ribeiro</p>
+                    <p>Número 237</p>
+                    <p>Bairro Banguê I</p>
+                    <p>CEP: 62870-000</p>
+                    <p>Pacajus,Ceará</p>
+            </div>
+            <div id="doacao">
+                <header id="info_doacao"><a href="como_ajudar.html" class="link_rodape">Informações para doação:</a></header>
+                <p>Banco do Brasil</p>
+                <p>Agência: 1105-3</p>
+                <p>Conta: 32.895-2</p>
+            </div>
         </ul>
     </footer>
-
 <script src = "home_carrossel_fotos.js"></script>
+<script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function() {scrollFunction()};
 
+    function scrollFunction() {
+
+        var link = document.getElementsByClassName("link");
+        var nome = document.getElementById("nome");
+        var logo = document.getElementById("logo");
+
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            var i;
+            for (i = 0; i < link.length; i++) {
+                link[i].style.padding = "15.5px 20px";
+                link[i].style.fontSize = "16px";
+            }
+
+            nome.style.fontSize = "18px";
+            nome.style.padding = "16px 0";
+            nome.style.margin = "0";
+            logo.style.width = "40px";
+            logo.style.height = "40px";
+            logo.style.margin = "5px 10px";
+
+        } else {
+            var i;
+            for (i = 0; i < link.length; i++) {
+                link[i].style.padding = "39.5px 25px";
+                link[i].style.fontSize = "18px";
+            }
+
+            nome.style.fontSize = "22px";
+            nome.style.padding = "37.5px 0";
+            nome.style.margin= "0 0 0 18px";
+            logo.style.width = "80px";
+            logo.style.height = "80px";
+            logo.style.margin = "10px";
+        }
+    }
+</script>
 </body>
 </html>

@@ -1,23 +1,34 @@
 /*
+
+                                                #####################
+                                                Formatação desktop
+                                                #####################
+
+
+*/
+
+
+/*
                             Formatação geral da página (fonte e imagem de fundo)
 */
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url("assets/layout_home_1.jpg");
     background-size: cover;
-    background-color: #6FCF97;
+    background-image: url('assets/Desktop\ -\ 4.png');
+    background-color:#F9F1EC;
     height: 100%;
     position: relative;
 }
 
 .main_container{
-    min-height: 100vh;
+    min-height: 100px;
     min-width: auto;
     overflow: hidden;
     display: block;
     position: relative;
     padding-bottom: 100px;
+    margin-bottom: auto;
 }
 
 .conteudo_home{
@@ -28,11 +39,17 @@ body{
     align-content: center;
     background-color: none;
     height: 1250px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    min-height: 60%;
 }
 
 .nossa_historia{
     height: 150px;
     padding-top: 30px;
+    width: 88%;
+    padding-bottom: 30px;
+    display: inline-block;
 }
 
 #head_nossa_historia{
@@ -44,7 +61,7 @@ body{
 }
 
 #head_nossa_historia:hover{
-    color: #000000;
+    color:#2E8A54;
 }
 
 #head_nossa_historia::before{
@@ -61,73 +78,99 @@ body{
                                     Formatação da barra de navegação
 */
 
-.logo{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    float: left;
-    padding: 10px 0;
+#header{
+    background-color: #2E8A54;
+    /*padding: 0 20px;*/
+    position: fixed;
+    overflow: hidden;
+    transition: 0.4s;
+    width: 100%;
+    margin: 0;
+    z-index: 99;
+    top: 0;
 }
 
-.header{
-    background-color: #6FCF97;
-}
-
-header::after{
+#header::after{
     content: '';
     display: table;
-    clear: both;
+    clear: both; 
 }
 
-.container{
-    width: 100%;
-    margin: 0 auto;
-}
-
-.nav{
+#logo_nome {
     position: relative;
     bottom: auto;
-    width: 100%;
+    float: left;
 }
 
-#nome{
+#logo {
+    width: 80px;
+    height: 100%;
+    border-radius: 50%;
+    float: left;
+    transition: 0.4s;
+    display: inline;
+    margin: 10px;
+    position: relative;
+}
+
+#nome {
+    color: #000;
     font-size: 22px;
     margin-left: 18px;
-}
-
-.item_nav{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: inline-block;
-    margin-left: 50px;
-    padding-top: 25px;
+    transition: 0.4s;
+    display: inline;
     position: relative;
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.link{
-    color: black;
+    float: right;
+    padding: 37.5px 0;
     text-decoration: none;
     text-transform: none;
 }
 
-.link:hover{
-    color: #000000;
+.nav {
+    position: relative;
+    bottom: auto;
+    float: right;
 }
 
-.link::before{
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.item_nav{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.link{
+    color: #000;
+    text-decoration: none;
+    text-transform: none;
+    padding: 39.5px 25px;
+    transition: 0.4s;
+    display: inline-block;
+}
+
+#header a:hover{
+    color: #fff;
+}
+
+#header a::before{
     content: '';
     display: block;
     height: 5px;
     width: 0;
-    background-color: #444444;
+    background-color: #fff;
     position: absolute;
     top: 0;
+    left: 0;
+    transition: 0.1s;
 }
 
-.link:hover::before{
+#header a:hover::before{
     width: 100%;
 }
 
@@ -140,7 +183,9 @@ header::after{
  /* Container das frases */
  .slideshow-container {
     position: relative;
-    background-color: transparent;
+    width: 90%;
+    margin-left: 50px;
+    left: 0;
   }
   
   /* Slides */
@@ -174,7 +219,8 @@ header::after{
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: #2E8A54;
+    opacity: 0.8;
     color: white;
   }
   
@@ -203,9 +249,13 @@ header::after{
   }
   
   /* Fonte itálica */
-  q {font-style: italic;}
+  q {
+      font-style: italic;
+    }
   
-  .author {color: black;} 
+  .author {
+      color: black;
+    } 
 
   #h2_depoimentos{
       font-family: 'Roboto',sans-serif;
@@ -228,6 +278,11 @@ header::after{
 
 */
 
+.h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
 #link_acervo_carrossel {
     color: black;
     text-decoration: none;
@@ -236,10 +291,82 @@ header::after{
 }
 
 #link_acervo_carrossel:hover{
-    color: #000000;
+    color: #2E8A54;
 }
 
-.carousel{
+/* Container das fotos */
+.carousel_track_container {
+    position: relative;
+    width: 90%;
+    margin-left: 50px;
+    left: 0;
+    padding-top: 20px;
+  }
+  
+  /* Slides */
+
+.mySlidesFoto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 24px;
+}
+  
+  /* Botões */
+  .prevFoto, .nextFoto {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .nextFoto {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prevFoto:hover, .nextFoto:hover {
+    background-color: #2E8A54;
+    opacity: 0.8;
+    color: white;
+  }
+  
+  /* Container dos pontos */
+  .dotFoto-container {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+  }
+  
+  /* Pontos */
+  .dotFoto {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Desmarcando pontos não ativados */
+  .active, .dotFoto:hover {
+    background-color: #717171;
+  }
+
+  .carousel{
     position: absolute;
     height: 400px;
     width: 90%;
@@ -248,92 +375,19 @@ header::after{
 }
 
 .carousel_image{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.carousel_track_container{
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel_track{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    height: 100%;
-}
-
-.carousel_slide{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-}
-
-.carousel_button{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.carousel_button--left{
-    left: -30px;
-}
-
-.carousel_button--right{
-    right: -30px;
-}
-
-.carousel_indicator{
-    border: 0;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: #bbb;
-    cursor: pointer;
-    transition: background-color 0.6s ease;
-    margin: 0 2px ;
+    margin-left: 75px;
 }
 
 .carousel_nav{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     padding: 10px 0;
     margin: 0 15px;
 }
-
-.carousel_button img{
-    width: 20px;
-    height: 30px;
-    background-color: transparent;
-}
-
-.carousel_indicator.current_slide{
-    background-color: #717171 ;
-}
-
-.is_hidden{
-    display: none;
-}
-
-.h3{
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-}
-
 /*
 
                                 Formatação do rodapé
@@ -341,11 +395,10 @@ header::after{
 */
 
 .footer{
-    background-color: #6FCF97;
+    background-color:  #2E8A54;
     position: absolute;
     bottom: 0;
     width: 100%;
-    margin-top: 1000px;
 }
 
 .informacoes,.informacoes_contato{
@@ -359,7 +412,7 @@ header::after{
 }
 
 .link_rodape:hover{
-    color: #000000;
+    color:white;
     font-style:italic;
 }
 
@@ -398,3 +451,222 @@ header::after{
     justify-content: center;
     top: 50%;
 }
+
+/*
+
+                                                ########################
+                                                    Formatação tablets
+                                                ########################
+
+
+*/
+
+@media screen and (max-width: 768px){
+    
+    /*   Formatações gerais  */
+    
+    body{
+        background: orangered;
+    }
+
+    .conteudo_home{
+        height: 1000px;
+    }
+
+    .main_container{
+        width: 100%;
+        height: 100%;
+    };
+
+    /* Formatações da barra de navegação */
+
+    .nav{
+        overflow: hidden;
+        position: relative;
+    }
+
+    .lista_items{
+        display: none;
+    }
+
+    .nav a{
+        color: #fff;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .icon{
+        background: #000;
+        display: block;
+        position: absolute;
+        right: 0;
+        top:0;
+    }
+
+    .nav a:hover{
+        background-color: red;
+        color:white
+    }
+
+    /* Formatações nossa história */
+
+    #head_nossa_historia{
+        font-size: 30px;
+    }
+
+    #paragrafo_nossa_historia{
+        font-size: 15px;
+    }
+
+    /* Formatações do carrrosel de depoimentos */
+
+    #h2_depoimentos{
+        font-family: 'Roboto',sans-serif;
+        font-size: 25px;
+        margin-right: 20px;
+    }
+
+
+    .slideshow-containter{
+        margin-right: 20px;
+    }
+
+
+    /* Formatações do carrossel de fotos */
+
+    .h3{
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    .carousel_image{
+        width: 120px;
+        height: 120px ;
+        object-fit: cover;
+        margin-left: 25px;
+        margin-right: 20px;
+    };
+
+    /* Formatações do footer */
+
+    .logo_rede_social{
+
+        width: 18px;
+        height: 18px;
+        margin: 5px;
+    }
+
+    .informacoes,.informacoes_contato{
+        list-style: none;
+        font-size: 13px;
+    }
+
+    .logo_rede_social{
+
+        width: 18px;
+        height: 18px;
+        margin: 10px;
+    }
+
+
+}
+
+/*
+
+                                                ########################
+                                                Formatação celulares
+                                                ########################
+
+
+*/
+
+@media screen and (max-width: 500px){
+
+    /*   Formatações gerais  */
+    
+    body{
+        background: violet;
+    }
+
+    .conteudo_home{
+        height: 1250px;
+    }
+    
+
+    /* Formatações da barra de navegação */
+
+    
+    /* Formatações nossa história */
+
+    #head_nossa_historia{
+        font-size: 22px;
+    }
+
+    #paragrafo_nossa_historia{
+        font-size: 20px;
+    }
+
+
+    /* Formatações do carrrosel de depoimentos */
+
+
+    #h2_depoimentos{
+        font-family: 'Roboto',sans-serif;
+        font-size: 22px;
+        margin-right: 5px;
+    }
+
+    .frase{
+        font-family: 'Roboto',sans-serif;
+        font-size: 18px;
+    }
+  
+    .author{
+        font-family: 'Roboto',sans-serif;
+        font-size: 14px;
+    }
+
+    .prev, .next{
+        font-size: 17px;
+    }
+    
+    /* Formatações do carrossel de fotos */
+
+    .h3{
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        margin-right: 20px;
+    }
+
+    .carousel_image{
+        width: 50px;
+        height: 50px ;
+        object-fit: cover;
+        margin-left: 25px;
+        margin-right: 20px;
+    };    
+
+    /* Formatações do footer */
+    
+    .logo_rede_social{
+
+        width: 12px;
+        height: 12px;
+        margin: 5px;
+    }
+
+    .informacoes,.informacoes_contato{
+        list-style: none;
+        font-size: 10px;
+    }
+
+    
+
+}
+
+
+
+

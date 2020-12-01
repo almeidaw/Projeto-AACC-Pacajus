@@ -4,112 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acervo de Fotos - AACC Pacajus</title>
+    <link rel="stylesheet" href="general1.css">
     <link rel="stylesheet" href="acervo.css">
     <link rel="shortcut icon" href="assets/logo_semFundo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet"> 
-    <script></script>
 </head>
 <body>
 
-                                                <!-- Esqueleto da barra de navegação-->
-
-<div class="main_container">
-<header class="header">
-    <div class="container">
-        <img src="assets/logo.jpg" alt="logo" class="logo">
+                                             <!-- Esqueleto da barra de navegação-->
+    <header id="header">
+        <div id="logo_nome">
+            <img src="assets/logo.jpg" alt="logo" id="logo">
+            <a id="nome" href="index.html">AACC Pacajus</a>
+        </div>
         <nav class="nav">
             <ul>
-                <li id="nome" class="item_nav"><a href="home.html" class="link">AACC Pacajus</a></li>
                 <li class="item_nav"><a href="quem_somos.html" class="link">Quem somos</a></li>
-                <li class="item_nav"><a href=" " class="link">Projetos</a></li>
-                <li class="item_nav"><a href="contato-parceiros/parceiros/parceiros.html"class="link">Parceiros</a></li>
+                <li class="item_nav"><a href="parceiros.html"class="link">Parceiros</a></li>
                 <li class="item_nav"><a href="como_ajudar.html" class="link">Como ajudar</a></li>
-                <li class="item_nav"><a href="bazar.html" class="link">Conheça nosso bazar</a></li>
+                <li class="item_nav"><a href="bazar.html" class="link">Bazar</a></li>
                 <li class="item_nav"><a href="acervo.html" class="link">Acervo de fotos</a></li>
-                <li class="item_nav"><a href="contato-parceiros/contato/contato.html" class="link">Contato</a></li>
+                <li class="item_nav"><a href="contato.html" class="link">Contato</a></li>
             </ul>
         </nav>
-    </div>
-</header>
-
-    <div class="conteudo_home">
-        <div class = "h1">
-        <h1>Acervo de Fotos!</h1>
-        </div>
-                            <!-- Esqueleto do carrossel de fotos da home -->
+    </header>
+    
+    <div class="conteudo">
+        <h1 class = "h1">Acervo de Fotos!</h1>
+            <!-- Esqueleto do carrossel de fotos do acervo -->
 
         <div class="carousel">
-                                    <!-- Imagens da seta esquerda-->
-
-            <button class="carousel_button carousel_button--left is_hidden">
-                <img src="assets/seta-esquerda.png" alt="">
-            </button>
-
-                                    <!-- Carrossel com as fotos -->
-
+                                        <!-- Carrossel com as fotos -->
+    
             <div class="carousel_track_container">
-                <ul class="carousel_track">
-                    <li class="carousel_slide current_slide">
-                        <img class = "carousel_image" src="assets/foto_carrossel_1.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_2.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_8.jpg" alt="">
-                    </li>
-                    <li class="carousel_slide">
-                        <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_5.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="">
-                    </li>
-                    <li class="carousel_slide">
-                        <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_8.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_9.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="">
-                    </li>
-                    <li class="carousel_slide">
-                        <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_1.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_2.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="">
-                    </li>
-                    <li class="carousel_slide">
-                        <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_5.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="">
-                        <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="">
-                    </li>
-                </ul>
+                <div class="carousel_track">
+                    <div class="mySlidesFoto">
+                        <h3>Natal 2019</h3>
+                        <img class = "carousel_image" src="assets/foto_carrossel_1.jpg" alt="" >
+                        <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
+                        <img class = "carousel_image" src="assets/foto_carrossel_2.jpg" alt="" >
+                        <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="" >
+                    </div>
+                    <div class="mySlidesFoto">
+                        <h3>Festa Junina 2018</h3>
+                        <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="" >
+                        <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
+                        <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="" >
+                        <img class = "carousel_image" src="assets/foto_carrossel_5.jpg" alt="" >
+                    </div>
+                    <div class="mySlidesFoto">
+                        <h3>Festa Junina 2018</h3>
+                        <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
+                        <img class = "carousel_image" src="assets/foto_carrossel_8.jpg" alt="" >
+                        <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="" >
+                        <img class = "carousel_image" src="assets/foto_carrossel_9.jpg" alt="" >
+                    </div>
+                    <div class="mySlidesFoto">
+                            <h3>Páscoa 2018</h3>
+                            <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
+                            <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="" >
+                            <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="" >
+                            <img class = "carousel_image" src="assets/foto_carrossel_9.jpg" alt="" >
+                        </div>
+                        <div class="mySlidesFoto">
+                            <h3>Dia das Crianças 2019</h3>
+                            <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="" >
+                            <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
+                            <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="" >
+                            <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="" >
+                        </div>
+                </div>
             </div>
-
-                                    <!-- Imagem da seta direita -->
-
-            <button class="carousel_button carousel_button--right">
-                <img src="assets/seta-direita.png" alt="">
-            </button>
-
-                                    <!-- Pontos indicadores-->
-
-            <div class="carousel_nav">
-                <button class="carousel_indicator current_slide"></button>
-                <button class="carousel_indicator"></button>
-                <button class="carousel_indicator"></button>
-                <button class="carousel_indicator"></button>
-                <button class="carousel_indicator"></button>
-            </div>
-
+    
+                                                <!-- Botões-->
+    
+                <a class="prevFoto" onclick="plusSlidesFoto(-1)">&#10096;</a>
+                <a class="nextFoto" onclick="plusSlidesFoto(1)">&#10097;</a>
+    
+    
+                                        <!-- Pontos indicadores-->
+                                        
+                <div class="dotFoto-container">
+                    <span class="dotFoto" onclick="currentSlideFoto(1)"></span>
+                    <span class="dotFoto" onclick="currentSlideFoto(2)"></span>
+                    <span class="dotFoto" onclick="currentSlideFoto(3)"></span>
+                    <span class="dotFoto" onclick="currentSlideFoto(4)"></span>
+                    <span class="dotFoto" onclick="currentSlideFoto(5)"></span>
+                </div>
         </div>
-
     </div>
-                                <!-- Esqueleto do footer-->
+     <!-- Esqueleto do footer-->
 
-    <footer class="footer">
+     <footer class="footer">
         <ul class="informacoes">
             <div class="div_info_contato">
                 <ul class="informacoes_contato">
                     <header> Informações de contato</header>
-                    <li>Telefone: telefone</li>
-                    <li>Email: <a href="" class="link_rodape">email</a></li>
+                    <li>Telefone: (85) 99820-1336</li>
+                    <li>Email: <a href="" class="link_rodape">aaccpacajus@gmail.com</a></li>
                 </ul>
             </div>
             <div class = "redes_sociais">
@@ -121,22 +113,64 @@
             </div>
             <div id="localizacao">
                 <header><a href="" class="link_rodape">Localização: </a></header>
-                    <p>Rua XXX</p>
-                    <p>Número 123</p>
+                    <p>Rua Vereador José Neto Ribeiro</p>
+                    <p>Número 237</p>
+                    <p>Bairro Banguê I</p>
+                    <p>CEP: 62870-000</p>
                     <p>Pacajus,Ceará</p>
             </div>
             <div id="doacao">
                 <header id="info_doacao"><a href="como_ajudar.html" class="link_rodape">Informações para doação:</a></header>
-                    <p>Banco XXX</p>
-                    <p>Agência: XXXXXX</p>
-                    <p>Conta: XXXXXXXX</p>
+                <p>Banco do Brasil</p>
+                <p>Agência: 1105-3</p>
+                <p>Conta: 32.895-2</p>
             </div>
         </ul>
     </footer>
-</div>
 
-<script src = "home_carrossel_fotos.js"></script>
-<script src="home_carrossel_depoimentos.js"></script>
+    <script src = "home_carrossel_fotos.js"></script>
+    <script src="home_carrossel_depoimentos.js"></script>
+    <script src="formatacao_navbar.js"></script>
+<script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+
+        var link = document.getElementsByClassName("link");
+        var nome = document.getElementById("nome");
+        var logo = document.getElementById("logo");
+
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            var i;
+            for (i = 0; i < link.length; i++) {
+                link[i].style.padding = "15.5px 20px";
+                link[i].style.fontSize = "16px";
+            }
+
+            nome.style.fontSize = "18px";
+            nome.style.padding = "16px 0";
+            nome.style.margin = "0";
+            logo.style.width = "40px";
+            logo.style.height = "40px";
+            logo.style.margin = "5px 10px";
+
+        } else {
+            var i;
+            for (i = 0; i < link.length; i++) {
+                link[i].style.padding = "39.5px 25px";
+                link[i].style.fontSize = "18px";
+            }
+
+            nome.style.fontSize = "22px";
+            nome.style.padding = "37.5px 0";
+            nome.style.margin= "0 0 0 18px";
+            logo.style.width = "80px";
+            logo.style.height = "80px";
+            logo.style.margin = "10px";
+        }
+    }
+</script>
 
 </body>
 </html>
