@@ -124,7 +124,7 @@ body{
 */
 
 .footer{
-    background-color: #196712;
+    background-color:  #196712;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -132,7 +132,6 @@ body{
 
 .informacoes,.informacoes_contato{
     list-style: none;
-    margin-right:50px;
 }
 
 .link_rodape{
@@ -142,7 +141,7 @@ body{
 }
 
 .link_rodape:hover{
-    color: #000000;
+    color:white;
     font-style:italic;
 }
 
@@ -158,4 +157,26 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.logo_rede_social{
+
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+#info_doacao{
+    margin-right: 40px;
+}
+
+#localizacao{
+    vertical-align: middle;
+}
+
+.redes_sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
 }

@@ -118,11 +118,10 @@ header::after{
 */
 
 .footer{
-    background-color: #6FCF97;
+    background-color:  #196712;
     position: absolute;
     bottom: 0;
     width: 100%;
-    
 }
 
 .informacoes,.informacoes_contato{
@@ -136,7 +135,7 @@ header::after{
 }
 
 .link_rodape:hover{
-    color: #000000;
+    color:white;
     font-style:italic;
 }
 
@@ -152,4 +151,26 @@ header::after{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.logo_rede_social{
+
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+#info_doacao{
+    margin-right: 40px;
+}
+
+#localizacao{
+    vertical-align: middle;
+}
+
+.redes_sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
 }
