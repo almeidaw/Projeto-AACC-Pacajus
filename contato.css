@@ -2,9 +2,9 @@
     list-style: none;
 }
 
+
 .h2-list{
     display: inline-block;
-    border: black 2px  ;
     font-size: 18px;
     font-family:'Roboto', sans-serif;
 }
@@ -13,13 +13,14 @@
     display: inline-block;
     font-size: 18px;
     font-family:'Roboto', sans-serif;
-    margin-left: 3%;
+
 }
 .topo{
     margin-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
 }
 
 .redes-sociais{
