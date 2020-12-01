@@ -14,7 +14,7 @@ body{
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     margin-bottom: auto;
 }
 .container_menor{
@@ -62,7 +62,7 @@ h1{
 #paragrafo_nossa_historia{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    color:#ffff;
+    color:#F9F1EC;
 }
 /*         
                                     Formatação Fundadora
@@ -84,7 +84,7 @@ h2{
 }
  /* Container das frases */
  .slideshow-container {
-    background-color: #1e7915;
+    background-color:#196712;
     border-radius: 20px;
     position: relative;
     width: 77%;
@@ -125,7 +125,7 @@ h2{
   .prev:hover, .next:hover {
     background-color: #2E8A54;
     opacity: 0.8;
-    color: white;
+    color: #F9F1EC;;
   }
   
   /* Container dos pontos */
@@ -179,31 +179,105 @@ h2{
 /*
                             Formatação documentação
 */
-.card_documentos{
+.mynav{
     background-color:  #196712;
     padding: 30px;
     border-radius: 15px;
     width: 80%;
     margin-left:7%;
 }
-.lista{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 0;
+.mynav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
 }
-.geral:not(:last-child) {
-    margin-right: 20px;
+
+.mynav li:not(:last-child) {
+  margin-right: 20px;
 }
-.geral{
-    display: inline;
-    position: relative;
+
+.mynav a {
+  display: block;
+  font-size: 20px;
+  color: #F9F1EC;
+  text-decoration: none;
+  padding: 7px 15px;
 }
-.doc{
-    display: block;
-    font-size: 20px;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 7px 15px;
+
+.target {
+  position: absolute;
+  border-bottom: 4px solid transparent;
+  z-index: -1;
+  transform: translateX(-60px);
+}
+
+.mynav a,
+.target {
+  transition: all .35s ease-in-out;
+}
+/*
+
+                                Formatação do rodapé
+
+*/
+
+.footer{
+  background-color:  #196712;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2000px;
+}
+
+.informacoes,.informacoes_contato{
+  list-style: none;
+}
+
+.link_rodape{
+  color: black;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.link_rodape:hover{
+  color: #000000;
+  font-style:italic;
+}
+
+.informacoes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.div_info_contato{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_rede_social{
+
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
+#info_doacao{
+  margin-right: 40px;
+}
+
+#localizacao{
+  vertical-align: middle;
+}
+
+.redes_sociais{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 50%;
 }
