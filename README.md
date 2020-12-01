@@ -14,7 +14,7 @@ http://almeidaw.github.io
 ├─ Quem somos (Laura)
 │  ├─ Depoimentos
 │  └─ Documentos
-├─ Projetos (Magno)
+├─ Parceiros (Jacque)
 ├─ Como ajudar (William)
 ├─ Bazar (William)
 ├─ Acervo de fotos (Laura)
