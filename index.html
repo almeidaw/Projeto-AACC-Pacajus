@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="home_styles.css">
     <link rel="shortcut icon" href="assets/logo_semFundo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
 </head>
 <body>
@@ -19,12 +20,8 @@
             <img src="assets/logo.jpg" alt="logo" id="logo">
             <a id="nome" href="index.html">AACC Pacajus</a>
         </div>
+
         <nav class="nav">
-            <div class="hamburger"> 
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
 
             <ul class="lista_items">
                 <li class="item_nav"><a href="quem_somos.html" class="link">Quem somos</a></li>
@@ -35,6 +32,11 @@
                 <li class="item_nav"><a href="acervo.html" class="link">Acervo de fotos</a></li>
                 <li class="item_nav"><a href="contato-parceiros/contato/contato.html" class="link">Contato</a></li>
             </ul>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
         </nav>
     </header>
 
@@ -284,6 +286,15 @@
         },1800)
     })
 
+
+function myFunction() {
+  var x = document.getElementsByClassName('lista_items');
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
 
 </script>
 
