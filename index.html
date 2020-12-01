@@ -25,7 +25,6 @@
 
             <ul class="lista_items">
                 <li class="item_nav"><a href="quem_somos.html" class="link">Quem somos</a></li>
-                <li class="item_nav"><a href=" " class="link">Projetos</a></li>
                 <li class="item_nav"><a href="parceiros.html"class="link">Parceiros</a></li>
                 <li class="item_nav"><a href="como_ajudar.html" class="link">Como ajudar</a></li>
                 <li class="item_nav"><a href="bazar.html" class="link">Bazar</a></li>
@@ -33,9 +32,12 @@
                 <li class="item_nav"><a href="contato.html" class="link">Contato</a></li>
             </ul>
 
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
 
         </nav>
     </header>
@@ -163,8 +165,8 @@
             <div class="div_info_contato">
                 <ul class="informacoes_contato">
                     <header> Informações de contato</header>
-                    <li>Telefone: telefone</li>
-                    <li>Email: <a href="" class="link_rodape">email</a></li>
+                    <li>Telefone: (85) 99820-1336</li>
+                    <li>Email: <a href="" class="link_rodape">aaccpacajus@gmail.com</a></li>
                 </ul>
             </div>
             <div class = "redes_sociais">
@@ -175,16 +177,18 @@
                 </div>
             </div>
             <div id="localizacao">
-                <header><a href="" class="link_rodape">Localização: </a></header>
-                    <p>Rua XXX</p>
-                    <p>Número 123</p>
+                <header><a href=" https://www.google.com.br/maps/place/R.+Ver.+Jos%C3%A9+Neto+Ribeiro,+Pacajus+-+CE,+62870-000/@-4.1893968,-38.4652923,17z/data=!3m1!4b1!4m5!3m4!1s0x7b8b9b7cc251acb:0xc4eb4350cea33ed6!8m2!3d-4.1893968!4d-38.4631036" target="_blank"  class="link_rodape">Localização: </a></header>
+                    <p>Rua Vereador José Neto Ribeiro</p>
+                    <p>Número 237</p>
+                    <p>Bairro Banguê I</p>
+                    <p>CEP: 62870-000</p>
                     <p>Pacajus,Ceará</p>
             </div>
             <div id="doacao">
                 <header id="info_doacao"><a href="como_ajudar.html" class="link_rodape">Informações para doação:</a></header>
-                    <p>Banco XXX</p>
-                    <p>Agência: XXXXXX</p>
-                    <p>Conta: XXXXXXXX</p>
+                    <p>Banco do Brasil</p>
+                    <p>Agência: 1105-3</p>
+                    <p>Conta: 32.895-2</p>
             </div>
         </ul>
     </footer>
@@ -285,16 +289,6 @@
             $('.nextFoto').fadeIn('slow')
         },1800)
     })
-
-
-function myFunction() {
-  var x = document.getElementsByClassName('lista_items');
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-} 
 
 </script>
 
