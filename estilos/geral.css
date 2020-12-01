@@ -6,7 +6,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background-size: cover;
     background-attachment: fixed;
-    background-color: #196712;
+    background-color: #FAF1ED;
     height: 100%;
     width: 100%;
     position: relative;
@@ -162,7 +162,7 @@ body{
 }
 
 .link_rodape:hover{
-    background-color: #FAF1ED;;
+    background-color: #FAF1ED;
     text-decoration: none;
     font-style:italic;
     color: #196712;
