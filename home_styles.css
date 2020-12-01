@@ -16,22 +16,13 @@
 */
 
 body{
-    font-family: 'Roboto', sans-serif;
-    background-size: cover;
     background-image: url('assets/Desktop\ -\ 4.png');
-    background-color:#F9F1EC;
-    height: 100%;
-    position: relative;
 }
 
 .main_container{
     min-height: 100px;
-    min-width: auto;
-    overflow: hidden;
-    display: block;
-    position: relative;
     padding-bottom: 100px;
-    margin-bottom: auto;
+
 }
 
 .conteudo_home{
@@ -76,122 +67,6 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
-
-/*
-                                    Formatação da barra de navegação
-*/
-
-#header{
-    background-color: #2E8A54;
-    /*padding: 0 20px;*/
-    position: fixed;
-    overflow: hidden;
-    transition: 0.4s;
-    width: 100%;
-    margin: 0;
-    z-index: 99;
-    top: 0;
-}
-
-#header::after{
-    content: '';
-    display: table;
-    clear: both; 
-}
-
-#logo_nome {
-    position: relative;
-    bottom: auto;
-    float: left;
-}
-
-#logo {
-    width: 80px;
-    height: 100%;
-    border-radius: 50%;
-    float: left;
-    transition: 0.4s;
-    display: inline;
-    margin: 10px;
-    position: relative;
-}
-
-#nome {
-    color: #000;
-    font-size: 22px;
-    margin-left: 18px;
-    transition: 0.4s;
-    display: inline;
-    position: relative;
-    float: right;
-    padding: 37.5px 0;
-    text-decoration: none;
-    text-transform: none;
-}
-
-.nav {
-    position: relative;
-    bottom: auto;
-    float: right;
-}
-
-.nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-.icon{
-    display: none;
-}
-
-.item_nav{
-    list-style: none;
-    display: inline-block;
-    position: relative;
-    font-size: 18px;
-    transition: 0.4s;
-}
-
-.link{
-    color: #000;
-    text-decoration: none;
-    text-transform: none;
-    padding: 39.5px 25px;
-    transition: 0.4s;
-    display: inline-block;
-}
-
-#header a:hover{
-    color: #fff;
-}
-
-#header a::before{
-    content: '';
-    display: block;
-    height: 5px;
-    width: 0;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.1s;
-}
-
-#header a:hover::before{
-    width: 100%;
-}
-
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin:5px;
-}
-
-.burger{
-    display: none;
-}
-
 /*
 
                                             Formatação do carrossel de depoimentos
