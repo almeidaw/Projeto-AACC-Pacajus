@@ -1,62 +1,50 @@
-/*
-                            Formatação geral da página (fonte e imagem de fundo)
-*/
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url("assets/layout_home_1.jpg");
     background-size: cover;
-    background-color: #6FCF97;
+    background-image: url('assets/Desktop\ -\ 4.png');
+    background-color:#F9F1EC;
     height: 100%;
-    display:flex;
-    flex-direction: column;
+    position: relative;
 }
-html,body{
-    width:100%;
-    height:100%;
-    margin:0;
-    padding:0;
-}
-/*                          Conteúdo Geral da página              */
+
 .main_container{
-    min-height: 100vh;
+    min-height: 100px;
     min-width: auto;
     overflow: hidden;
-    padding-bottom: 150px;
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+    margin-bottom: auto;
 }
 
-.conteudo_home{
-    margin-left: 60px;
-    display: flex;
+.conteudo{
+    display: inline-block;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: right;
+    justify-content: center;
+    align-content: center;
     background-color: none;
-    height: 1050px;
+    height: 1250px;
+    padding: 25px min(25px, 50px, 100px);
 }
-.flex{
-    display: flex;
-    justify-content: space-between;
-}
-
 /*--------------------------------Card do texto da história---------------*/
 .card{
     background-color: #2e8a54;
     padding: 30px;
     border-radius: 15px;
+    flex-direction: column;
 }
 /*--------------------------------Div da história-------------------------*/
 .nossa_historia{
     height: 150px;
-    flex-direction: row;
     width: 50%;
+    display:column;
 }
 /*---------------------------------Div da foto----------------------------*/
 .mangueira{
-    display:flex;
-    flex-direction: row;
     width: 50%;
     padding:80px;
+    display:column;
 }
 
 #foto_mangueira{
@@ -81,93 +69,3 @@ html,body{
 }
 
 
-
-/*
-
-                                            Formatação do carrossel de depoimentos
-
-*/
-
-.depoimentos{
-    height: 300px;
-}
-
-#header_depoimentos{
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif ;
-}
-
-.autor{
-    padding-left: 10px;
-    padding-top: 30px;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-}
-
-.frase{
-    text-align: center;
-    font-size: 40px;
-    padding-top: 20px;
-    font-family: 'Roboto', sans-serif;
-}
-
-/*
-
-                                Formatação do rodapé
-
-*/
-
-.footer{
-    background-color: #6FCF97;
-    position:absolute;
-    bottom: 0;
-    width: 100%;
-    left:0px;
-    margin-top: 1000px;
-}
-
-.informacoes,.informacoes_contato{
-    list-style: none;
-}
-
-.link_rodape{
-    color: black;
-    text-decoration: none;
-    text-transform: none;
-}
-
-.link_rodape:hover{
-    color: #000000;
-    font-style:italic;
-}
-
-.informacoes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 0px;
-}
-
-.div_info_contato{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo_rede_social{
-
-    width: 25px;
-    height: 25px;
-    margin: 10px;
-}
-
-#info_doacao{
-    margin-right: 40px;
-    vertical-align: middle;
-}
-
-#localizacao{
-    vertical-align: middle;
-}

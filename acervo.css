@@ -1,248 +1,145 @@
-/*
-                            Formatação geral da página (fonte e imagem de fundo)
-*/
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url("assets/layout_home_1.jpg");
     background-size: cover;
-    background-color: #6FCF97;
+    background-image: url('assets/Desktop\ -\ 4.png');
+    background-color:#F9F1EC;
     height: 100%;
     position: relative;
 }
 
 .main_container{
-    min-height: 100vh;
+    min-height: 100px;
     min-width: auto;
     overflow: hidden;
     display: block;
     position: relative;
     padding-bottom: 100px;
+    margin-bottom: auto;
 }
 
-.conteudo_home{
-    margin-left: 60px;
-    flex-direction: row;
-    justify-content: baseline;
+.conteudo{
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
     align-content: center;
     background-color: none;
     height: 1250px;
+    padding: 25px min(25px, 50px, 100px);
 }
-
-.nossa_historia{
-    height: 150px;
-    padding-top: 30px;
-}
-
-#head_nossa_historia{
-    color: black;
-    text-decoration: none;
-    text-transform: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-}
-
-#head_nossa_historia:hover{
-    color: #000000;
-}
-
-#head_nossa_historia::before{
-    background-color: #444444;
-    position: absolute;
-}
-
-#paragrafo_nossa_historia{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
-
-/*
-                                    Formatação da barra de navegação
-*/
-
-.logo{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    float: left;
-    padding: 10px 0;
-}
-
-.header{
-    background-color: #6FCF97;
-}
-
-header::after{
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.container{
-    width: 100%;
-    margin: 0 auto;
-}
-
-.nav{
-    position: relative;
-    bottom: auto;
-    width: 100%;
-}
-
-#nome{
-    font-size: 22px;
-    margin-left: 18px;
-}
-
-.item_nav{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: inline-block;
-    margin-left: 50px;
-    padding-top: 25px;
-    position: relative;
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.link{
-    color: black;
-    text-decoration: none;
-    text-transform: none;
-}
-
-.link:hover{
-    color: #000000;
-}
-
-.link::before{
-    content: '';
-    display: block;
-    height: 5px;
-    width: 0;
-    background-color: #444444;
-    position: absolute;
-    top: 0;
-}
-
-.link:hover::before{
-    width: 100%;
-}
-
 .h1{
     display:flex;
     justify-content: center;
-    font-size: 50px;
+    align-items:center;
+    font-size: 30px;
 }
 /*
 
                                                 Formatação do carrossel de fotos
 
 */
-
-#link_acervo_carrossel {
-    color: black;
-    text-decoration: none;
-    text-transform: none;
-    font-family: 'Roboto', sans-serif;
-}
-
-#link_acervo_carrossel:hover{
-    color: #000000;
-}
-
 .carousel{
-    position: absolute;
-    height: 400px;
+    background-color: #2E8A54;
+    border-radius: 25px;
+    padding-top: 50px;
+}
+/* Container das fotos */
+.carousel_track_container {
+    position: relative;
     width: 90%;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #2e8a54;
-    padding: 50px;
-    border-radius: 20px;
+    margin-left: 100px;
+    left: 0;
+    padding-top: 20px;
 }
-
-.carousel_image{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.carousel_track_container{
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel_track{
-    list-style: none;
-    position: relative;
-    height: 100%;
-}
-
-.carousel_slide{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
+.titulos{
     display: flex;
-}
+    align-self: center;
+}  
+  /* Slides */
 
-.carousel_button{
+.mySlidesFoto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 24px;
+}
+  
+  /* Botões */
+  .prevFoto, .nextFoto {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     margin-top: -30px;
     padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
-}
-
-.carousel_button--left{
-    left: -30px;
-}
-
-.carousel_button--right{
-    right: -30px;
-}
-
-.carousel_indicator{
-    border: 0;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: #bbb;
+  }
+  
+  /* Position the "next button" to the right */
+  .nextFoto {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prevFoto:hover, .nextFoto:hover {
+    background-color: #2E8A54;
+    opacity: 0.8;
+    color: white;
+  }
+  
+  /* Container dos pontos */
+  .dotFoto-container {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+  }
+  
+  /* Pontos */
+  .dotFoto {
     cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
     transition: background-color 0.6s ease;
-    margin: 0 2px ;
+  }
+  
+  /* Desmarcando pontos não ativados */
+  .active, .dotFoto:hover {
+    background-color: #717171;
+  }
+
+  .carousel{
+    position: absolute;
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.carousel_image{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 75px;
 }
 
 .carousel_nav{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     padding: 10px 0;
     margin: 0 15px;
 }
-
-.carousel_button img{
-    width: 20px;
-    height: 30px;
-    background-color: transparent;
-}
-
-.carousel_indicator.current_slide{
-    background-color: #717171 ;
-}
-
-.is_hidden{
-    display: none;
-}
-
 
 /*
 
