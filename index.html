@@ -40,7 +40,7 @@
     
         <div class="nossa_historia">
             <div>
-                <h1><a href="quem_somos.html" target="_blank" id="head_nossa_historia">Nossa história</a></h1>
+                <h1><a href="quem_somos.html" id="head_nossa_historia">Nossa história</a></h1>
             </div>
 
             <div>
@@ -101,6 +101,14 @@
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
         </div> 
+
+                                    <!--  Call to action  -->
+
+        <h3 class="call_to_action">Quer nos ajudar em nossa missão? Saiba como abaixo!</h3>
+        <div class="botoes_ajuda">
+           <a href="como_ajudar.html"> <button class="projetos"> Clique aqui para conhecer nossos projetos </button> </a>
+           <a href="https://api.whatsapp.com/send?phone=5511993404761&text=Oi, gostaria de colaborar com a AACC Pacajus!"><button class="whatsapp" >Clique aqui para contatar nosso Whatsapp</button> </a> 
+        </div>
         
     
                             <!-- Esqueleto do carrossel de fotos da home -->
@@ -248,38 +256,59 @@
     })
 
     $(document).ready(function(){
+        $('.call_to_action').hide();
+        setTimeout(function(){
+            $('.call_to_action').fadeIn('slow')
+        },1600)
+    })
+
+    $(document).ready(function(){
+        $('.botoes_ajuda').hide();
+        setTimeout(function(){
+            $('.botoes_ajuda').fadeIn('slow')
+        },1600)
+    })
+
+    $(document).ready(function(){
+        $('.botoes_ajuda').hide();
+        setTimeout(function(){
+            $('#link_acervo_carrossel').fadeIn('slow')
+        },1800)
+    })
+
+    $(document).ready(function(){
         $('#link_acervo_carrossel').hide();
         setTimeout(function(){
             $('#link_acervo_carrossel').fadeIn('slow')
-        },1600)
+        },2000)
     })
 
     $(document).ready(function(){
         $('.carousel_image').hide();
         setTimeout(function(){
             $('.carousel_image').fadeIn('slow')
-        },1800)
+        },2200)
     })
 
     $(document).ready(function(){
         $('.dotFoto').hide();
         setTimeout(function(){
             $('.dotFoto').fadeIn('slow')
-        },1800)
+        },2200)
     })
 
     $(document).ready(function(){
         $('.prevFoto').hide();
         setTimeout(function(){
             $('.prevFoto').fadeIn('slow')
-        },1800)
+        },2200)
     })
 
     $(document).ready(function(){
         $('.nextFoto').hide();
         setTimeout(function(){
             $('.nextFoto').fadeIn('slow')
-        },1800)
+        },2200)
     })
 
 </script>

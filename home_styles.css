@@ -17,22 +17,24 @@
 
 body{
     background-image: url('assets/Desktop\ -\ 4.png');
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 .main_container{
     min-height: 100px;
     padding-bottom: 100px;
-
+    background: rgba(255, 255, 255, 0.78);
 }
 
 .conteudo_home{
-    margin-left: 60px;
     display: inline-block;
     flex-direction: row;
     justify-content: baseline;
     align-content: center;
     background-color: none;
-    height: 1250px;
+    height: 1600px;
     margin-bottom: 20px;
     margin-top: 100px;
     min-height: 60%;
@@ -41,7 +43,7 @@ body{
 .nossa_historia{
     height: 150px;
     padding-top: 30px;
-    width: 88%;
+    width: 100%;
     padding-bottom: 30px;
     display: inline-block;
 }
@@ -167,6 +169,41 @@ body{
 
 /*
 
+                                    Formatação área call to action
+
+*/
+
+.call_to_action{
+    font-size: 40px;
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.projetos,.whatsapp{
+    background-color: #196712;
+    color: white;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.projetos:hover,.whatsapp:hover{
+    background-color: white;
+    color:#196712;
+    transition: 0.3s;
+}
+
+.botoes_ajuda{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*
+
                                                 Formatação do carrossel de fotos
 
 */
@@ -281,6 +318,8 @@ body{
     padding: 10px 0;
     margin: 0 15px;
 }
+
+
 
 /*
 
@@ -498,7 +537,7 @@ body{
         position: absolute;
         bottom: 0;
         width: 100%;
-        font-size: 15px;
+        color: #FAF1ED;
     }
     
     .informacoes,.informacoes_contato{
@@ -849,20 +888,68 @@ body{
 
     /* Formatações do footer */
     
-    .logo_rede_social{
-
-        width: 12px;
-        height: 12px;
-        margin: 5px;
+    .footer{
+        background-color:  #196712;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        color: #FAF1ED;
+        flex-shrink: 0;
     }
-
+    
     .informacoes,.informacoes_contato{
         list-style: none;
-        font-size: 10px;
     }
-
+    
+    .link_rodape{
+        color: #FAF1ED;
+        text-decoration: underline;
+        text-transform: none;
+    }
+    
+    .link_rodape:hover{
+        background-color: #FAF1ED;
+        text-decoration: none;
+        font-style:italic;
+        color: #196712;
+    }
+    
+    .informacoes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0px;
+    }
+    
+    .div_info_contato{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo_rede_social{
+        color: #FAF1ED;
+        width: 25px;
+        height: 25px;
+        margin: 10px;
+    }
+    
+    #info_doacao{
+        margin-right: 40px;
+    }
+    
+    #localizacao{
+        vertical-align: middle;
+    }
+    
+    .redes_sociais{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 50%;
+    }
+    
 }
-
-
 
 
