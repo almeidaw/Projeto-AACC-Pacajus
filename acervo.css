@@ -8,16 +8,6 @@ body{
     position: relative;
 }
 
-/*.main_container{
-    min-height: 100px;
-    min-width: auto;
-    overflow: hidden;
-    display: block;
-    position: relative;
-    padding-bottom: 100px;
-    margin-bottom: auto;
-}*/
-
 .conteudo{
     padding: 25px min(25px, 50px, 100px);
 }
@@ -91,10 +81,15 @@ img{
     font-size:15px;
     cursor: pointer;
   }
-  
+  #vejamais{
+    background-color: #196712;
+    color: white;
+    text-decoration: none;
+  }
   /* Add a grey background color on mouse-over */
   .btn:hover {
     background-color: #2E8A54;
+    text-decoration: none;
   }
   
   /* Add a dark background color to the active button */
