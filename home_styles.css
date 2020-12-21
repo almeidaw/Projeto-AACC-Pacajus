@@ -317,6 +317,9 @@ body{
     margin: 0 15px;
 }
 
+.fotos{
+    display: none;
+}
 
 
 /*
@@ -341,6 +344,10 @@ body{
                                             Formatações gerais  
     */
 
+    body{
+        background: blue;
+    }
+
     .item_nav{
         margin-right: -30px;
     }
@@ -348,6 +355,10 @@ body{
     .nav{
         display: inline-block;
         position: absolute;
+    }
+
+    .conteudo_home{
+        height: 2150px;
     }
 
                                             /* Formatação carrossel de frases*/
@@ -379,8 +390,43 @@ body{
     
                                             /* Carrossel de fotos */
 
-     .carousel{
+     .carousel_track_container,.dot-container{
         display: none;
+    }
+
+    .prevFoto,.nextFoto{
+        font-size: 0px;
+    }
+
+    .prevFoto:hover,.nextFoto:hover{
+        background-color: transparent;
+        color: transparent;
+        cursor:none;
+    }
+
+    .fotos{
+        display: flex;
+        background-color: #196712;
+        color: white;
+        border-radius: 10px;
+        font-size: 25px;
+        padding: 10px 10px 10px 10px;
+        cursor: pointer;
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 100px;
+        margin-left: 25%;
+    }
+
+    .fotos:hover{
+        background-color: white;
+        color:#196712;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    .link_fotos{
+        text-decoration: none;
     }
 
                                                 /* Footer */
@@ -431,13 +477,17 @@ body{
 @media screen and (max-width: 500px){
 
                                     /*   Formatações gerais  */
+
+    body{
+        background: lightcoral;
+    }
    .nav{
        position:absolute;
        display: inline-block;
    }
 
    .conteudo_home{
-       height: 1200px;
+       height: 2200px;
    }
 
 
@@ -448,18 +498,18 @@ body{
     }
 
     #paragrafo_nossa_historia{
-        font-size: 14px;
-        margin-right: 10px;
+        font-size: 20px;
+        margin-right: 15px;
     }
 
                                          /* Carossel de frases */
 
     #h2_depoimentos{
-        font-size: 22px;
+        font-size: 26px;
     }
 
     .frase,.author{
-        font-size: 12px;
+        font-size: 20px;
     }
 
     .dot{
@@ -479,20 +529,60 @@ body{
 
     
     .call_to_action{
-        font-size: 18px;
+        font-size: 26px;
     }
 
     .projetos,.whatsapp{
-        font-size: 14px;
+        font-size: 18px;
         padding: 5px;
         margin-right: 20px;
     }
 
                                                 /* Carrossel de fotos */
 
-    .carousel{
+    .carousel_track_container,.dot-container{
         display: none;
     }
+                                            
+    .prevFoto,.nextFoto{
+        display: none;
+    }
+                                            
+    .prevFoto:hover,.nextFoto:hover{
+        display: none;
+    }
+                                            
+    .fotos{
+        display: flex;
+        background-color: #196712;
+        color: white;
+        border-radius: 10px;
+        font-size: 25px;
+        padding: 10px 10px 10px 10px;
+        cursor: pointer;
+        font-family: sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 170px;
+    }
+                                            
+    .fotos:hover{
+        background-color: white;
+        color:#196712;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+                                            
+    .link_fotos{
+        text-decoration: none;
+    }
+
+    .h3{
+        font-size: 26px;
+    }
+                                            
 
 
                                                 /* Footer */

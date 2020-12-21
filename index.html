@@ -142,6 +142,8 @@
 
                                     <!-- Carrossel com as fotos -->
 
+            <a href="acervo.html" class="link_fotos"><button class="fotos">Veja nosso acervo de fotos!</button></a>
+
             <div class="carousel_track_container">
                 <div class="carousel_track">
                     <div class="mySlidesFoto">
@@ -291,11 +293,12 @@
         },1600)
     })
 
+
     $(document).ready(function(){
-        $('.botoes_ajuda').hide();
+        $('.fotos').hide();
         setTimeout(function(){
-            $('#link_acervo_carrossel').fadeIn('slow')
-        },1800)
+            $('.fotos').fadeIn('slow')
+        },2000)
     })
 
     $(document).ready(function(){
