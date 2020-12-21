@@ -341,12 +341,8 @@ body{
                                             Formatações gerais  
     */
 
-    body{
-        background-color: blue;
-    }
-
     .item_nav{
-        font-size: 6px;
+        margin-right: -30px;
     }
 
     .nav{
@@ -362,6 +358,23 @@ body{
                                          
     .prev,.next{
         margin-right: 50px;
+    }
+
+    #h2_depoimentos{
+        margin-right: 18px;
+    }
+
+                                            /* Call to action */
+
+    .projetos,.whatsapp{
+        font-size: 25px;
+        padding: 5px;
+        margin-right: 20px;
+    }
+
+    .call_to_action{
+        margin-right: 20px;
+        margin-bottom: 50px;
     }
     
                                             /* Carrossel de fotos */
@@ -427,20 +440,22 @@ body{
        height: 1200px;
    }
 
+
                                     /* Formatações nossa história */
 
     #head_nossa_historia{
-        font-size: 16px;
+        font-size: 26px;
     }
 
     #paragrafo_nossa_historia{
         font-size: 14px;
+        margin-right: 10px;
     }
 
                                          /* Carossel de frases */
 
     #h2_depoimentos{
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .frase,.author{
