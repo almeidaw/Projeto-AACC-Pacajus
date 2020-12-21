@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -31,62 +32,740 @@
     
     <div class="conteudo">
         <h1 class = "h1">Acervo de Fotos!</h1>
-            <!-- Esqueleto do carrossel de fotos do acervo -->
-
-        <div class="carousel">
-                                        <!-- Carrossel com as fotos -->
-    
-            <div class="carousel_track_container">
-                <div class="carousel_track">
-                    <div class="mySlidesFoto">
-                        <h3>Natal 2019</h3>
-                        <img class = "carousel_image" src="assets/foto_carrossel_1.jpg" alt="" >
-                        <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
-                        <img class = "carousel_image" src="assets/foto_carrossel_3.jpg" alt="" >
-                    </div>
-                    <div class="mySlidesFoto">
-                        <h3>Festa Junina 2018</h3>
-                        <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="" >
-                        <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
-                        <img class = "carousel_image" src="assets/foto_carrossel_5.jpg" alt="" >
-                    </div>
-                    <div class="mySlidesFoto">
-                        <h3>Festa Junina 2018</h3>
-                        <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
-                        <img class = "carousel_image" src="assets/foto_carrossel_8.jpg" alt="" >
-                        <img class = "carousel_image" src="assets/foto_carrossel_9.jpg" alt="" >
-                    </div>
-                    <div class="mySlidesFoto">
-                            <h3>Páscoa 2018</h3>
-                            <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
-                            <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="" >
-                            <img class = "carousel_image" src="assets/foto_carrossel_9.jpg" alt="" >
-                        </div>
-                        <div class="mySlidesFoto">
-                            <h3>Dia das Crianças 2019</h3>
-                            <img class = "carousel_image" src="assets/foto_carrossel_4.jpg" alt="" >
-                            <img class = "carousel_image" src="assets/foto_carrossel_7.jpg" alt="" >
-                            <img class = "carousel_image" src="assets/foto_carrossel_6.jpg" alt="" >
-                        </div>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Mostrar todas</button>
+            <button class="btn" onclick="filterSelection('aulas2018')"> Aulas - 2018</button>
+            <button class="btn" onclick="filterSelection('aulas2019')"> Aulas - 2019</button>
+            <button class="btn" onclick="filterSelection('aulas2020')"> Aulas - 2020</button>
+            <button class="btn" onclick="filterSelection('assembleia2018')"> Assembleia Geral - 2018</button>
+            <button class="btn" onclick="filterSelection('assembleia2019')"> Assembleia Geral - 2019</button>
+            <buttton id ="vejamais" class="btn"><a id="vejamais" href="https://www.facebook.com/aaccpacajus" target="_blank">Veja Mais!</a></buttton>
+          </div>
+          
+          <!-- Grid do Acervo -->
+          <div class="row">
+            <div class="column assembleia2018">
+              <div class="content">
+                <img src="/assets/acervo/assembleias/2018/assembleia-2018.jpg" alt="Assembleia 2018">
+                <h4>Assembleia Geral - Novembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column assembleia2018">
+              <div class="content">
+                <img src="/assets/acervo/assembleias/2018/assembleia2-2018.jpg" alt="Assembleia 2018">
+                <h4>Assembleia Geral - Novembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column assembleia2018">
+              <div class="content">
+                <img src="/assets/acervo/assembleias/2018/assembleia3-2018.jpg" alt="Assembleia 2018">
+                <h4>Assembleia Geral - Novembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column assembleia2018">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2018/assembleia4-2018.jpg" alt="Assembleia 2018">
+                  <h4>Assembleia Geral - Novembro de 2018</h4>
                 </div>
             </div>
-    
-                                                <!-- Botões-->
-    
-                <a class="prevFoto" onclick="plusSlidesFoto(-1)">&#10096;</a>
-                <a class="nextFoto" onclick="plusSlidesFoto(1)">&#10097;</a>
-    
-    
-                                        <!-- Pontos indicadores-->
-                                        
-                <div class="dotFoto-container">
-                    <span class="dotFoto" onclick="currentSlideFoto(1)"></span>
-                    <span class="dotFoto" onclick="currentSlideFoto(2)"></span>
-                    <span class="dotFoto" onclick="currentSlideFoto(3)"></span>
-                    <span class="dotFoto" onclick="currentSlideFoto(4)"></span>
-                    <span class="dotFoto" onclick="currentSlideFoto(5)"></span>
+            <div class="column assembleia2018">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2018/assembleia5-2018.jpg" alt="Assembleia 2018">
+                  <h4>Assembleia Geral - Novembro de 2018</h4>
                 </div>
-        </div>
+            </div>
+            <div class="column assembleia2018">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2018/assembleia6-2018.jpg" alt="Assembleia 2018">
+                  <h4>Assembleia Geral - Novembro de 2018</h4>
+                </div>
+            </div>
+            <div class="column assembleia2018">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2018/assembleia7-2018.jpg" alt="Assembleia 2018">
+                  <h4>Assembleia Geral - Novembro de 2018</h4>
+                </div>
+            </div>
+            <div class="column assembleia2018">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2018/assembleia8-2018.jpg" alt="Assembleia 2018">
+                  <h4>Assembleia Geral - Novembro de 2018</h4>
+                </div>
+            </div>
+            <div class="column assembleia2018">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2018/assembleia9-2018.jpg" alt="Assembleia 2018">
+                  <h4>Assembleia Geral - Novembro de 2018</h4>
+                </div>
+            </div>
+            <div class="column assembleia2019">
+              <div class="content">
+                <img src="/assets/acervo/assembleias/2019/assembleia-2019.jpg" alt="Assembleia Geral - Janeiro de 2019">
+                  <h4>Assembleia Geral - Janeiro de 2019</h4>
+              </div>
+            </div>
+            <div class="column assembleia2019">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2019/assembleia2-2019.jpg" alt="Assembleia Geral - Janeiro de 2019">
+                    <h4>Assembleia Geral - Janeiro de 2019</h4>
+                </div>
+              </div>
+              <div class="column assembleia2019">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2019/assembleia3-2019.jpg" alt="Assembleia Geral - Janeiro de 2019">
+                    <h4>Assembleia Geral - Janeiro de 2019</h4>
+                </div>
+              </div>
+              <div class="column assembleia2019">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2019/assembleia4-2019.jpg" alt="Assembleia Geral - Janeiro de 2019">
+                    <h4>Assembleia Geral - Janeiro de 2019</h4>
+                </div>
+              </div>
+              <div class="column assembleia2019">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2019/assembleia5-2019.jpg" alt="Assembleia Geral - Janeiro de 2019">
+                    <h4>Assembleia Geral - Janeiro de 2019</h4>
+                </div>
+              </div>
+              <div class="column assembleia2019">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2019/assembleia6-2019.jpg" alt="Assembleia Geral - Janeiro de 2019">
+                    <h4>Assembleia Geral - Janeiro de 2019</h4>
+                </div>
+              </div>
+              <div class="column assembleia2019">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2019/assembleia-fev-2019.jpg" alt="Assembleia Geral - Fevereiro de 2019">
+                    <h4>Assembleia Geral - Fevereiro de 2019</h4>
+                </div>
+              </div>
+              <div class="column assembleia2019">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2019/assembleia2-fev-2019.jpg" alt="Assembleia Geral - Fevereiro de 2019">
+                    <h4>Assembleia Geral - Fevereiro de 2019</h4>
+                </div>
+              </div>
+              <div class="column assembleia2019">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2019/assembleia3-fev-2019.jpg" alt="Assembleia Geral - Fevereiro de 2019">
+                    <h4>Assembleia Geral - Fevereiro de 2019</h4>
+                </div>
+              </div>
+              <div class="column assembleia2019">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2019/assembleia4-fev-2019.jpg" alt="Assembleia Geral - Fevereiro de 2019">
+                    <h4>Assembleia Geral - Fevereiro de 2019</h4>
+                </div>
+              </div>
+              <div class="column assembleia2019">
+                <div class="content">
+                  <img src="/assets/acervo/assembleias/2019/assembleia5-fev-2019.jpg" alt="Assembleia Geral - Fevereiro de 2019">
+                    <h4>Assembleia Geral - Fevereiro de 2019</h4>
+                </div>
+              </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas14-abril-2018.jpg" alt="Aulas - Abril de 2018">
+                <h4>Aulas - Abril de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas15-abril-2018.jpg" alt="Aulas - Abril de 2018">
+                <h4>Aulas - Abril de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas22-abril-2018.jpg" alt="Aulas - Abril de 2018">
+                <h4>Aulas - Abril de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas23-abril-2018.jpg" alt="Aulas - Abril de 2018">
+                <h4>Aulas - Abril de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas24-abril-2018.jpg" alt="Aulas - Abril de 2018">
+                <h4>Aulas - Abril de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas25-abril-2018.jpg" alt="Aulas - Abril de 2018">
+                <h4>Aulas - Abril de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas26-abril-2018.jpg" alt="Aulas - Abril de 2018">
+                <h4>Aulas - Abril de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas27-abril-2018.jpg" alt="Aulas - Abril de 2018">
+                <h4>Aulas - Abril de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas28-abril-2018.jpg" alt="Aulas - Abril de 2018">
+                <h4>Aulas - Abril de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas29-abril-2018.jpg" alt="Aulas - Abril de 2018">
+                <h4>Aulas - Abril de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas30-abril-2018.jpg" alt="Aulas - Abril de 2018">
+                <h4>Aulas - Abril de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas-julho-2018.jpg" alt="Aulas - Julho de 2018">
+                <h4>Aulas - Julho de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas2-julho-2018.jpg" alt="Aulas - Julho de 2018">
+                <h4>Aulas - Julho de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas-agosto-2018.jpg" alt="Aulas - Agosto de 2018">
+                <h4>Aulas - Agosto de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas2-agosto-2018.jpg" alt="Aulas - Agosto de 2018">
+                <h4>Aulas - Agosto de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas3-agosto-2018.jpg" alt="Aulas - Agosto de 2018">
+                <h4>Aulas - Agosto de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas4-agosto-2018.jpg" alt="Aulas - Agosto de 2018">
+                <h4>Aulas - Agosto de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas5-agosto-2018.jpg" alt="Aulas - Agosto de 2018">
+                <h4>Aulas - Agosto de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas18-agosto-2018.jpg" alt="Aulas - Agosto de 2018">
+                <h4>Aulas - Agosto de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas19-agosto-2018.jpg" alt="Aulas - Agosto de 2018">
+                <h4>Aulas - Agosto de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas12-agosto-2018.jpg" alt="Aulas - Agosto de 2018">
+                <h4>Aulas - Agosto de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas13-agosto-2018.jpg" alt="Aulas - Agosto de 2018">
+                <h4>Aulas - Agosto de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas14-agosto-2018.jpg" alt="Aulas - Agosto de 2018">
+                <h4>Aulas - Agosto de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas20-agosto-2018.jpg" alt="Aulas - Agosto de 2018">
+                <h4>Aulas - Agosto de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas29-agosto-2018.jpg" alt="Aulas - Agosto de 2018">
+                <h4>Aulas - Agosto de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas30-agosto-2018.jpg" alt="Aulas - Agosto de 2018">
+                <h4>Aulas - Agosto de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas-set-2018.jpg" alt="Aulas - Setembro de 2018">
+                <h4>Aulas - Setembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas2-set-2018.jpg" alt="Aulas - Setembro de 2018">
+                <h4>Aulas - Setembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas3-set-2018.jpg" alt="Aulas - Setembro de 2018">
+                <h4>Aulas - Setembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas4-set-2018.jpg" alt="Aulas - Setembro de 2018">
+                <h4>Aulas - Setembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aulas5-set-2018.jpg" alt="Aulas - Setembro de 2018">
+                <h4>Aulas - Setembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula6-set-2018.jpg" alt="Aulas - Setembro de 2018">
+                <h4>Aulas - Setembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula7-set-2018.jpg" alt="Aulas - Setembro de 2018">
+                <h4>Aulas - Setembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula8-set-2018.jpg" alt="Aulas - Setembro de 2018">
+                <h4>Aulas - Setembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula9-set-2018.jpg" alt="Aulas - Setembro de 2018">
+                <h4>Aulas - Setembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula10-set-2018.jpg" alt="Aulas - Setembro de 2018">
+                <h4>Aulas - Setembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula11-set-2018.jpg" alt="Aulas - Setembro de 2018">
+                <h4>Aulas - Setembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula12-set-2018.jpg" alt="Aulas - Setembro de 2018">
+                <h4>Aulas - Setembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula13-set-2018.jpg" alt="Aulas - Setembro de 2018">
+                <h4>Aulas - Setembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula14-set-2018.jpg" alt="Aulas - Setembro de 2018">
+                <h4>Aulas - Setembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula15-set-2018.jpg" alt="Aulas - Setembro de 2018">
+                <h4>Aulas - Setembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula-out-2018.jpg" alt="Aulas - Outubro de 2018">
+                <h4>Aulas - Outubro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula2-out-2018.jpg" alt="Aulas - Outubro de 2018">
+                <h4>Aulas - Outubro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula3-out-2018.jpg" alt="Aulas - Outubro de 2018">
+                <h4>Aulas - Outubro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula4-out-2018.jpg" alt="Aulas - Outubro de 2018">
+                <h4>Aulas - Outubro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula5-out-2018.jpg" alt="Aulas - Outubro de 2018">
+                <h4>Aulas - Outubro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula6-out-2018.jpg" alt="Aulas - Outubro de 2018">
+                <h4>Aulas - Outubro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula7-out-2018.jpg" alt="Aulas - Outubro de 2018">
+                <h4>Aulas - Outubro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula8-out-2018.jpg" alt="Aulas - Outubro de 2018">
+                <h4>Aulas - Outubro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula-nov-2018.jpg" alt="Aulas - Novembro de 2018">
+                <h4>Aulas - Novembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula2-nov-2018.jpg" alt="Aulas - Novembro de 2018">
+                <h4>Aulas - Novembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula3-nov-2018.jpg" alt="Aulas - Novembro de 2018">
+                <h4>Aulas - Novembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula4-nov-2018.jpg" alt="Aulas - Novembro de 2018">
+                <h4>Aulas - Novembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula-dez-2018.jpg" alt="Aulas - Dezembro de 2018">
+                <h4>Aulas - Dezembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2018">
+              <div class="content">
+                <img src="assets/acervo/aulas/2018/aula2-dez-2018.jpg" alt="Aulas - Dezembro de 2018">
+                <h4>Aulas - Dezembro de 2018</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula-fev-2019.jpg" alt="Aulas - Fevereiro de 2019" >
+                <h4>Aulas - Fevereiro de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula-mar-2019.jpg" alt="Aulas - Março de 2019" >
+                <h4>Aulas - Março de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula2-mar-2019.jpg" alt="Aulas - Março de 2019" >
+                <h4>Aulas - Março de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula3-mar-2019.jpg" alt="Aulas - Março de 2019" >
+                <h4>Aulas - Março de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula-abril-2019.jpg" alt="Aulas - Abril de 2019" >
+                <h4>Aulas - Abril de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula2-abril-2019.jpg" alt="Aulas - Abril de 2019" >
+                <h4>Aulas - Abril de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula3-abril-2019.jpg" alt="Aulas - Abril de 2019" >
+                <h4>Aulas - Abril de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula4-abril-2019.jpg" alt="Aulas - Abril de 2019" >
+                <h4>Aulas - Abril de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula5-abril-2019.jpg" alt="Aulas - Abril de 2019" >
+                <h4>Aulas - Abril de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula6-abril-2019.jpg" alt="Aulas - Abril de 2019" >
+                <h4>Aulas - Abril de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula7-abril-2019.jpg" alt="Aulas - Abril de 2019" >
+                <h4>Aulas - Abril de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula8-abril-2019.jpg" alt="Aulas - Abril de 2019" >
+                <h4>Aulas - Abril de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula9-abril-2019.jpg" alt="Aulas - Abril de 2019" >
+                <h4>Aulas - Abril de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula10-abril-2019.jpg" alt="Aulas - Abril de 2019" >
+                <h4>Aulas - Abril de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula11-abril-2019.jpg" alt="Aulas - Abril de 2019" >
+                <h4>Aulas - Abril de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula12-abril-2019.jpg" alt="Aulas - Abril de 2019" >
+                <h4>Aulas - Abril de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula-mai-2019.jpg" alt="Aulas - Maio de 2019" >
+                <h4>Aulas - Maio de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula-jun-2019.jpg" alt="Aulas - Junho de 2019" >
+                <h4>Aulas - Junho de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula2-jun-2019.jpg" alt="Aulas - Junho de 2019" >
+                <h4>Aulas - Junho de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula3-jun-2019.jpg" alt="Aulas - Junho de 2019" >
+                <h4>Aulas - Junho de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula4-jun-2019.jpg" alt="Aulas - Junho de 2019" >
+                <h4>Aulas - Junho de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula5-jun-2019.jpg" alt="Aulas - Junho de 2019" >
+                <h4>Aulas - Junho de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula6-jun-2019.jpg" alt="Aulas - Junho de 2019" >
+                <h4>Aulas - Junho de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula-ago-2019.jpg" alt="Aulas - Agosto de 2019" >
+                <h4>Aulas - Agosto de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula2-ago-2019.jpg" alt="Aulas - Agosto de 2019" >
+                <h4>Aulas - Agosto de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula3-ago-2019.jpg" alt="Aulas - Agosto de 2019" >
+                <h4>Aulas - Agosto de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula4-ago-2019.jpg" alt="Aulas - Agosto de 2019" >
+                <h4>Aulas - Agosto de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula5-ago-2019.jpg" alt="Aulas - Agosto de 2019" >
+                <h4>Aulas - Agosto de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula6-ago-2019.jpg" alt="Aulas - Agosto de 2019" >
+                <h4>Aulas - Agosto de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula7-ago-2019.jpg" alt="Aulas - Agosto de 2019" >
+                <h4>Aulas - Agosto de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula-out-2019.jpg" alt="Aulas - Outubro de 2019" >
+                <h4>Aulas - Outubro de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2019">
+              <div class="content">
+                <img src="assets/acervo/aulas/2019/aula2-out-2019.jpg" alt="Aulas - Outubro de 2019" >
+                <h4>Aulas - Outubro de 2019</h4>
+              </div>
+            </div>
+            <div class="column aulas2020">
+              <div class="content">
+                <img src="assets/acervo/aulas/2020/aula-fev-2020.jpg" alt="Aulas - Fevereiro de 2020">
+                <h4>Aulas - Fevereiro de 2020</h4>
+              </div>
+            </div>
+            <div class="column aulas2020">
+              <div class="content">
+                <img src="assets/acervo/aulas/2020/aula2-fev-2020.jpg" alt="Aulas - Fevereiro de 2020">
+                <h4>Aulas - Fevereiro de 2020</h4>
+              </div>
+            </div>
+            <div class="column aulas2020">
+              <div class="content">
+                <img src="assets/acervo/aulas/2020/aula3-fev-2020.jpg" alt="Aulas - Fevereiro de 2020">
+                <h4>Aulas - Fevereiro de 2020</h4>
+              </div>
+            </div>
+            <div class="column aulas2020">
+              <div class="content">
+                <img src="assets/acervo/aulas/2020/aula5-fev-2020.jpg" alt="Aulas - Fevereiro de 2020">
+                <h4>Aulas - Fevereiro de 2020</h4>
+              </div>
+            </div>
+            <div class="column aulas2020">
+              <div class="content">
+                <img src="assets/acervo/aulas/2020/aula6-fev-2020.jpg" alt="Aulas - Fevereiro de 2020">
+                <h4>Aulas - Fevereiro de 2020</h4>
+              </div>
+            </div>
+            <div class="column aulas2020">
+              <div class="content">
+                <img src="assets/acervo/aulas/2020/aula7-fev-2020.jpg" alt="Aulas - Fevereiro de 2020">
+                <h4>Aulas - Fevereiro de 2020</h4>
+              </div>
+            </div>
+            <div class="column aulas2020">
+              <div class="content">
+                <img src="assets/acervo/aulas/2020/aula8-fev-2020.jpg" alt="Aulas - Fevereiro de 2020">
+                <h4>Aulas - Fevereiro de 2020</h4>
+              </div>
+            </div>
+            <div class="column aulas2020">
+              <div class="content">
+                <img src="assets/acervo/aulas/2020/aula-mar-2020.jpg" alt="Aulas - Março de 2020">
+                <h4>Aulas - Março de 2020</h4>
+              </div>
+            </div>
+            <div class="column aulas2020">
+              <div class="content">
+                <img src="assets/acervo/aulas/2020/aula2-mar-2020.jpg" alt="Aulas - Março de 2020">
+                <h4>Aulas - Março de 2020</h4>
+              </div>
+            </div>
+            <div class="column aulas2020">
+              <div class="content">
+                <img src="assets/acervo/aulas/2020/aula3-mar-2020.jpg" alt="Aulas - Março de 2020">
+                <h4>Aulas - Março de 2020</h4>
+              </div>
+            </div>
+            <div class="column aulas2020">
+              <div class="content">
+                <img src="assets/acervo/aulas/2020/aula4-mar-2020.jpg" alt="Aulas - Março de 2020">
+                <h4>Aulas - Março de 2020</h4>
+              </div>
+            </div>
+            <div class="column aulas2020">
+              <div class="content">
+                <img src="assets/acervo/aulas/2020/aula5-mar-2020.jpg" alt="Aulas - Março de 2020">
+                <h4>Aulas - Março de 2020</h4>
+              </div>
+            </div>
+            <div class="column aulas2020">
+              <div class="content">
+                <img src="assets/acervo/aulas/2020/aula6-mar-2020.jpg" alt="Aulas - Março de 2020">
+                <h4>Aulas - Março de 2020</h4>
+              </div>
+            </div>
+          <!-- END GRID -->
+          </div>
     </div>
      <!-- Esqueleto do footer-->
 
@@ -124,8 +803,7 @@
     </footer>
 
 </div>
-    <script src = "home_carrossel_fotos.js"></script>
-    <script src="home_carrossel_depoimentos.js"></script>
+    <script src="acervo.js"></script>
     <script src="formatacao_navbar.js"></script>
 <script>
     // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
