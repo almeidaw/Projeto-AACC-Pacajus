@@ -25,7 +25,7 @@ body{
 .main_container{
     min-height: 100px;
     padding-bottom: 100px;
-    background: rgba(255, 255, 255, 0.78);
+    background: rgba(249, 233, 208, 0.78);
 }
 
 .conteudo_home{
@@ -148,10 +148,6 @@ body{
       font-style: italic;
     }
   
-  .author {
-      color: black;
-    } 
-
   #h2_depoimentos{
       font-family: 'Roboto',sans-serif;
       font-size: 40px;
@@ -165,6 +161,7 @@ body{
   .author{
       font-family: 'Roboto',sans-serif;
       font-size: 20px;
+      color: black;
   }
 
 /*
@@ -343,254 +340,65 @@ body{
     /*   
                                             Formatações gerais  
     */
-    
+
     body{
-        background: blue;
-    }
-    
-
-    /* 
-                                        Formatações da barra de navegação 
-    */
-
-    #header{
-        background-color: #2E8A54;
-        /*padding: 0 20px;*/
-        position: relative;
-        overflow: hidden;
-        transition: 0.4s;
-        width: 100%;
-        margin: 0;
-        z-index: 2;
-        top: 0;
-    }
-    
-    .lista_items{
-        position: absolute;
-        right: 0px;
-        height: 150vh;
-        top: 20vh;
-        display: flex;
-        flex-direction: column ;
-        color: red;
-        margin: auto;
+        background-color: blue;
     }
 
-    .nav {
-        position: relative;
-        margin: auto;
+    .item_nav{
+        font-size: 6px;
     }
 
-    .burger{
-        margin: auto;
-        width:16px;
-        height: auto;
-        display: auto;
-    }
-    
-
-    /* 
-                                            Formatações nossa história 
-    */
-
-    
-    /* 
-                                        Formatações do carrrosel de depoimentos 
-    */
-
-
-  #h2_depoimentos{
-      font-family: 'Roboto',sans-serif;
-      font-size: 30px;
-  }
-
-  .frase{
-      font-family: 'Roboto',sans-serif;
-      font-size: 30px;
-  }
-
-  .author{
-      font-family: 'Roboto',sans-serif;
-      font-size: 20px;
-  }
-
-    /* 
-                                            Formatações do carrossel de fotos 
-    */
-
-    .h3{
-        font-family: 'Roboto', sans-serif;
-        font-size: 30px;
-    }
-    
-    #link_acervo_carrossel {
-        color: black;
-        text-decoration: none;
-        text-transform: none;
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    #link_acervo_carrossel:hover{
-        color: #2E8A54;
-    }
-    
-    /* Container das fotos */
-    .carousel_track_container {
-        position: relative;
-        width: 90%;
-        margin-left: 50px;
-        left: 0;
-        padding-top: 20px;
-      }
-      
-      /* Slides */
-    
-    .mySlidesFoto{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 24px;
-    }
-      
-      /* Botões */
-      .prevFoto, .nextFoto {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        margin-top: -30px;
-        padding: 16px;
-        color: #888;
-        font-weight: bold;
-        font-size: 20px;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-      }
-      
-      /* Position the "next button" to the right */
-      .nextFoto {
-        position: absolute;
-        right: 0;
-        border-radius: 3px 0 0 3px;
-      }
-      
-      /* On hover, add a black background color with a little bit see-through */
-      .prevFoto:hover, .nextFoto:hover {
-        background-color: #2E8A54;
-        opacity: 0.8;
-        color: white;
-      }
-      
-      /* Container dos pontos */
-      .dotFoto-container {
-        text-align: center;
-        padding: 20px;
-        background-color: transparent;
-      }
-      
-      /* Pontos */
-      .dotFoto {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
+    .nav{
         display: inline-block;
-        transition: background-color 0.6s ease;
-      }
-      
-      /* Desmarcando pontos não ativados */
-      .active, .dotFoto:hover {
-        background-color: #717171;
-      }
-    
-      .carousel{
         position: absolute;
-        height: 400px;
-        width: 90%;
-        margin: 0 auto;
-        padding: 10px;
-    }
-    
-    .carousel_image{
-        width: 110px;
-        height: 110px;
-        object-fit: cover;
-        margin-left: 45px;
-    }
-    
-    .carousel_nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 10px 0;
-        margin: 0 15px;
     }
 
-    /* 
-                                            Formatações do footer 
-    */
+                                            /* Formatação carrossel de frases*/
 
-    .footer{
-        background-color:  #196712;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        color: #FAF1ED;
+    .mySlides{
+        margin-right: 50px;
+    }
+                                         
+    .prev,.next{
+        margin-right: 50px;
     }
     
-    .informacoes,.informacoes_contato{
-        list-style: none;
+                                            /* Carrossel de fotos */
+
+     .carousel{
+        display: none;
+    }
+
+                                                /* Footer */
+
+    .icones_redes_sociais{
+        padding: 8px 8px;
     }
     
-    .link_rodape{
-        color: black;
-        text-decoration: none;
-        text-transform: none;
+    .header_redes{
+        font-size: 16px;
     }
-    
-    .link_rodape:hover{
-        color:white;
-        font-style:italic;
-    }
-    
-    .informacoes{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-left: 0px;
-    }
-    
-    .div_info_contato{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
+
     .logo_rede_social{
-    
         width: 20px;
         height: 20px;
-        margin: 10px;
+        margin: 5px;
+        padding-top: 5px;
     }
-    
-    #info_doacao{
-        margin-right: 20px;
+
+    .informacoes_contato{
+        font-size: 16px;
     }
-    
+
     #localizacao{
-        vertical-align: middle;
+        font-size: 16px;
     }
-    
-    .redes_sociais{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        top: 50%;
+
+    #doacao{
+        font-size: 16px;
     }
+
 }
 
 /*
@@ -609,348 +417,97 @@ body{
 
 @media screen and (max-width: 500px){
 
-    /*   Formatações gerais  */
-    
-    body{
-        background: violet;
+                                    /*   Formatações gerais  */
+   .nav{
+       position:absolute;
+       display: inline-block;
+   }
+
+   .conteudo_home{
+       height: 1200px;
+   }
+
+                                    /* Formatações nossa história */
+
+    #head_nossa_historia{
+        font-size: 16px;
     }
 
-    .conteudo_home{
-        height: 1250px;
+    #paragrafo_nossa_historia{
+        font-size: 14px;
     }
 
-    .main_container{
-        min-height: 100px;
-        min-width: auto;
-        overflow: hidden;
-        display: block;
-        position: relative;
-        padding-bottom: 100px;
-        margin-bottom: auto;
-    }
-    
-    .conteudo_home{
-        margin-left: 60px;
-        display: inline-block;
-        flex-direction: row;
-        justify-content: baseline;
-        align-content: center;
-        background-color: none;
-        height: 1250px;
-        margin-bottom: 20px;
-        margin-top: 100px;
-        min-height: 60%;
+                                         /* Carossel de frases */
+
+    #h2_depoimentos{
+        font-size: 18px;
     }
 
-    /* Formatações da barra de navegação */
+    .frase,.author{
+        font-size: 12px;
+    }
 
-    #header{
-        background-color: #2E8A54;
-        /*padding: 0 20px;*/
-        position: fixed;
-        overflow: hidden;
-        transition: 0.4s;
-        width: 100%;
-        margin: 0;
-        z-index: 99;
-        top: 0;
+    .dot{
+        width: 8px;
+        height: 8px;
     }
     
-    #header::after{
-        content: '';
-        display: table;
-        clear: both; 
+    .mySlides{
+       margin-right: 50px;
     }
-    
-    #logo_nome {
-        position: relative;
-        bottom: auto;
-        float: left;
+
+    .prev,.next{
+        margin-right: 50px;
     }
+
+                                                /* Call to action */
+
     
-    #logo {
-        width: 80px;
-        height: 100%;
-        border-radius: 50%;
-        float: left;
-        transition: 0.4s;
-        display: inline;
-        margin: 10px;
-        position: relative;
+    .call_to_action{
+        font-size: 18px;
     }
-    
-    #nome {
-        color: #000;
-        font-size: 22px;
-        margin-left: 18px;
-        transition: 0.4s;
-        display: inline;
-        position: relative;
-        float: right;
-        padding: 37.5px 0;
-        text-decoration: none;
-        text-transform: none;
+
+    .projetos,.whatsapp{
+        font-size: 14px;
+        padding: 5px;
+        margin-right: 20px;
     }
-    
-    .nav {
-        position: relative;
-        bottom: auto;
-        float: right;
-    }
-    
-    .nav ul {
-        margin: 0;
-        padding: 0;
-    }
-    
-    .icon{
+
+                                                /* Carrossel de fotos */
+
+    .carousel{
         display: none;
     }
-    
-    .item_nav{
-        list-style: none;
-        display: inline-block;
-        position: relative;
-        font-size: 18px;
-        transition: 0.4s;
-    }
-    
-    .link{
-        color: #000;
-        text-decoration: none;
-        text-transform: none;
-        padding: 39.5px 25px;
-        transition: 0.4s;
-        display: inline-block;
-    }
-    
-    #header a:hover{
-        color: #fff;
-    }
-    
-    #header a::before{
-        content: '';
-        display: block;
-        height: 5px;
-        width: 0;
-        background-color: #fff;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: 0.1s;
-    }
-    
-    #header a:hover::before{
-        width: 100%;
-    }
-    
-    /* Formatações nossa história */
-
-    .nossa_historia{
-        height: 150px;
-        padding-top: 30px;
-        width: 88%;
-        padding-bottom: 30px;
-        display: inline-block;
-    }
-    
-    #head_nossa_historia{
-        color: black;
-        text-decoration: none;
-        text-transform: none;
-        font-family: 'Roboto', sans-serif;
-        font-size: 40px;
-    }
-    
-    #head_nossa_historia:hover{
-        color:#2E8A54;
-    }
-    
-    #head_nossa_historia::before{
-        background-color: #444444;
-        position: absolute;
-    }
-    
-    #paragrafo_nossa_historia{
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-    }
-
-    /* Formatações do carrrosel de depoimentos */
 
 
-    /* Container das frases */
- .slideshow-container {
-    position: relative;
-    width: 90%;
-    margin-left: 50px;
-    left: 0;
-  }
-  
-  /* Slides */
-  .mySlides {
-    display: none;
-    padding: 80px;
-    text-align: center;
-  }
-  
-  /* Botões */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: #2E8A54;
-    opacity: 0.8;
-    color: white;
-  }
-  
-  /* Container dos pontos */
-  .dot-container {
-    text-align: center;
-    padding: 20px;
-    background-color: transparent;
-  }
-  
-  /* Pontos */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  /* Desmarcando pontos não ativados */
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fonte itálica */
-  q {
-      font-style: italic;
+                                                /* Footer */
+
+    .icones_redes_sociais{
+        padding: 8px 8px;
     }
-  
-  .author {
-      color: black;
-    } 
-
-  #h2_depoimentos{
-      font-family: 'Roboto',sans-serif;
-      font-size: 30px;
-  }
-
-  .frase{
-      font-family: 'Roboto',sans-serif;
-      font-size: 30px;
-  }
-
-  .author{
-      font-family: 'Roboto',sans-serif;
-      font-size: 20px;
-  }
     
-    /* Formatações do carrossel de fotos */
-
-    .h3{
-        font-family: 'Roboto', sans-serif;
-        font-size: 22px;
-        margin-right: 20px;
+    .header_redes{
+        font-size: 10px;
     }
 
-    .carousel_image{
-        width: 50px;
-        height: 50px ;
-        object-fit: cover;
-        margin-left: 25px;
-        margin-right: 20px;
-    };    
-
-    /* Formatações do footer */
-    
-    .footer{
-        background-color:  #196712;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        color: #FAF1ED;
-        flex-shrink: 0;
-    }
-    
-    .informacoes,.informacoes_contato{
-        list-style: none;
-    }
-    
-    .link_rodape{
-        color: #FAF1ED;
-        text-decoration: underline;
-        text-transform: none;
-    }
-    
-    .link_rodape:hover{
-        background-color: #FAF1ED;
-        text-decoration: none;
-        font-style:italic;
-        color: #196712;
-    }
-    
-    .informacoes{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-left: 0px;
-    }
-    
-    .div_info_contato{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
     .logo_rede_social{
-        color: #FAF1ED;
-        width: 25px;
-        height: 25px;
-        margin: 10px;
+        width: 10px;
+        height: 10px;
+        margin: 5px;
     }
-    
-    #info_doacao{
-        margin-right: 40px;
+
+    .informacoes_contato{
+        font-size: 10px;
     }
-    
+
     #localizacao{
-        vertical-align: middle;
+        font-size: 10px;
     }
-    
-    .redes_sociais{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        top: 50%;
+
+    #doacao{
+        font-size: 10px;
     }
-    
+
 }
 
 
