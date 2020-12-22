@@ -2,7 +2,6 @@
 
     const target = document.querySelector(".target");
     const links = document.querySelectorAll(".mynav a");
-    const colors = ["deepskyblue", "orange", "firebrick", "gold", "magenta", "black", "darkblue"];
   
     function mouseenterFunc() {
       if (!this.parentNode.classList.contains("active")) {
@@ -20,7 +19,6 @@
         const height = this.getBoundingClientRect().height;
         const left = this.getBoundingClientRect().left + window.pageXOffset;
         const top = this.getBoundingClientRect().top + window.pageYOffset;
-        const color = colors[Math.floor(Math.random() * colors.length)];
   
         target.style.width = `${width}px`;
         target.style.height = `${height}px`;

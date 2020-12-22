@@ -49,8 +49,14 @@ body{
 
 #foto_mangueira{
     border-radius: 25px;
-    width: 500px;
-    height: 415px;
+    width: 600px;
+    height: 500px;
+}
+
+#foto_fundadora{
+  border-radius: 25px;
+  width: 450px;
+  height: 550px;
 }
 /*------------------------------Título------------------------------------*/
 h1{
@@ -60,9 +66,15 @@ h1{
 }
 
 #paragrafo_nossa_historia{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color:#F9F1EC;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color:#F9F1EC;
+}
+
+#paragrafo_fundadora{
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  color:#F9F1EC;
 }
 /*         
                                     Formatação Fundadora
