@@ -34,7 +34,7 @@ body{
     justify-content: baseline;
     align-content: center;
     background-color: none;
-    height: 1850px;
+    height: 2000px;
     margin-bottom: 20px;
     margin-top: 100px;
     min-height: 60%;
@@ -46,6 +46,7 @@ body{
     width: 100%;
     padding-bottom: 30px;
     display: inline-block;
+    margin-bottom: 50px;
 }
 
 #head_nossa_historia{
@@ -68,6 +69,8 @@ body{
 #paragrafo_nossa_historia{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    margin-right: 100px;
+    
 }
 /*
 
@@ -237,8 +240,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin-left: 24px;
+    margin-left: 7%;
 }
   
   /* Botões */
@@ -303,21 +305,19 @@ body{
 }
 
 .carousel_image{
-    width: 250px;
-    height: 250px;
+    width: 30%;
+    height: 30%;
     object-fit: cover;
-    margin-left: 75px;
+    display: inline-block;
 }
 
 .carousel_nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10px 0;
-    margin: 0 15px;
 }
 
-.fotos{
+.link_fotos{
     display: none;
 }
 
@@ -344,10 +344,6 @@ body{
                                             Formatações gerais  
     */
 
-    body{
-        background: blue;
-    }
-
     .item_nav{
         margin-right: -30px;
     }
@@ -358,7 +354,7 @@ body{
     }
 
     .conteudo_home{
-        height: 2150px;
+        height: 2250px;
     }
 
                                             /* Formatação carrossel de frases*/
@@ -390,45 +386,34 @@ body{
     
                                             /* Carrossel de fotos */
 
-     .carousel_track_container,.dot-container{
-        display: none;
+    .carousel_track_container,.prevFoto,.nextFoto,.dot-container,.prevFoto:hover,.nextFoto:hover{
+        display: none !important;
     }
 
-    .prevFoto,.nextFoto{
-        font-size: 0px;
-    }
-
-    .prevFoto:hover,.nextFoto:hover{
-        background-color: transparent;
-        color: transparent;
-        cursor:none;
+    .link_fotos{
+        display: block;
+        text-decoration: none;
+        margin-left: 150px;
+        margin-top: 100px;
     }
 
     .fotos{
-        display: flex;
+        display: block;
+        justify-content: center;
         background-color: #196712;
         color: white;
         border-radius: 10px;
         font-size: 25px;
         padding: 10px 10px 10px 10px;
         cursor: pointer;
-        font-family: sans-serif;
-        text-align: center;
-        margin-top: 100px;
-        margin-left: 25%;
+        font-family: sans-serif; 
     }
 
     .fotos:hover{
         background-color: white;
         color:#196712;
         transition: 0.3s;
-        text-decoration: none;
     }
-
-    .link_fotos{
-        text-decoration: none;
-    }
-
                                                 /* Footer */
 
     .icones_redes_sociais{
@@ -477,17 +462,14 @@ body{
 @media screen and (max-width: 500px){
 
                                     /*   Formatações gerais  */
-
-    body{
-        background: lightcoral;
-    }
+    
    .nav{
        position:absolute;
        display: inline-block;
    }
 
    .conteudo_home{
-       height: 2200px;
+       height: 2600px;
    }
 
 
@@ -540,47 +522,39 @@ body{
 
                                                 /* Carrossel de fotos */
 
-    .carousel_track_container,.dot-container{
+    .h3{
+        margin-right: 100px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .carousel_track_container,.prevFoto,.nextFoto,.dot-container,.prevFoto:hover,.nextFoto:hover{
         display: none;
     }
-                                            
-    .prevFoto,.nextFoto{
-        display: none;
+
+    .link_fotos{
+        display: block;
+        text-decoration: none;
+        margin-left: 5px;
+        margin-top: 100px;
     }
-                                            
-    .prevFoto:hover,.nextFoto:hover{
-        display: none;
-    }
-                                            
+
     .fotos{
-        display: flex;
+        display: block;
+        justify-content: center;
         background-color: #196712;
         color: white;
         border-radius: 10px;
         font-size: 25px;
         padding: 10px 10px 10px 10px;
         cursor: pointer;
-        font-family: sans-serif;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-right: 170px;
+        font-family: sans-serif; 
     }
-                                            
+
     .fotos:hover{
         background-color: white;
         color:#196712;
         transition: 0.3s;
-        text-decoration: none;
-    }
-                                            
-    .link_fotos{
-        text-decoration: none;
-    }
-
-    .h3{
-        font-size: 26px;
     }
                                             
 
