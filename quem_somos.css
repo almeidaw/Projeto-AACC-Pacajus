@@ -102,15 +102,38 @@ h2{
     width: 77%;
     margin-left: 10%;
     margin-bottom: 5%;
+    
   }
   
   /* Slides */
   .mySlides {
-    display: none;
     padding: 80px;
-    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
   }
   
+  .depoimentos{
+    border-radius: 25px;
+    width: 450px;
+    height: 550px;
+  }
+
+.paragrafo{
+  display:inline-block;
+  justify-content: space-between;
+  text-align: center;
+  width: 50%;
+  padding:80px;
+}
+
+.foto{
+  display:inline-block;
+    justify-content: space-between;
+    width: 50%;
+    padding:80px;
+}
   /* Botões */
   .prev, .next {
     cursor: pointer;

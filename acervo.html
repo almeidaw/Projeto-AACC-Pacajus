@@ -32,16 +32,40 @@
     
     <div class="conteudo">
         <h1 class = "h1">Acervo de Fotos!</h1>
-        <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> Mostrar todas</button>
-            <button class="btn" onclick="filterSelection('aulas2018')"> Aulas - 2018</button>
-            <button class="btn" onclick="filterSelection('aulas2019')"> Aulas - 2019</button>
-            <button class="btn" onclick="filterSelection('aulas2020')"> Aulas - 2020</button>
-            <button class="btn" onclick="filterSelection('assembleia2018')"> Assembleia Geral - 2018</button>
-            <button class="btn" onclick="filterSelection('assembleia2019')"> Assembleia Geral - 2019</button>
-            <buttton id ="vejamais" class="btn"><a id="vejamais" href="https://www.facebook.com/aaccpacajus" target="_blank">Veja Mais!</a></buttton>
+        <button class="btn active" onclick="filterSelection('all')"> Mostrar todas</button>
+        <div class="dropdown">
+          <div id="myBtnContainer">
+            <button onclick="myFunction()" class="dropbtn">2018</button>
+            <div id="myDropdown" class="dropdown-content">
+                <button class="btn" onclick="filterSelection('aulas2018')"> Aulas - 2018</button>
+                <button class="btn" onclick="filterSelection('assembleia2018')"> Assembleia Geral - 2018</button>
+                <button class="btn" onclick="filterSelection('ser_feliz2018')"> Projeto Ser Feliz - 2018</button>
+              </div>
+            </div>
           </div>
-          
+          <div class="dropdown">
+            <div id="myBtnContainer">
+              <button onclick="myFunction2019()" class="dropbtn">2019</button>
+              <div id="myDropdown2019" class="dropdown-content">
+                <button class="btn" onclick="filterSelection('aulas2019')"> Aulas - 2019</button>
+                <button class="btn" onclick="filterSelection('assembleia2019')"> Assembleia Geral - 2019</button>
+                <button class="btn" onclick="filterSelection('flores2019')"> Projeto Todas as Flores do Mundo - 2019</button>
+                <button class="btn" onclick="filterSelection('viva2019')"> Projeto Viva a Vida - 2019</button>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div id="myBtnContainer">
+              <button onclick="myFunction2020()" class="dropbtn">2020</button>
+              <div id="myDropdown2020" class="dropdown-content">
+                <button class="btn" onclick="filterSelection('aulas2020')"> Aulas - 2020</button>
+                <button class="btn" onclick="filterSelection('flores2020')"> Projeto Todas as Flores do Mundo - 2020</button>
+                <button class="btn" onclick="filterSelection('bloquinho2020')"> Bloquinho da Alegria - 2020</button>
+              </div>
+            </div>
+          </div>
+          <buttton id ="vejamais" class="btn"><a id="vejamais" href="https://www.instagram.com/aaccpacajus/" target="_blank">Veja Mais!</a></buttton>
+      </div>
           <!-- Grid do Acervo -->
           <div class="row">
             <div class="column assembleia2018">
