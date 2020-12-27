@@ -108,10 +108,24 @@ h2{
   /* Slides */
   .mySlides {
     padding: 80px;
-    display:flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    height: auto;
+    max-height: 1100px;
+  }
+
+  .carrossel_quem_somos_depo{
+    width: 30%;
+    height: 30%;
+    margin-bottom: 28%;
+    
+  }
+
+  .carrossel_quem_somos_depo2{
+    width: 30%;
+    height: 30%;
+    margin-bottom: 40%;
   }
   
   .depoimentos{
@@ -121,11 +135,11 @@ h2{
   }
 
 .paragrafo{
-  display:inline-block;
-  justify-content: space-between;
-  text-align: center;
-  width: 50%;
-  padding:80px;
+    display:inline-block;
+    justify-content: space-between;
+    text-align: center;
+    width: 50%;
+    padding:80px;
 }
 
 .foto{
