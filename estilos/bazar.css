@@ -73,3 +73,14 @@ body {
 	display: block;
 	/*width: auto;*/
 }
+
+.h1_bazar{
+	font-size: 20px;
+	font-family: 'Roboto',sans-serif;
+	margin-top: 15%;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.8);
+	padding: 3% 3%;
+}
