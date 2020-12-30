@@ -1,3 +1,7 @@
+body {
+    background-image: url("assets/Desktop - 3.png");
+}
+
 .topo {
     display: flex;
     flex-direction: row;

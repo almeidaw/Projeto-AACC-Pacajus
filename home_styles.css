@@ -1,44 +1,40 @@
 /*
 
-                                                #####################
-                                                Formatação desktop
-                                                #####################
+###############################################################################################################                                               #####################
+                                               
 
+                                                Formatação desktop
+
+
+
+##############################################################################################################                                               #####################
 
 */
-
 
 /*
                             Formatação geral da página (fonte e imagem de fundo)
 */
 
 body{
-    font-family: 'Roboto', sans-serif;
-    background-size: cover;
     background-image: url('assets/Desktop\ -\ 4.png');
-    background-color:#F9F1EC;
+    margin: 0;
+    padding: 0;
     height: 100%;
-    position: relative;
 }
 
 .main_container{
     min-height: 100px;
-    min-width: auto;
-    overflow: hidden;
-    display: block;
-    position: relative;
     padding-bottom: 100px;
-    margin-bottom: auto;
+    background: rgba(249, 233, 208, 0.78);
 }
 
 .conteudo_home{
-    margin-left: 60px;
     display: inline-block;
     flex-direction: row;
     justify-content: baseline;
     align-content: center;
     background-color: none;
-    height: 1250px;
+    height: 2000px;
     margin-bottom: 20px;
     margin-top: 100px;
     min-height: 60%;
@@ -47,9 +43,10 @@ body{
 .nossa_historia{
     height: 150px;
     padding-top: 30px;
-    width: 88%;
+    width: 100%;
     padding-bottom: 30px;
     display: inline-block;
+    margin-bottom: 50px;
 }
 
 #head_nossa_historia{
@@ -72,106 +69,8 @@ body{
 #paragrafo_nossa_historia{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-}
-
-/*
-                                    Formatação da barra de navegação
-*/
-
-#header{
-    background-color: #2E8A54;
-    /*padding: 0 20px;*/
-    position: fixed;
-    overflow: hidden;
-    transition: 0.4s;
-    width: 100%;
-    margin: 0;
-    z-index: 99;
-    top: 0;
-}
-
-#header::after{
-    content: '';
-    display: table;
-    clear: both; 
-}
-
-#logo_nome {
-    position: relative;
-    bottom: auto;
-    float: left;
-}
-
-#logo {
-    width: 80px;
-    height: 100%;
-    border-radius: 50%;
-    float: left;
-    transition: 0.4s;
-    display: inline;
-    margin: 10px;
-    position: relative;
-}
-
-#nome {
-    color: #000;
-    font-size: 22px;
-    margin-left: 18px;
-    transition: 0.4s;
-    display: inline;
-    position: relative;
-    float: right;
-    padding: 37.5px 0;
-    text-decoration: none;
-    text-transform: none;
-}
-
-.nav {
-    position: relative;
-    bottom: auto;
-    float: right;
-}
-
-.nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-.item_nav{
-    list-style: none;
-    display: inline-block;
-    position: relative;
-    font-size: 18px;
-    transition: 0.4s;
-}
-
-.link{
-    color: #000;
-    text-decoration: none;
-    text-transform: none;
-    padding: 39.5px 25px;
-    transition: 0.4s;
-    display: inline-block;
-}
-
-#header a:hover{
-    color: #fff;
-}
-
-#header a::before{
-    content: '';
-    display: block;
-    height: 5px;
-    width: 0;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.1s;
-}
-
-#header a:hover::before{
-    width: 100%;
+    margin-right: 100px;
+    
 }
 /*
 
@@ -252,13 +151,9 @@ body{
       font-style: italic;
     }
   
-  .author {
-      color: black;
-    } 
-
   #h2_depoimentos{
       font-family: 'Roboto',sans-serif;
-      font-size: 30px;
+      font-size: 40px;
   }
 
   .frase{
@@ -269,7 +164,44 @@ body{
   .author{
       font-family: 'Roboto',sans-serif;
       font-size: 20px;
+      color: black;
   }
+
+/*
+
+                                    Formatação área call to action
+
+*/
+
+.call_to_action{
+    font-size: 40px;
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.projetos,.whatsapp{
+    background-color: #196712;
+    color: white;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.projetos:hover,.whatsapp:hover{
+    background-color: white;
+    color:#196712;
+    transition: 0.3s;
+}
+
+.botoes_ajuda{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 /*
 
@@ -279,7 +211,7 @@ body{
 
 .h3{
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 #link_acervo_carrossel {
@@ -308,8 +240,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin-left: 24px;
+    margin-left: 7%;
 }
   
   /* Botões */
@@ -318,7 +249,7 @@ body{
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -30px;
+    margin-top: 40px;
     padding: 16px;
     color: #888;
     font-weight: bold;
@@ -374,300 +305,288 @@ body{
 }
 
 .carousel_image{
-    width: 250px;
-    height: 250px;
+    width: 30%;
+    height: 30%;
     object-fit: cover;
-    margin-left: 75px;
+    display: inline-block;
 }
 
 .carousel_nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10px 0;
-    margin: 0 15px;
-}
-/*
-
-                                Formatação do rodapé
-
-*/
-
-.footer{
-    background-color:  #2E8A54;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
-.informacoes,.informacoes_contato{
-    list-style: none;
+.link_fotos{
+    display: none;
 }
 
-.link_rodape{
-    color: black;
-    text-decoration: none;
-    text-transform: none;
-}
-
-.link_rodape:hover{
-    color:white;
-    font-style:italic;
-}
-
-.informacoes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 0px;
-}
-
-.div_info_contato{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo_rede_social{
-
-    width: 25px;
-    height: 25px;
-    margin: 10px;
-}
-
-#info_doacao{
-    margin-right: 40px;
-}
-
-#localizacao{
-    vertical-align: middle;
-}
-
-.redes_sociais{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    top: 50%;
-}
 
 /*
 
-                                                ########################
-                                                    Formatação tablets
-                                                ########################
+#################################################################################################################                                                ########################
+                                                   
+
+
+                                                Formatação tablets
+
+
+
+
+#################################################################################################################                                                ########################
 
 
 */
 
 @media screen and (max-width: 768px){
     
-    /*   Formatações gerais  */
-    
-    body{
-        background: orangered;
+    /*   
+                                            Formatações gerais  
+    */
+
+    .item_nav{
+        margin-right: -30px;
+    }
+
+    .nav{
+        display: inline-block;
+        position: absolute;
     }
 
     .conteudo_home{
-        height: 1000px;
+        height: 2250px;
     }
 
-    .main_container{
-        width: 100%;
-        height: 100%;
-    };
+                                            /* Formatação carrossel de frases*/
 
-    /* Formatações da barra de navegação */
-
-    nav{
-        position: relative;
+    .mySlides{
+        margin-right: 50px;
     }
-
-    .hamburger{
-        position: absolute;
-        cursor: pointer;
-        right:5%;
-        top: 100%;
-        transform: translate(-5%,-50%);
-        position: fixed;
+                                         
+    .prev,.next{
+        margin-right: 50px;
     }
-
-    .lista_items{
-        position: fixed;
-        background: #2E8A54;
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        width: 100%;
-        display: none;
-    }
-
-    .line{
-        width: 30px;
-        height: 3px;
-        background: white;
-        margin: 3px;
-    }
-
-    /* Formatações nossa história */
-
-    #head_nossa_historia{
-        font-size: 30px;
-    };
-
-    #paragrafo_nossa_historia{
-        font-size: 15px;
-    }
-
-    /* Formatações do carrrosel de depoimentos */
 
     #h2_depoimentos{
-        font-family: 'Roboto',sans-serif;
+        margin-right: 18px;
+    }
+
+                                            /* Call to action */
+
+    .projetos,.whatsapp{
         font-size: 25px;
+        padding: 5px;
         margin-right: 20px;
     }
 
-
-    .slideshow-containter{
+    .call_to_action{
         margin-right: 20px;
+        margin-bottom: 50px;
+    }
+    
+                                            /* Carrossel de fotos */
+
+    .carousel_track_container,.prevFoto,.nextFoto,.dot-container,.prevFoto:hover,.nextFoto:hover{
+        display: none !important;
     }
 
-
-    /* Formatações do carrossel de fotos */
-
-    .h3{
-        font-family: 'Roboto', sans-serif;
-        font-size: 30px;
-        margin-right: 20px;
+    .link_fotos{
+        display: block;
+        text-decoration: none;
+        margin-left: 150px;
+        margin-top: 100px;
     }
 
-    .carousel_image{
-        width: 120px;
-        height: 120px ;
-        object-fit: cover;
-        margin-left: 25px;
-        margin-right: 20px;
-    };
+    .fotos{
+        display: block;
+        justify-content: center;
+        background-color: #196712;
+        color: white;
+        border-radius: 10px;
+        font-size: 25px;
+        padding: 10px 10px 10px 10px;
+        cursor: pointer;
+        font-family: sans-serif; 
+    }
 
-    /* Formatações do footer */
+    .fotos:hover{
+        background-color: white;
+        color:#196712;
+        transition: 0.3s;
+    }
+                                                /* Footer */
+
+    .icones_redes_sociais{
+        padding: 8px 8px;
+    }
+    
+    .header_redes{
+        font-size: 16px;
+    }
 
     .logo_rede_social{
-
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
         margin: 5px;
+        padding-top: 5px;
     }
 
-    .informacoes,.informacoes_contato{
-        list-style: none;
-        font-size: 13px;
+    .informacoes_contato{
+        font-size: 16px;
     }
 
-    .logo_rede_social{
-
-        width: 18px;
-        height: 18px;
-        margin: 10px;
+    #localizacao{
+        font-size: 16px;
     }
 
+    #doacao{
+        font-size: 16px;
+    }
 
 }
 
 /*
 
-                                                ########################
-                                                Formatação celulares
-                                                ########################
+#################################################################################################################                                                ########################
+                                                
+
+                                            Formatação celulares
+
+
+
+#################################################################################################################                                                ########################
 
 
 */
 
 @media screen and (max-width: 500px){
 
-    /*   Formatações gerais  */
+                                    /*   Formatações gerais  */
     
-    body{
-        background: violet;
-    }
+   .nav{
+       position:absolute;
+       display: inline-block;
+   }
 
-    .conteudo_home{
-        height: 1250px;
-    }
-    
+   .conteudo_home{
+       height: 2600px;
+   }
 
-    /* Formatações da barra de navegação */
 
-    
-    /* Formatações nossa história */
+                                    /* Formatações nossa história */
 
     #head_nossa_historia{
-        font-size: 22px;
+        font-size: 26px;
     }
 
     #paragrafo_nossa_historia{
         font-size: 20px;
+        margin-right: 15px;
     }
 
-
-    /* Formatações do carrrosel de depoimentos */
-
+                                         /* Carossel de frases */
 
     #h2_depoimentos{
-        font-family: 'Roboto',sans-serif;
-        font-size: 22px;
-        margin-right: 5px;
+        font-size: 26px;
     }
 
-    .frase{
-        font-family: 'Roboto',sans-serif;
-        font-size: 18px;
-    }
-  
-    .author{
-        font-family: 'Roboto',sans-serif;
-        font-size: 14px;
+    .frase,.author{
+        font-size: 20px;
     }
 
-    .prev, .next{
-        font-size: 17px;
+    .dot{
+        width: 8px;
+        height: 8px;
     }
     
-    /* Formatações do carrossel de fotos */
+    .mySlides{
+       margin-right: 50px;
+    }
+
+    .prev,.next{
+        margin-right: 50px;
+    }
+
+                                                /* Call to action */
+
+    
+    .call_to_action{
+        font-size: 26px;
+    }
+
+    .projetos,.whatsapp{
+        font-size: 18px;
+        padding: 5px;
+        margin-right: 20px;
+    }
+
+                                                /* Carrossel de fotos */
 
     .h3{
-        font-family: 'Roboto', sans-serif;
-        font-size: 22px;
-        margin-right: 20px;
+        margin-right: 100px;
+        font-size: 26px;
+        text-align: center;
     }
 
-    .carousel_image{
-        width: 50px;
-        height: 50px ;
-        object-fit: cover;
-        margin-left: 25px;
-        margin-right: 20px;
-    };    
+    .carousel_track_container,.prevFoto,.nextFoto,.dot-container,.prevFoto:hover,.nextFoto:hover{
+        display: none;
+    }
 
-    /* Formatações do footer */
+    .link_fotos{
+        display: block;
+        text-decoration: none;
+        margin-left: 5px;
+        margin-top: 100px;
+    }
+
+    .fotos{
+        display: block;
+        justify-content: center;
+        background-color: #196712;
+        color: white;
+        border-radius: 10px;
+        font-size: 25px;
+        padding: 10px 10px 10px 10px;
+        cursor: pointer;
+        font-family: sans-serif; 
+    }
+
+    .fotos:hover{
+        background-color: white;
+        color:#196712;
+        transition: 0.3s;
+    }
+                                            
+
+
+                                                /* Footer */
+
+    .icones_redes_sociais{
+        padding: 8px 8px;
+    }
     
-    .logo_rede_social{
-
-        width: 12px;
-        height: 12px;
-        margin: 5px;
-    }
-
-    .informacoes,.informacoes_contato{
-        list-style: none;
+    .header_redes{
         font-size: 10px;
     }
 
-    
+    .logo_rede_social{
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+    }
+
+    .informacoes_contato{
+        font-size: 10px;
+    }
+
+    #localizacao{
+        font-size: 10px;
+    }
+
+    #doacao{
+        font-size: 10px;
+    }
 
 }
-
-
 
 

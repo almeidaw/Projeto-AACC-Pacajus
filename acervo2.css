@@ -1,0 +1,99 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    background-image: url('assets/Desktop\ -\ 4.png');
+    background-color:#F9F1EC;
+    height: 100%;
+    position: relative;
+}
+
+/*.main_container{
+    min-height: 100px;
+    min-width: auto;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+    margin-bottom: auto;
+}*/
+
+.conteudo{
+    padding: 25px min(25px, 50px, 100px);
+}
+h1{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 70px;
+    margin-top:10%;
+    margin-bottom: 4%;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide columns by default */
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: #196712;
+    padding: 10px;
+  }
+h4{
+    font-size: 20px;
+    color:white;
+    font-weight: lighter;
+}
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: #2E8A54;
+  }
+  
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color: #196712;
+     color: white;
+  }
